@@ -1,0 +1,84 @@
+@import url("./fonts.css");
+@import url("./reset.css");
+@import url("./variable.css");
+
+body {
+  direction: rtl;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+body,
+* {
+  font-family: var(--main-font) !important;
+  color: var(--dark-color);
+}
+/* @media (min-width: 1200px) {
+  .css-wbysu7-MuiContainer-root {
+      max-width: 1400px !important;
+  }
+} */
+
+.custom-calendar.rmdp-wrapper,
+.rmdp-container .custom-calendar.ep-arrow::after {
+  background-color: #fff !important ;
+}
+
+.rmdp-day-picker {
+  /* display: initial !important; */
+}
+/* 
+.MuiInputBase-root::after {
+  dis: none !important;
+} */
+
+.MuiInputBase-root::after {
+  display: none;
+}
+
+.MuiInputBase-root::before {
+  display: none;
+}
+
+.rmdp-day {
+  font-weight: bold;
+}
+.rmdp-range {
+  background-color: var(--primary-color) !important ;
+}
+.rmdp-week-day {
+  color: var(--primary-color) !important  ;
+}
+.rmdp-range-hover {
+  background-color: #ccc !important  ;
+}
+.rmdp-today {
+  background-color: var(--primary-color) !important;
+  color: var(--primary-color) !important;
+}
+.rmdp-today .sd {
+  background-color: var(--primary-color) !important;
+}
+.rmdp-range-hover .sd {
+  color: #000 !important;
+}
+.rmdp-selected span {
+  background-color: var(--primary-color) !important;
+}
+
+.hotel_inp_Wrapper {
+  background-color: #fff;
+  box-shadow: var(--primary-shadow);
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  position: relative;
+  width: 100%;
+}
+.vacation_inp_Wrapper {
+  background-color: #fff;
+  position: relative;
+  box-shadow: var(--primary-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
