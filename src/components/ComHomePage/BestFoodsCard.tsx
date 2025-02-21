@@ -5,12 +5,11 @@ import {
   CusTPSimpleCard,
   DarkOverlay,
 } from "../../elements/CusComponets";
-import Image from "next/image";
 
 const BestFoodsCard: FC<IBestFoodsCardProps> = ({ image, name }) => {
   return (
     <CusCard>
-      <Image
+      <img
 
         src={image ? image : ""}
         alt=""

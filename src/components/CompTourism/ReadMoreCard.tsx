@@ -2,7 +2,6 @@ import { FC } from "react";
 import { IReadMoreCardProps } from "../../types/intefaces";
 import { Box, Typography } from "@mui/material";
 import BtnWhteBlackTex from "../BtnWhiteTextBlackColor/BtnWhteBlackTex";
-import Image from "next/image";
 import Link from "next/link";
 import { CusWrapperCard } from "@/elements/CusComponets";
 
@@ -18,7 +17,7 @@ const ReadMoreCard: FC<IReadMoreCardProps> = ({
     <Link href={link}>
       <CusWrapperCard>
         <Box height={"160px"} width={"100%"} display={"flex"} alignItems={"center"}>
-          <Image
+          <img
             className="rounded-lg"
             src={coverImg}
             alt=""

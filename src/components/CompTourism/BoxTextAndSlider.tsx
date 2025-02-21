@@ -106,19 +106,19 @@ const BoxTextAndSlider = () => {
           <Slider {...settings}>
             <TourWaysCard
               disc="هتل هزاره و مرکز کنفرانس گلاستر لندن"
-              image="/public/images/Tourism/Slider/img4.jpg"
+              Image="/public/images/Tourism/Slider/img4.jpg"
               isDetails={false}
               score={15.055}
             />
             <TourWaysCard
               disc="هتل هزاره و مرکز کنفرانس گلاستر لندن"
-              image="/public/images/Tourism/Slider/img5.jpg"
+              Image="/public/images/Tourism/Slider/img5.jpg"
               isDetails={false}
               score={15.055}
             />
             <TourWaysCard
               disc="هتل هزاره و مرکز کنفرانس گلاستر لندن"
-              image="/public/images/Tourism/Slider/img6.jpg"
+              Image="/public/images/Tourism/Slider/img6.jpg"
               isDetails={false}
               score={15.055}
             />

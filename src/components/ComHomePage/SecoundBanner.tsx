@@ -3,7 +3,6 @@ import { Box, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import DarkBtn from "../DarkBtn/DarkBtn";
 import { useMedia } from "../../context/MediaQueryContext";
-import Image from "next/image";
 const SecoundBanner = () => {
   let isXs = useMedia()
   const CusSecoundBanner = styled(Box)({
@@ -28,7 +27,7 @@ const SecoundBanner = () => {
               <Typography sx={{ fontSize: "0.90rem", fontWeight: "light" }}>
                 ساخته شده توسط <u>شهروز</u>
               </Typography>
-              <Image src="/public/images/AllNewLogos/singleLogo.svg" alt="" style={{ width: "40px" }} />
+              <img src="/public/images/AllNewLogos/singleLogo.svg" alt="" style={{ width: "40px" }} />
             </Box>
             <Typography sx={{ fontSize: "1.7rem", fontWeight: "bold" }}>
               با هم رفتن راحت تر از همیشه است !
@@ -45,7 +44,7 @@ const SecoundBanner = () => {
           </Box>
         </Grid>
         <Grid size={{ md: 6 }} sx={{ marginTop: isXs ? "2rem" : "0rem" }}>
-          <Image
+          <img
             src="/public/images/secoundBannerImg/caption.jpg"
             className="rounded-md"
             alt=""

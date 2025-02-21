@@ -2,7 +2,6 @@ import { Box, Typography } from "@mui/material";
 import { FC } from "react";
 import BodyText from "./BodyText";
 import { IBoxOfArticleProps } from "../../types/intefaces";
-import Image from "next/image";
 
 const BoxOfArticle: FC<IBoxOfArticleProps> = ({
   AverageTemp,
@@ -18,7 +17,7 @@ const BoxOfArticle: FC<IBoxOfArticleProps> = ({
       <Typography sx={{ fontStyle: "italic", fontSize: "1.1rem" }}>
         میانگین دما : {AverageTemp.min}پایین , {AverageTemp.max} بالا
       </Typography>
-      <Image src={coverArticle} alt="" className="mt-7" />
+      <img src={coverArticle} alt="" className="mt-7" />
       {TextArticle.map(({ text }) => {
         return <BodyText textArticle={text} />;
       })}

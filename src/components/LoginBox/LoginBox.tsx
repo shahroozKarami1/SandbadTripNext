@@ -1,3 +1,4 @@
+"use client"
 import {
   Box,
   Button,
@@ -67,7 +68,7 @@ const LoginBox: FC<IProfileBox> = ({ setOpen, open }) => {
             flexDirection={"column"}
             gap={1}
           >
-            <Image
+            <img
               style={{
                 width: "50px",
               }}

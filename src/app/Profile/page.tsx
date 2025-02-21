@@ -23,7 +23,6 @@ import IntroBtn from "../../components/CompProfile/IntroBtn";
 import CardOfTabs from "../../components/CompProfile/CardOfTabs";
 import EditForm from "../../components/CompProfile/EditForm";
 import Link from "next/link";
-import Image from "next/image";
 interface TabPanelProps {
   children?: React.ReactNode;
   index: number;
@@ -94,7 +93,7 @@ const Profile = () => {
                   >
                     {!isXs && (
                       <Box width={"120px"}>
-                        <Image
+                        <img
                           src="/public/images/NextTrip/img7.jpg"
                           alt=""
                           style={{
@@ -109,7 +108,7 @@ const Profile = () => {
                     <Box display={"flex"} flexDirection={"column"} gap={2}>
                       {isXs && (
                         <Box width={"80px"}>
-                          <Image
+                          <img
                             src="/public/images/NextTrip/img7.jpg"
                             alt=""
                             style={{

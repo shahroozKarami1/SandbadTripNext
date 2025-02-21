@@ -1,8 +1,7 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { FC } from "react";
-import { CusStartAndBuildCardTrip } from "../../elements/CusComponets";
+import { CusBtnStartAndBuildCard, CusStartAndBuildCardTrip } from "../../elements/CusComponets";
 import { IStartAndBuildCardProps } from "../../types/intefaces";
-import styled from "@emotion/styled";
 
 const StartAndBuildCard: FC<IStartAndBuildCardProps> = ({
   colorBack,
@@ -12,18 +11,10 @@ const StartAndBuildCard: FC<IStartAndBuildCardProps> = ({
   textBtn,
   title,
 }) => {
-  const CusBtn = styled(Button)({
-    color: "#000",
-    fontWeight: "bold",
-    borderRadius: "2rem",
-    color: colorBtn.colorText ? colorBtn.colorText : `var(--dark-color)`,
-    marginTop: "1.5rem",
-    padding: "1rem",
-    fontSize: "0.80rem"
-  });
+
   return (
     <CusStartAndBuildCardTrip sx={{ bgcolor: colorBack }}>
-      <Image
+      <img
         src={cover}
         alt=""
         style={{
@@ -39,7 +30,9 @@ const StartAndBuildCard: FC<IStartAndBuildCardProps> = ({
           {title}
         </Typography>
         <Typography>{disc}</Typography>
-        <CusBtn sx={{ bgcolor: colorBtn.colorBack }}>{textBtn}</CusBtn>
+        <CusBtnStartAndBuildCard sx={{
+          bgcolor: colorBtn.colorBack, color: colorBtn.colorText ? colorBtn.colorText : `var(--dark-color)`,
+        }}>{textBtn}</CusBtnStartAndBuildCard>
       </Box>
     </CusStartAndBuildCardTrip>
   );

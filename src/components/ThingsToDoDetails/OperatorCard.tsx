@@ -1,3 +1,4 @@
+"use client"
 import {
   Box,
   Button,
@@ -43,7 +44,7 @@ const OperatorCard: FC<IOperatorCardProps> = ({
     <>
       <CusOperatorDetails>
         <Box display={"flex"} gap={1} alignItems={"center"}>
-          <Image
+          <img
             src={profile}
             alt=""
             style={{ width: "50px", borderRadius: "50%" }}

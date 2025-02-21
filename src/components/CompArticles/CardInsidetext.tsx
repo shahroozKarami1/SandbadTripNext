@@ -1,9 +1,8 @@
-import { Box, Typography } from "@mui/material";
+import {  Typography } from "@mui/material";
 import { FC } from "react";
 import { ICardInsideText } from "../../types/intefaces";
 import { CusCardTextBox, CusCardWrapper, DarkOverlay } from "../../elements/CusComponets";
 import Link from "next/link";
-import Image from "next/image";
 
 const CardInsidetext: FC<ICardInsideText> = ({
   cover,
@@ -17,7 +16,7 @@ const CardInsidetext: FC<ICardInsideText> = ({
     <Link href={link}>
       <CusCardWrapper>
         <DarkOverlay />
-        <Image
+        <img
           src={cover}
           alt=""
           style={{

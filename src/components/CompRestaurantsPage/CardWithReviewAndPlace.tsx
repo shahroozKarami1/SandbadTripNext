@@ -3,7 +3,6 @@ import { ICardWithReviewAndPlaceProps } from "../../types/intefaces";
 import { Box, Typography } from "@mui/material";
 import { CusCardWrapperCardAndReview, CusCircleIcon } from "../../elements/CusComponets";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
-import Image from "next/image";
 import Link from "next/link";
 
 const CardWithReviewAndPlace: FC<ICardWithReviewAndPlaceProps> = ({
@@ -27,7 +26,7 @@ const CardWithReviewAndPlace: FC<ICardWithReviewAndPlaceProps> = ({
             }}
           />
         </Box>
-        <Image
+        <img
           src={cardCover}
           alt=""
           style={{

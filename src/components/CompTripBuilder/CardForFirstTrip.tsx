@@ -11,7 +11,7 @@ const CardForFirstTrip: FC<ICardForFirstTripProps> = ({
   return (
     <Box sx={{ margin: ' 0  0.5rem', cursor: "pointer" }} onClick={changePageHandler}>
       <Box height={"120px"}  >
-        <Image
+        <img
           src={coverImg}
           alt=""
           style={{

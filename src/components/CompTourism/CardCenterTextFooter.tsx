@@ -3,12 +3,11 @@ import { FC } from "react";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import Link from "next/link";
 import { CusBoxWrapper, CusText } from "@/elements/CusComponets";
-import Image from "next/image";
 const CardCenterTextFooter: FC<{
   link: string;
-  image: string;
+  Image: string;
   textFooter: string;
-}> = ({ image, link, textFooter }) => {
+}> = ({ Image, link, textFooter }) => {
 
   return (
     <Link href={link}>
@@ -23,8 +22,8 @@ const CardCenterTextFooter: FC<{
             }}
           />
         </Box>
-        <Image
-          src={image}
+        <img
+          src={Image}
           alt=""
           style={{
             width: "100%",

@@ -1,6 +1,6 @@
 "use client"
 import styled from "@emotion/styled";
-import { Box, Button, Input, ListItem, TextareaAutosize, TextField, Typography } from "@mui/material";
+import { Box, Button, Input, LinearProgress, ListItem, Rating, TextareaAutosize, TextField, Typography } from "@mui/material";
 import FirstBannerImg from "../../public/images/HomePage/FirstBanner.jpg";
 import MainBanner from "/public/images/ThingsToDoPage/Banner.jpg";
 import CircleIcon from "@mui/icons-material/Circle";
@@ -9,6 +9,7 @@ import AddCircleOutlinedIcon from "@mui/icons-material/AddCircleOutlined";
 import RemoveCircleOutlinedIcon from "@mui/icons-material/RemoveCircleOutlined";
 import VerifiedOutlinedIcon from "@mui/icons-material/VerifiedOutlined";
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import AutoAwesomeOutlinedIcon from "@mui/icons-material/AutoAwesomeOutlined";
 
 export const CusMenuBtn = styled(Button)({
   backgroundColor: "transparent",
@@ -720,7 +721,7 @@ export const CusIcon = styled("span")({
     fontSize: "0.90rem",
   },
 });
-export   const BoxOverLay = styled(Box)({
+export const BoxOverLay = styled(Box)({
   position: "absolute",
   height: "100%",
   width: "100%",
@@ -728,16 +729,16 @@ export   const BoxOverLay = styled(Box)({
   background: "linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 100%)",
 });
 
-export   const CusBadgeBox = styled(Button)({
+export const CusBadgeBox = styled(Button)({
   display: "inline-flex",
   alignItems: "center",
   borderRadius: "2rem",
   padding: "0.5rem  1rem",
   gap: 3,
-  margin  : "0.5rem" , 
-  border   : "1px  solid #ccc"
+  margin: "0.5rem",
+  border: "1px  solid #ccc"
 });
-export   const CusFooter = styled(Box)({
+export const CusFooter = styled(Box)({
   display: "flex",
   alignItems: "center",
   marginTop: "2rem",
@@ -745,9 +746,137 @@ export   const CusFooter = styled(Box)({
   borderTop: "1px  solid #ccc",
   paddingTop: "0.5rem",
 });
-export const  CusLine = styled(Box)({
+export const CusLine = styled(Box)({
   backgroundColor: "var(--primary-color)",
   height: "15px",
   width: "150px",
   borderRadius: "2rem",
 });
+
+export const CusTpCard = styled(Typography)({
+  color: "#fff",
+  fontWeight: "bold",
+  fontSize: "1.5rem",
+  bottom: 15,
+  right: 10,
+  position: "absolute"
+});
+
+export const CusCardWrapperTinyCard = styled(Box)({
+  position: "relative",
+  // width : "100%" , 
+  margin: "0  0.5rem"
+});
+
+export const CusBtn = styled(Button)({
+  color: "#444",
+  fontSize: "0.90rem",
+  borderBottom: "1px solid #000",
+  padding: 0,
+  margin: "0.25rem 0",
+  borderRadius: 0
+})
+
+export const CusProgressBar = styled(LinearProgress)({
+  width: '100%',
+  borderRadius: "1rem",
+  height: "13px",
+  backgroundColor: "#E0E0E0",
+  "& .MuiLinearProgress-bar": {
+    backgroundColor: "var(--primary-color)",
+
+  }
+});
+
+export const CusCardGaryQues = styled(Box)({
+  borderRadius: "1rem",
+  backgroundColor: "#F2F2F2",
+  padding: "1rem",
+  margin: '0.5rem',
+  direction: "rtl"
+});
+export const CusMainBanner = styled(Box)({
+  height: "80vh",
+  // width: "100vw",
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
+  backgroundPosition: "bottom",
+});
+
+export const CusDarkBtn = styled(Button)({
+  backgroundColor: `var(--dark-color)`,
+  color: "#fff",
+  borderRadius: "1.2rem",
+  whiteSpace: "nowrap",
+  padding: "0.5rem  2rem  ",
+  fontSize: "1rem",
+  fontWeight: "bold",
+});
+
+
+export const CusMainBannerTripDetails = styled(Box)({
+  position: "relative",
+  height: "320px",
+});
+export const CusTopOfBanner = styled(Box)({
+  position: "absolute",
+  top: 20,
+  left: 20,
+  display: "flex",
+  gap: 10,
+  alignItems: "center",
+});
+export const CusBottomBanner = styled(Box)({
+  position: "absolute",
+  bottom: 20,
+  right: 30,
+  display: "flex",
+  flexDirection: "column",
+  gap: 10,
+});
+export const CusRentalCard = styled(Box)({
+  display: "flex",
+  flexDirection: "column",
+  position: "relative",
+  border: "1px  solid #ccc",
+  padding: "2rem",
+  alignItems: "center",
+  justifyContent: 'center'
+});
+export const StyledRating = styled(Rating)({
+  transform: "scaleX(-1)", // معکوس کردن محور X
+  "& .MuiRating-icon": {
+    transform: "scaleX(-1)", // برگرداندن آیکون‌ها به حالت عادی
+  },
+});
+
+export const CusBtnStartAndBuildCard = styled(Button)({
+  color: "#000",
+  fontWeight: "bold",
+  borderRadius: "2rem",
+  marginTop: "1.5rem",
+  padding: "1rem",
+  fontSize: "0.80rem"
+});
+
+export const CusCardText = styled(Typography)({
+  color: "#fff",
+  fontWeight: "bold",
+  fontSize: "1.5rem",
+  bottom: 10,
+  position: "absolute",
+  right: "20px",
+});
+
+export const CusIconAiCardPlanning = styled(AutoAwesomeOutlinedIcon)({
+
+  "&.MuiSvgIcon-root  ": {
+    backgroundColor: "#F2ECF9",
+    borderRadius: "50%",
+    fontSize: "2.5rem",
+    padding: "0.5rem",
+    "& path": {
+      color: "#784AB1"
+    }
+  }
+})

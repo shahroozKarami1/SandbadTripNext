@@ -1,7 +1,6 @@
 import { FC } from "react";
 import { ITipCardProps } from "../../types/intefaces";
 import { Box, Typography } from "@mui/material";
-import Image from "next/image";
 
 const TipCard: FC<ITipCardProps> = ({ name, profile, tipBody }) => {
   return (
@@ -14,7 +13,7 @@ const TipCard: FC<ITipCardProps> = ({ name, profile, tipBody }) => {
 
       }}
     >
-      <Image
+      <img
         src={profile}
         style={{
           borderRadius: "50%",

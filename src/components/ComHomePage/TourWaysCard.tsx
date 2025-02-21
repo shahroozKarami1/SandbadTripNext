@@ -7,10 +7,9 @@ import {
 } from "../../elements/CusComponets";
 import CircleRate from "../CircleRate/CircleRate";
 import Link from "next/link";
-import Image from "next/image";
 const TourWaysCard: FC<ITourWaysCardProps> = ({
   disc,
-  image,
+  Image,
   price,
   score,
   isDetails,
@@ -20,8 +19,8 @@ const TourWaysCard: FC<ITourWaysCardProps> = ({
     <Box sx={{ direction: "rtl" }}>
       <Link href={link ? link : "/"}>
         <Box sx={{ position: "relative", margin: "0 0.5rem" }}>
-          <Image
-            src={image}
+          <img
+            src={Image}
             alt=""
             className="rounded-lg  "
             style={{

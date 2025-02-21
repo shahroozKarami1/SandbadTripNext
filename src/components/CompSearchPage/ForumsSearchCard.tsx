@@ -1,7 +1,6 @@
 import { FC } from "react";
 import { IForumsSearchCardProps } from "../../types/intefaces";
 import { Box, Typography } from "@mui/material";
-import Image from "next/image";
 import { CusWrapperBox } from "@/elements/CusComponets";
 
 const ForumsSearchCard: FC<IForumsSearchCardProps> = ({
@@ -18,7 +17,7 @@ const ForumsSearchCard: FC<IForumsSearchCardProps> = ({
       <Typography sx={{ fontWeight: "bold" }}>{title}</Typography>
 
       <Box display={"flex"} alignItems={"center"} gap={1}>
-        <Image
+        <img
           src={profile}
           alt=""
           style={{ width: "50px", borderRadius: "50%", height: "50px" }}

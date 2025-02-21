@@ -1,3 +1,4 @@
+"use client"
 import { SearchOutlined } from "@mui/icons-material";
 import { Box, InputAdornment } from "@mui/material";
 import { FC, useState } from "react";

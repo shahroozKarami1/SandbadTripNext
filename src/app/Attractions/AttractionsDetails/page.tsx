@@ -33,7 +33,6 @@ import PayCard from "@/components/ThingsToDoDetails/PayCard";
 import InpSearch from "@/components/InpSearch/InpSearch";
 import ReadMore from "@/components/ReadMore/ReadMore";
 import CreateOutlinedIcon from "@mui/icons-material/CreateOutlined";
-import Image from "next/image";
 
 const ListItemComp: FC<{
   text: string;
@@ -117,7 +116,7 @@ const ThingsToDoDetails = () => {
         <Grid container spacing={1} marginTop={"3rem"}>
           <Grid size={{ md: 7, xs: 12 }}>
             <Box sx={{ position: "relative" }} height={"409px"}>
-              <Image
+              <img
                 src="/public/images/ThingsToDoDetails/Banner/mainImg.jpg"
                 style={{
                   objectFit: "cover",
@@ -135,7 +134,7 @@ const ThingsToDoDetails = () => {
           <Grid size={{ md: 5, xs: 12 }}>
             <Box display={"flex"} flexDirection={"column"} gap={1}>
               <Box height={"200px"}>
-                <Image
+                <img
                   src="/public/images/ThingsToDoDetails/Banner/img1.jpg"
                   alt=""
                   style={{
@@ -148,7 +147,7 @@ const ThingsToDoDetails = () => {
                 />
               </Box>
               <Box height={"200px"}>
-                <Image
+                <img
                   src="/public/images/ThingsToDoDetails/Banner/img2.jpg"
                   alt=""
                   style={{

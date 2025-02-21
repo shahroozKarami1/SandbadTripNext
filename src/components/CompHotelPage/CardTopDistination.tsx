@@ -2,11 +2,10 @@
 import { FC, useState } from "react";
 import { ICardTopDistinationProps } from "../../types/intefaces";
 import { Box, Button, Typography } from "@mui/material";
-import Image from "next/image";
 
 const CardTopDistination: FC<ICardTopDistinationProps> = ({
   diec,
-  image,
+  Image,
   title,
 }) => {
   let [isExpended, setIsExpended] = useState<boolean>(false);
@@ -24,7 +23,7 @@ const CardTopDistination: FC<ICardTopDistinationProps> = ({
       sx={{ direction: "rtl" }}
       margin={"0  0.5rem"}
     >
-      <Image src={image} className="rounded-md" alt="" />
+      <img src={Image} className="rounded-md" alt="" />
       <Box
         display={"flex"}
         flexDirection={"column"}

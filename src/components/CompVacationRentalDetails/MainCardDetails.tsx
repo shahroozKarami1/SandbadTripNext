@@ -1,10 +1,10 @@
+"use client"
 import { FC, useState } from "react";
 import { IMainCardDetailsProps } from "../../types/intefaces";
 import { Box, Button, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import FmdGoodOutlinedIcon from "@mui/icons-material/FmdGoodOutlined";
 import SimpleSlider from "../SliderWithOutContainer/SimpleSlider";
-import { Link } from "react-router-dom";
 import PeopleAltOutlinedIcon from "@mui/icons-material/PeopleAltOutlined";
 import BedOutlinedIcon from "@mui/icons-material/BedOutlined";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
@@ -13,6 +13,8 @@ import YellowBtn from "../CompArticleDetails/YellowBtn";
 import CheckInOut from "../DataPicker/CheckInOut";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import MoreDetailsSectionCard from "./MoreDetailsSectionCard";
+import Link from "next/link";
+import Image from "next/Image";
 const CardDetails: FC<{
   icon?: React.ReactNode;
   text?: string;
@@ -21,7 +23,7 @@ const CardDetails: FC<{
   return (
     <Box display={"flex"} alignItems={"center"}>
       {isLink ? (
-        <Link to={"/"}>
+        <Link href={"/"}>
           <Box
             display={"flex"}
             alignItems={"center"}
@@ -95,7 +97,7 @@ const MainCardDetails: FC<IMainCardDetailsProps> = ({
         </Grid>
         <Grid size={{ md: 8 }}>
           <Box>
-            <Link to={"/"}>
+            <Link href={"/"}>
               <Typography sx={{ fontWeight: "bold", fontSize: "1.1rem" }}>
                 {title}
               </Typography>

@@ -32,7 +32,6 @@ import RateProgress from "@/components/CompHotelDetails/RateProgress";
 import TitleSection from "@/components/ComHomePage/TitleSection";
 import CardNearBy from "@/components/CompHotelDetails/CardNearBy";
 import ErrorOutlineIcon from "@mui/icons-material/ErrorOutline";
-import Image from "next/image";
 
 const HotelDetails = () => {
   var settings = {
@@ -335,7 +334,7 @@ const HotelDetails = () => {
                     justifyContent={"center"}
                     marginTop={"2rem"}
                   >
-                    <Image
+                    <img
                       src="/public/images/HotelDetail/bigMap.png"
                       alt=""
                       className="rounded-lg  w-full"

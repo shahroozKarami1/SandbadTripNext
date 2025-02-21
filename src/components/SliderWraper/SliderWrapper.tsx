@@ -1,3 +1,4 @@
+"use client"
 import { Box, styled } from "@mui/material";
 import React, { FC } from "react";
 import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';

@@ -15,7 +15,6 @@ import SearchIcon from "@mui/icons-material/Search";
 import LanguageIcon from "@mui/icons-material/Language";
 import DarkBtn from "../DarkBtn/DarkBtn";
 import BtnWhteBlackTex from "../BtnWhiteTextBlackColor/BtnWhteBlackTex";
-import Image from "next/image";
 interface IEditForm {
   openState: boolean;
   setState: React.Dispatch<React.SetStateAction<boolean>>;
@@ -47,7 +46,7 @@ const EditForm: FC<IEditForm> = ({ openState, setState }) => {
         <Grid container justifyContent={"center"} gap={2}>
           <Grid size={{ md: 2 }}>
             <Box width={"120px"}>
-              <Image
+              <img
                 src="/public/images/NextTrip/img4.jpg"
                 alt=""
                 style={{

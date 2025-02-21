@@ -1,9 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import { CusCardDetails, CusOutLineLinkBtn } from "../../elements/CusComponets";
 import CardDetailsItem from "./CardDetailsItem";
-
- 
-
 const CardDetailsBox = () => {
   return (
     <CusCardDetails>

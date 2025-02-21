@@ -7,7 +7,6 @@ import { CusStickyMenu } from "../../elements/CusComponets";
 import { useMedia } from "../../context/MediaQueryContext";
 import { useState } from "react";
 import LoginBox from "../LoginBox/LoginBox";
-import Image from "next/image";
 const TopBarHome = () => {
   let [isOpenProfileBox, setIsOpenProfileBox] = useState<boolean>(false);
   let isXs = useMedia();
@@ -20,7 +19,7 @@ const TopBarHome = () => {
             <Grid container alignItems={"center"} justifyContent={"center"}>
               <Grid size={{ md: 2 }}>
                 <Box sx={{ width: "150px", height: "100px" }}>
-                  <Image
+                  <img
                     src="/public/images/AllNewLogos/persian vertical 2-01.svg"
                     alt=""
                     style={{

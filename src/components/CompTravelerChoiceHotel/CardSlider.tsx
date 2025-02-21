@@ -1,5 +1,4 @@
 import { Box } from "@mui/material";
-import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
 
@@ -14,7 +13,7 @@ const CardSlider: FC<{ cover: string; link: string }> = ({ cover, link }) => {
           overflow: "hidden",
         }}
       >
-        <Image
+        <img
           src={cover}
           alt=""
           style={{

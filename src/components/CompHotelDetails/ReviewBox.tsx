@@ -7,7 +7,6 @@ import { CusCircleIcon, CusCircleOutLine } from "../../elements/CusComponets";
 import MoreHorizOutlinedIcon from "@mui/icons-material/MoreHorizOutlined";
 import ThumbUpOutlinedIcon from "@mui/icons-material/ThumbUpOutlined";
 import Grid from "@mui/material/Grid2";
-import Image from "next/image";
 const RatingReview: FC<{ reviewTopic: string; likeScore?: number }> = ({
   reviewTopic,
 }) => {
@@ -49,7 +48,7 @@ const ReviewBox: FC<ReviewBoxProps> = ({
         alignItems={"center"}
       >
         <Box display={"flex"} alignItems={"center"} gap={1}>
-          <Image
+          <img
             src={profile}
             alt=""
             style={{ borderRadius: "50%", width: "40px", height: "40px" }}

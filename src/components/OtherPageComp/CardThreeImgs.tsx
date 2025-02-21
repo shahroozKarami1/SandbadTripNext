@@ -3,8 +3,8 @@ import { ICardThreeImgsProps } from "../../types/intefaces";
 import { Box, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
-import { Link } from "react-router-dom";
 import { DarkOverlay } from "../../elements/CusComponets";
+import Link from "next/link";
 
 const CardThreeImgs: FC<ICardThreeImgsProps> = ({
   imgUrls,
@@ -13,7 +13,7 @@ const CardThreeImgs: FC<ICardThreeImgsProps> = ({
   titleOfMainCard,
 }) => {
   return (
-    <Link to={link}>
+    <Link href={link}>
       <Box
         sx={{
           position: "relative",
@@ -33,7 +33,7 @@ const CardThreeImgs: FC<ICardThreeImgsProps> = ({
         <Grid container spacing={0.5}>
           <Grid size={{ md: 8 }}>
             <Box sx={{ position: "relative", height: "100%" }}>
-              <Image
+              <img
                 src={imgUrls.mainImg}
                 alt=""
                 style={{
@@ -74,7 +74,7 @@ const CardThreeImgs: FC<ICardThreeImgsProps> = ({
             {imgUrls.otherImgs.map((imgSrc, index) => {
               return (
                 <Box key={index}>
-                  <Image
+                  <img
                     src={imgSrc}
                     alt=""
                     style={{

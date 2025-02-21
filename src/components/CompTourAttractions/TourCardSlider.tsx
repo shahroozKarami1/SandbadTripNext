@@ -11,7 +11,6 @@ import Grid from "@mui/material/Grid2";
 import ErrorOutlineIcon from "@mui/icons-material/ErrorOutline";
 import ToolTipCustom from "../ToolTipCustom/ToolTipCustom";
 import VerifiedIcon from '@mui/icons-material/Verified';
-import Image from "next/image";
 const BestSellerCard = () => {
   return (
     <Box display={"flex"}>
@@ -40,7 +39,7 @@ const CardOfSlider: FC<{ coverImg: string }> = ({ coverImg }) => {
         borderRadius: "1rem",
       }}
     >
-      <Image
+      <img
         src={coverImg}
         alt=""
         style={{

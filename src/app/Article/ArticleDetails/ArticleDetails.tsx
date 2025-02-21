@@ -5,7 +5,6 @@ import YellowBtn from "@/components/CompArticleDetails/YellowBtn";
 import SliderWrapper from "@/components/SliderWraper/SliderWrapper";
 import { Avatar, AvatarGroup, Box, Container, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
-import Image from "next/image";
 
 const ArticleDetails = () => {
   return (
@@ -69,7 +68,7 @@ const ArticleDetails = () => {
         </Grid>
         <Grid container>
           <Grid size={{ md: 12 }}>
-            <Image
+            <img
               src="/public/images/ArticleDetails/Banner/bigBanner.jpg"
               alt=""
             />

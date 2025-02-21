@@ -3,7 +3,6 @@ import { IReviewsCardProps } from "../../types/intefaces";
 import { Box, Typography } from "@mui/material";
 import { CusCircleIcon, CusReviewCard } from "../../elements/CusComponets";
 import Link from "next/link";
-import Image from "next/image";
 
 const ReviewsCard: FC<IReviewsCardProps> = ({
   comment,
@@ -30,7 +29,7 @@ const ReviewsCard: FC<IReviewsCardProps> = ({
           بالاترین امتیاز در <span className="font-light">{topRateIn}</span>
         </Typography>
         <Box display={"flex"} alignItems={"flex-start"} gap={1} sx={{ marginTop: "1rem" }}>
-          <Image src={profile} alt="" className="rounded-full" style={{ width: "40px" }} />
+          <img src={profile} alt="" className="rounded-full" style={{ width: "40px" }} />
           <Typography sx={{ fontSize: "0.80rem" }}>{comment}</Typography>
         </Box>
       </CusReviewCard>

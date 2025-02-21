@@ -41,7 +41,7 @@ export interface IBestFoodsCardProps {
 }
 export interface IDistinationCardProps {
   name: string;
-  image: string;
+  Image: string;
   item: number;
   title: string;
 }
@@ -49,18 +49,18 @@ export interface ITourWaysCardProps {
   disc: string;
   score: number;
   price?: number;
-  image: string;
+  Image: string;
   isDetails?: boolean;
   link?: string;
 }
 
 export interface IMoreExploreCardProps {
-  image: string;
+  Image: string;
   disc: string;
 }
 
 interface IdataNextTrip {
-  image: string;
+  Image: string;
   title: string;
 }
 
@@ -85,7 +85,7 @@ export interface IMainBannerProps {
   bannerUrl: string;
 }
 export interface ICardTopDistinationProps {
-  image: string;
+  Image: string;
   title: string;
   diec: string;
 }
@@ -202,7 +202,7 @@ export interface ICardInsideText {
 export interface ICardTextFooterProps {
   subTitle: string;
   title: string;
-  image: string;
+  Image: string;
   link: string;
 }
 export interface ITitleCenterProps {

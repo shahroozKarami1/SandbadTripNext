@@ -5,7 +5,6 @@ import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 import ReplyIcon from '@mui/icons-material/Reply';
 import FormComment from './FormComment';
 import TitleSection from '../ComHomePage/TitleSection';
-import Image from 'next/image';
 import { ICommentBodyProps } from '@/types/intefaces';
 
 const CommentBody: FC<ICommentBodyProps> = ({ commentBody, commentDate, name, profile, isReplyComment, replyComment }) => {
@@ -16,7 +15,7 @@ const CommentBody: FC<ICommentBodyProps> = ({ commentBody, commentDate, name, pr
             <Box >
                 <Box display={"flex"} alignItems={"flex-start"} gap={2}>
                     <Box width={"250px"} mt={"0.75rem"}>
-                        <Image src={profile ? profile : "/public/images/user.jpg"} alt=""
+                        <img src={profile ? profile : "/public/images/user.jpg"} alt=""
                             style={{ borderRadius: "0.75rem", objectFit: "cover", objectPosition: 'center', width: "100%", height: "100%" }} />
                     </Box>
                     <Box display={"flex"} flexDirection={"column"}  >
@@ -77,7 +76,7 @@ const CommentBody: FC<ICommentBodyProps> = ({ commentBody, commentDate, name, pr
                                 <Box >
                                     <Box display={"flex"} alignItems={"flex-start"} gap={2}>
                                         <Box width={"250px"} mt={"0.75rem"}>
-                                            <Image src={profile ? profile : "/public/images/user.jpg"} alt=""
+                                            <img src={profile ? profile : "/public/images/user.jpg"} alt=""
                                                 style={{ borderRadius: "0.75rem", objectFit: "cover", objectPosition: 'center', width: "100%", height: "100%" }} />
                                         </Box>
                                         <Box display={"flex"} flexDirection={"column"}  >

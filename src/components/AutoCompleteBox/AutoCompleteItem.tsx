@@ -2,7 +2,6 @@ import { Box, Typography } from "@mui/material";
 import { FC } from "react";
 import { IAutoCompleteItemProps } from "../../types/intefaces";
 import NearMeOutlinedIcon from "@mui/icons-material/NearMeOutlined";
-import Image from "next/image";
 import { CoverNearbyIcon, CusAutoCompleteItem } from "@/elements/CusComponets";
 
 const AutoCompleteItem: FC<IAutoCompleteItemProps> = ({
@@ -20,8 +19,8 @@ const AutoCompleteItem: FC<IAutoCompleteItemProps> = ({
           </CoverNearbyIcon>
         ) : (
           <Box sx={{ height: "70px" }}>
-            <Image
-              src={cover ?  cover  :  ""}
+            <img
+              src={cover ? cover : ""}
               alt=""
               style={{
                 objectFit: "cover",

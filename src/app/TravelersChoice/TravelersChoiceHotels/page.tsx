@@ -17,7 +17,6 @@ import FmdGoodOutlinedIcon from "@mui/icons-material/FmdGoodOutlined";
 import DinnerDiningIcon from "@mui/icons-material/DinnerDining";
 import SpaOutlinedIcon from "@mui/icons-material/SpaOutlined";
 import SaveBtn from "@/components/SaveBtn/SaveBtn";
-import Image from "next/image";
 
 const TravelersChoiceHotels = () => {
 
@@ -28,7 +27,7 @@ const TravelersChoiceHotels = () => {
         <Box position={"relative"} height={400}>
           <DarkOverlay />
 
-          <Image
+          <img
             src="/public/images/BestChoiceDetails/Banner/MainBanner.png"
             style={{
               objectFit: "cover",
@@ -49,10 +48,10 @@ const TravelersChoiceHotels = () => {
               flexDirection: "column"
             }}
           >
-            <Image
+            <img
               src="/public/images/BestChoiceDetails/Banner/logo.png"
               style={{
-                width : '100px'
+                width: '100px'
               }}
               alt=""
             />
@@ -69,15 +68,15 @@ const TravelersChoiceHotels = () => {
       ) : (
         <Box position={"relative"}>
           <DarkOverlay />
-          <Image
+          <img
             src="/public/images/BestChoiceDetails/Banner/MainBanner.png"
             alt=""
           />
           <CusInnerMainBanner>
-            <Image
-            style={{
-              width : "100px"
-            }}
+            <img
+              style={{
+                width: "100px"
+              }}
               src="/public/images/BestChoiceDetails/Banner/logo.png"
               className="ml-5"
               alt=""

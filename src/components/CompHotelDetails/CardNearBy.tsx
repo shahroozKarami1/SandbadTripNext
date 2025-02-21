@@ -3,7 +3,6 @@ import { FC } from "react";
 import { ICardNearByProps } from "../../types/intefaces";
 import { CusCircleIcon, CusLikeIcon } from "../../elements/CusComponets";
 import Link from "next/link";
-import Image from "next/image";
 const CardNearBy: FC<ICardNearByProps> = ({
   countOfLike,
   coverCard,
@@ -17,7 +16,7 @@ const CardNearBy: FC<ICardNearByProps> = ({
     <Link href={linkCard}>
       <Box display={"flex"} gap={2} sx={{ margin: "1.5rem 0", position: 'relative' }} >
         <Box >
-          <Image
+          <img
             src={coverCard}
             alt=""
             style={{ width: "120px", borderRadius: "1rem" }}

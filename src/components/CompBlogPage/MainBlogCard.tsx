@@ -1,7 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import { FC } from "react";
 import { IMainBlogCardProps } from "../../types/intefaces";
-import Image from "next/image";
 import Link from "next/link";
 
 const MainBlogCard: FC<IMainBlogCardProps> = ({
@@ -13,7 +12,7 @@ const MainBlogCard: FC<IMainBlogCardProps> = ({
   return (
     <Box sx={{ my: "2rem" }}>
       <Box sx={{ width: "100%", height: '400px' }}>
-        <Image src={cover} alt="" style={{
+        <img src={cover} alt="" style={{
           objectFit: "cover",
           objectPosition: "center",
           borderRadius: "1rem",

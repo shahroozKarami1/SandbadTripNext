@@ -1,7 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import { FC } from "react";
 import { IPopularFourmsCardProps } from "../../types/intefaces";
-import Image from "next/image";
 import Link from "next/link";
 
 const PopularFourmsCard: FC<IPopularFourmsCardProps> = ({
@@ -12,7 +11,7 @@ const PopularFourmsCard: FC<IPopularFourmsCardProps> = ({
   return (
     <Link href={"/"}>
       <Box display={"flex"} flexDirection={"column"} sx={{ margin: "0  0.5rem" }}>
-        <Image
+        <img
           src={coverImg}
           alt=""
           className="rounded-lg"

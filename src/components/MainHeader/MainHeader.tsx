@@ -1,3 +1,4 @@
+"use client"
 import { Box, Container, List } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import DarkBtn from "../DarkBtn/DarkBtn";
@@ -6,10 +7,10 @@ import TopBarMenu from "../ComHomePage/TopBarMenu";
 import InpSearch from "../InpSearch/InpSearch";
 import { CusStickyMenu } from "../../elements/CusComponets";
 import NavbarMenu from "../ComHomePage/NavBarMenu";
-import { Link } from "react-router-dom";
 import { useMedia } from "../../context/MediaQueryContext";
 import { useState } from "react";
 import LoginBox from "../LoginBox/LoginBox";
+import Link from "next/link";
 
 const MainHeader = () => {
   let [isOpenProfileBox, setIsOpenProfileBox] = useState<boolean>(false);
@@ -22,9 +23,9 @@ const MainHeader = () => {
         <Container>
           <Box display={"flex"} gap={3} alignItems={"center"}>
             <Box sx={{ width: '100px' }}>
-              <Link to={"/"}>
-                <Image
-                  src="/public/images/AllNewLogos/singleLogo.svg"
+              <Link href={"/"}>
+                <img
+                  src="/images/AllNewLogos/singleLogo.svg"
                   alt=""
                   style={{
                     objectFit: "cover",

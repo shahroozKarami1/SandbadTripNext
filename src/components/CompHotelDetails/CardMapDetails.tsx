@@ -13,7 +13,6 @@ import MapsHomeWorkOutlinedIcon from "@mui/icons-material/MapsHomeWorkOutlined";
 import ComputerOutlinedIcon from "@mui/icons-material/ComputerOutlined";
 import PhoneEnabledOutlinedIcon from "@mui/icons-material/PhoneEnabledOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
-import Image from "next/image";
 const ItemDetailsMap: FC<{
   icon: React.ReactNode;
   text: string;
@@ -39,7 +38,7 @@ const CardMapDetails = () => {
   return (
     <CusCardDetails>
       <Typography sx={{ fontWeight: "bold" }}>موقععیت و تماس</Typography>
-      <Image
+      <img
         src="/public/images/HotelDetail/map.png"
         alt=""
         className="rounded-md  mt-5"

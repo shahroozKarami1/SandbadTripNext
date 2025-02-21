@@ -6,7 +6,6 @@ import SliderWrapper from "../../components/SliderWraper/SliderWrapper";
 import TitleSection from "../../components/ComHomePage/TitleSection";
 import AiCardPlanning from "../../components/CompTrips/AiCardPlanning";
 import Link from "next/link";
-import Image from "next/image";
 
 const TextsForDisc: FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
@@ -22,7 +21,7 @@ const TravelersChoice = () => {
         <Grid container>
           <Grid size={{ md: 12 }}>
             <Box sx={{ marginTop: "2rem" }}>
-              <Image src="public/images/TravelersChoice/MainBanner.jpg" alt="" />
+              <img src="public/images/TravelersChoice/MainBanner.jpg" alt="" />
             </Box>
           </Grid>
         </Grid>
@@ -95,17 +94,17 @@ const TravelersChoice = () => {
         />
 
         <SliderWrapper numberOfShowSlider={5} ArrowPosition="40%">
-          <AiCardPlanning text="لندن" Image="/public/images/NextTrip/img1.jpg" />
+          <AiCardPlanning text="لندن" image="/public/images/NextTrip/img1.jpg" />
           <AiCardPlanning
             text="امارات"
-            Image="/public/images/NextTrip/img2.jpg"
+            image="/public/images/NextTrip/img2.jpg"
           />
-          <AiCardPlanning text="پکن" Image="/public/images/NextTrip/img3.jpg" />
+          <AiCardPlanning text="پکن" image="/public/images/NextTrip/img3.jpg" />
           <AiCardPlanning
             text="لس آنجلس"
-            Image="/public/images/NextTrip/img4.jpg"
+            image="/public/images/NextTrip/img4.jpg"
           />
-          <AiCardPlanning text="لندن" Image="/public/images/NextTrip/img5.jpg" />{" "}
+          <AiCardPlanning text="لندن" image="/public/images/NextTrip/img5.jpg" />{" "}
         </SliderWrapper>
       </Container>
     </Box>

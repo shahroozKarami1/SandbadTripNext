@@ -1,10 +1,8 @@
 import { Box, Typography } from "@mui/material";
 import { FC } from "react";
 import { ICardFooterDicsProps } from "../../types/intefaces";
-import styled from "@emotion/styled";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import { CusCircleIcon, CusCircleOutLine, WrapperBox } from "../../elements/CusComponets";
-import Image from "next/image";
 import Link from "next/link";
 
 const CardFooterDics: FC<ICardFooterDicsProps> = ({
@@ -20,7 +18,7 @@ const CardFooterDics: FC<ICardFooterDicsProps> = ({
     <Link href={link}>
       <Box>
         <WrapperBox>
-          <Image
+          <img
             src={coverCard}
             alt=""
             style={{

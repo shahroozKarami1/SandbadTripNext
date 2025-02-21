@@ -4,7 +4,6 @@ import { Box } from "@mui/material";
 import { CusTPForCard, DarkOverlay } from "../../elements/CusComponets";
 import { useMedia } from "../../context/MediaQueryContext";
 import Link from "next/link";
-import Image from "next/image";
 
 const CardSingleText: FC<ICardSingleTextProps> = ({
   TopCover,
@@ -21,7 +20,7 @@ const CardSingleText: FC<ICardSingleTextProps> = ({
           sx={{ position: "relative", height: heightCard ? heightCard : "100%" }}
         >
           <DarkOverlay />
-          <Image
+          <img
             src={TopCover}
             alt=""
             style={{

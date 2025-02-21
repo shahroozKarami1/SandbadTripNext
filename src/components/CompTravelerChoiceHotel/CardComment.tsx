@@ -3,7 +3,6 @@ import { FC } from "react";
 import { ICardCommentProps } from "../../types/intefaces";
 import { CusCircleIcon, CusFooter } from "../../elements/CusComponets";
 import ReadMore from "../ReadMore/ReadMore";
-import Image from "next/image";
 
 const CardComment: FC<ICardCommentProps> = ({
   CommentBody,
@@ -31,7 +30,7 @@ const CardComment: FC<ICardCommentProps> = ({
       <ReadMore lineShow={3} textBody={CommentBody} />
       <CusFooter>
         <Box display={"flex"} gap={1} alignItems={"center"}>
-          <Image src={profile} style={{ width: "40px" }} alt="" className="rounded-full" />
+          <img src={profile} style={{ width: "40px" }} alt="" className="rounded-full" />
           <Typography sx={{ fontWeight: "bold", fontSize: "0.70rem" }}>
             {email}
           </Typography>

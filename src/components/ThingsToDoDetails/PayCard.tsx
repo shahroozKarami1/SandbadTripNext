@@ -1,3 +1,4 @@
+"use client"
 import styled from "@emotion/styled";
 import { Box, Button, Typography } from "@mui/material";
 import { useState } from "react";

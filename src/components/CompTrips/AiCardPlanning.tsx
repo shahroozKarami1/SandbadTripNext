@@ -1,34 +1,12 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import { FC } from "react";
+import { CusCardText, CusIconAiCardPlanning } from "@/elements/CusComponets";
 
-import AutoAwesomeOutlinedIcon from "@mui/icons-material/AutoAwesomeOutlined";
-import styled from "@emotion/styled";
+const AiCardPlanning: FC<{ text: string; image: string }> = ({ text, image }) => {
 
-const AiCardPlanning: FC<{ text: string; Image: string }> = ({ text, Image }) => {
-  const CusCardText = styled(Typography)({
-    color: "#fff",
-    fontWeight: "bold",
-    fontSize: "1.5rem",
-    bottom: 10,
-    position: "absolute",
-    right: "20px",
-  });
-
-  const CusIcon = styled(AutoAwesomeOutlinedIcon)({
-
-    "&.MuiSvgIcon-root  ": {
-      backgroundColor: "#F2ECF9",
-      borderRadius: "50%",
-      fontSize: "2.5rem",
-      padding: "0.5rem",
-      "& path": {
-        color: "#784AB1"
-      }
-    }
-  })
   return (
     <Box sx={{ position: "relative", margin: "0  0.5rem", height: "100%" }}>
-      <Image src={Image} alt="" className="rounded-lg" />
+      <img src={image} alt="" className="rounded-lg" />
       <Box
         sx={{
           position: "absolute",
@@ -39,7 +17,7 @@ const AiCardPlanning: FC<{ text: string; Image: string }> = ({ text, Image }) =>
       />
 
       <Box sx={{ position: "absolute", left: 10, top: 10 }}>
-        <CusIcon />
+        <CusIconAiCardPlanning />
       </Box>
       <CusCardText>{text}</CusCardText>
     </Box>

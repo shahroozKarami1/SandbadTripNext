@@ -9,28 +9,28 @@ const TourWaySection = () => {
           price={134}
           score={935}
           disc="گشت روز قلعه هایدلبرگ و شهر از فرانکفورت147"
-          image="/public/images/frankfordDistination/img1.jpg"
+          Image="/public/images/frankfordDistination/img1.jpg"
         />
 
         <TourWaysCard
           price={134}
           score={935}
           disc="گشت روز قلعه هایدلبرگ و شهر از فرانکفورت147"
-          image="/public/images/frankfordDistination/img2.jpg"
+          Image="/public/images/frankfordDistination/img2.jpg"
         />
 
         <TourWaysCard
           price={134}
           score={935}
           disc="گشت روز قلعه هایدلبرگ و شهر از فرانکفورت147"
-          image="/public/images/frankfordDistination/img3.jpg"
+          Image="/public/images/frankfordDistination/img3.jpg"
         />
 
         <TourWaysCard
           price={134}
           score={935}
           disc="گشت روز قلعه هایدلبرگ و شهر از فرانکفورت147"
-          image="/public/images/frankfordDistination/img4.jpg"
+          Image="/public/images/frankfordDistination/img4.jpg"
         />
       </SliderWrapper>
     </Box>

@@ -4,7 +4,7 @@ import React, { FC } from "react";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import IosShareIcon from "@mui/icons-material/IosShare";
-import { DarkOverlay } from "../../elements/CusComponets";
+import { CusBottomBanner, CusMainBannerTripDetails, CusTopOfBanner, DarkOverlay } from "../../elements/CusComponets";
 import DateRangeOutlinedIcon from '@mui/icons-material/DateRangeOutlined';
 const BannerBtn: FC<{
   isText: Boolean;
@@ -35,30 +35,11 @@ const BannerBtn: FC<{
   );
 };
 const MainBanner = () => {
-  const CusMainBanner = styled(Box)({
-    position: "relative",
-    height: "320px",
-  });
-  const CusTopOfBanner = styled(Box)({
-    position: "absolute",
-    top: 20,
-    left: 20,
-    display: "flex",
-    gap: 10,
-    alignItems: "center",
-  });
-  const CusBottomBanner = styled(Box)({
-    position: "absolute",
-    bottom: 20,
-    right: 30,
-    display: "flex",
-    flexDirection: "column",
-    gap: 10,
-  });
+
 
   return (
-    <CusMainBanner>
-      <Image
+    <CusMainBannerTripDetails>
+      <img
         src="/public/images/TripDetails/Banner/banner.jpg"
         alt=""
         style={{
@@ -88,7 +69,7 @@ const MainBanner = () => {
         </Typography>
         <Box display={"flex"} alignItems={"center"} gap={3}>
           <Box display={"flex"} alignItems={"center"} gap={1}>
-            <Image
+            <img
               src="/public/images/NextTrip/img5.jpg"
               style={{
                 width: "40px",
@@ -108,7 +89,7 @@ const MainBanner = () => {
           </Box>
         </Box>
       </CusBottomBanner>
-    </CusMainBanner>
+    </CusMainBannerTripDetails  >
   );
 };
 

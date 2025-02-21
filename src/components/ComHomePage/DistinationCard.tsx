@@ -5,9 +5,8 @@ import FavoriteOutlinedIcon from "@mui/icons-material/FavoriteOutlined";
 import styled from "@emotion/styled";
 import { useMedia } from "../../context/MediaQueryContext";
 import Link from "next/link";
-import Image from "next/image";
 const DistinationCard: FC<IDistinationCardProps> = ({
-  image,
+  Image,
   item,
   name,
   title,
@@ -27,7 +26,7 @@ const DistinationCard: FC<IDistinationCardProps> = ({
       margin={"0  0.70rem"}
     >
       <Link href={"/"}>
-        <Image src={image} alt="" className="rounded-lg  " style={{ height: isXs ? "100%" : "300px" }} />
+        <img src={Image} alt="" className="rounded-lg  " style={{ height: isXs ? "100%" : "300px" }} />
       </Link>
       <Box
         display={"flex"}

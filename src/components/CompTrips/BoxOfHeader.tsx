@@ -7,7 +7,6 @@ const BoxOfHeader: FC<IBoxOfHeaderProps> = ({ icon, text }) => {
       gap={2}
       marginTop={"3rem"}
       display={"flex"}
-      
       flexDirection={"column"}
       alignItems={"center"}
     >

@@ -1,13 +1,12 @@
 import { FC } from "react";
 import { ICardTextFooterProps } from "../../types/intefaces";
 import { Box, Typography } from "@mui/material";
-import Image from "next/image";
 
-const CardTextFooter: FC<ICardTextFooterProps> = ({ image, subTitle, title }) => {
+const CardTextFooter: FC<ICardTextFooterProps> = ({ Image, subTitle, title }) => {
   return (
     <Box margin={"0.5rem"}>
-      <Image
-        src={image}
+      <img
+        src={Image}
         alt=""
         className="rounded-lg  transition-all cursor-pointer  hover:opacity-70"
       />

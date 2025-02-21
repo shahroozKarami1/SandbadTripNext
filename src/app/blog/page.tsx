@@ -17,7 +17,6 @@ import MoreInterstedCard from "@/components/CompBlogPage/MoreInterstedCard";
 import TitleSection from "@/components/ComHomePage/TitleSection";
 import CommentBody from "@/components/CompBlogPage/CommentBody";
 import FormComment from "@/components/CompBlogPage/FormComment";
-import Image from "next/image";
 import { CusInnerBlogBox, CusTitleRightSide } from "@/elements/CusComponets";
 
 const Blog = () => {
@@ -28,7 +27,7 @@ const Blog = () => {
           <Grid size={{ md: 8 }}>
             <CusInnerBlogBox>
               <Box>
-                <Image
+                <img
                   src="/public/images/imgBlog/mainBanner.jpg"
                   alt=""
                   style={{
@@ -126,7 +125,7 @@ const Blog = () => {
             <CusInnerBlogBox>
               <Box sx={{ display: 'flex', gap: 2 }}>
                 <Box sx={{ width: "120px", height: "80px" }}>
-                  <Image src="/public/images/NextTrip/img5.jpg" alt="" style={{ objectFit: "cover", borderRadius: "0.5rem", height: "100%", width: "100%", objectPosition: "center" }} />
+                  <img src="/public/images/NextTrip/img5.jpg" alt="" style={{ objectFit: "cover", borderRadius: "0.5rem", height: "100%", width: "100%", objectPosition: "center" }} />
                 </Box>
                 <Box display={"flex"} flexDirection={"column"} gap={1}>
                   <Box display={"flex"} alignItems={"center"} gap={2}>
@@ -151,13 +150,13 @@ const Blog = () => {
               </Box>
               <Grid container spacing={2}>
 
-                <Grid size={{ md: 4   ,  xs :  6 }}>
+                <Grid size={{ md: 4, xs: 6 }}>
                   <MoreInterstedCard link="/" coverCard="/public/images/NextTrip/img7.jpg" markCard="استان مازندران" textCard="دریاچه لفور سوادکوه؛ ماجراجویی در جنگل‌های بکر مازندران" />
                 </Grid>
-                <Grid size={{ md: 4   ,  xs :  6 }}>
+                <Grid size={{ md: 4, xs: 6 }}>
                   <MoreInterstedCard link="/" coverCard="/public/images/NextTrip/img8.jpg" markCard="استان مازندران" textCard="دریاچه لفور سوادکوه؛ ماجراجویی در جنگل‌های بکر مازندران" />
                 </Grid>
-                <Grid size={{ md: 4   ,  xs :  6 }}>
+                <Grid size={{ md: 4, xs: 6 }}>
                   <MoreInterstedCard link="/" coverCard="/public/images/NextTrip/img3.jpg" markCard="استان مازندران" textCard="دریاچه لفور سوادکوه؛ ماجراجویی در جنگل‌های بکر مازندران" />
                 </Grid>
               </Grid>
@@ -191,7 +190,7 @@ const Blog = () => {
             </CusInnerBlogBox>
 
           </Grid>
-          <Grid size={{ md: 3.5  ,  xs  :  12 }}>
+          <Grid size={{ md: 3.5, xs: 12 }}>
             <CusInnerBlogBox>
               <CusTitleRightSide>
                 راهنمای سفر به جای جای ایران

@@ -1,3 +1,4 @@
+"use client"
 import {
   Box,
   Drawer,
@@ -7,10 +8,10 @@ import {
   Typography,
 } from "@mui/material";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
-import { Link } from "react-router-dom";
 import { FC, useState } from "react";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import LoginBox from "../LoginBox/LoginBox";
+import Link from "next/link";
 
 const CusListItemDetails: FC<{ link: string; text: string }> = ({
   link,
@@ -20,7 +21,7 @@ const CusListItemDetails: FC<{ link: string; text: string }> = ({
     <ListItem
       sx={{ marginLeft: "  4rem", marginBottom: "1rem  ", width: "100%" }}
     >
-      <Link to={link}>
+      <Link href={link}>
         <Typography>{text}</Typography>
       </Link>
     </ListItem>
@@ -49,8 +50,8 @@ const ResponsiveMenu = () => {
         </IconButton>
 
         <Box width={"132px"} height={"80px"}>
-          <Link to={"/"}>
-            <Image
+          <Link href={"/"}>
+            <img
               src="/public/images/responsiveLogo/Image.svg"
               style={{
                 objectFit: "cover",

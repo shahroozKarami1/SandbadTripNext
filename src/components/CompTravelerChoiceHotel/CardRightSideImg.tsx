@@ -8,7 +8,6 @@ import { CusCircleIcon } from "../../elements/CusComponets";
 import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 import ReadMore from "../ReadMore/ReadMore";
 import BadgeBoxes from "./BadgeBoxes";
-import Image from "next/image";
 import Link from "next/link";
 const CardRightSideImg: FC<ICardRightSideImgProps> = ({
   cover,
@@ -25,7 +24,7 @@ const CardRightSideImg: FC<ICardRightSideImgProps> = ({
       <Grid container margin={"1rem  0"} alignItems={"center"}>
         <Grid size={{ md: 5 }}>
           <Box height={"350px"} width={"100%"}>
-            <Image
+            <img
               src={cover}
               alt=""
               className="rounded-md "

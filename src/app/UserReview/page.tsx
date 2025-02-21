@@ -4,7 +4,6 @@ import InpSearch from "@/components/InpSearch/InpSearch";
 import BeenHereCards from "@/components/CompUserReview/BeenHereCards";
 import { useMedia } from "@/context/MediaQueryContext";
 import Link from "next/link";
-import Image from "next/image";
 import { CusAddPlaceBtn, CusBoxBtnCard, CusBoxTextCard } from "@/elements/CusComponets";
 function UserReview() {
   let isXs = useMedia();
@@ -36,17 +35,17 @@ function UserReview() {
                   textPlaceHolder="دوست دارید چه چیزی را مرور کنید؟"
                 />
                 <Box display={"flex"} gap={3} sx={{ marginTop: "2rem" }}>
-                  <Image
+                  <img
                     src="/public/images/UserRview/mainImgs/img1.png"
                     style={{ width: isXs ? "120px" : "200px" }}
                     alt=""
                   />
-                  <Image
+                  <img
                     src="/public/images/UserRview/mainImgs/img2.png"
                     style={{ width: isXs ? "120px" : "200px" }}
                     alt=""
                   />
-                  <Image
+                  <img
                     src="/public/images/UserRview/mainImgs/img3.png"
                     style={{ width: isXs ? "120px" : "200px" }}
                     alt=""
@@ -80,14 +79,14 @@ function UserReview() {
               <BeenHereCards
                 name="برج میلاد"
                 location="تهران ایران"
-                Image="/public/images/Hotelmg/BestChoice/img1.jpg"
+                image="/public/images/Hotelmg/BestChoice/img1.jpg"
               />
             </Grid>
             <Grid size={{ md: 4 }}>
               <BeenHereCards
                 name="برج میلاد"
                 location="تهران ایران"
-                Image="/public/images/Hotelmg/BestChoice/img1.jpg"
+                image="/public/images/Hotelmg/BestChoice/img1.jpg"
               />
             </Grid>
           </Grid>
@@ -96,7 +95,7 @@ function UserReview() {
           <Grid size={{ md: 4 }}>
             <Link href={"/"}>
               <Box sx={{ position: "relative" }}>
-                <Image
+                <img
                   src="/public/images/UserRview/cardImg.png"
                   alt=""
                   style={{ objectFit: "cover" }}

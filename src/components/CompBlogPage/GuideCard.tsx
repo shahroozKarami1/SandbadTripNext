@@ -1,7 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import { FC } from "react";
 import LocalFireDepartmentOutlinedIcon from "@mui/icons-material/LocalFireDepartmentOutlined";
-import Image from "next/image";
 import Link from "next/link";
 import { IGuideCardProps } from "@/types/intefaces";
 
@@ -21,7 +20,7 @@ const GuideCard: FC<IGuideCardProps> = ({
         sx={{ marginY: "1.2rem" }}
       >
         <Box sx={{ width: "100px", height: "70px" }}>
-          <Image
+          <img
             src={cover}
             alt=""
             style={{

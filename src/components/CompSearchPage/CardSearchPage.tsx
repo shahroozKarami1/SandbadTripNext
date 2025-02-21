@@ -4,7 +4,6 @@ import { Box, Typography } from "@mui/material";
 import { CusBoxDistination, CusSearchCard } from "../../elements/CusComponets";
 import Grid from "@mui/material/Grid2";
 import { useMedia } from "../../context/MediaQueryContext";
-import Image from "next/image";
 import Link from "next/link";
 const CardSearchPage: FC<ICardSearchPageProps> = ({
   country,
@@ -21,7 +20,7 @@ const CardSearchPage: FC<ICardSearchPageProps> = ({
         <Grid container>
           <Grid size={{ md: 4 }}>
             <Box height={"270px"} width={isXs ? "460px" : "100%"}>
-              <Image
+              <img
                 src={coverImg}
                 alt=""
                 style={{

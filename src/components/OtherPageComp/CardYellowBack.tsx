@@ -19,7 +19,7 @@ const CardYellowBack: FC<ICardYellowBackProps> = ({
   return (
     <CusYellowCard>
       <Box sx={{ height: "250px" }}>
-        <Image
+        <img
           src={coverCard}
           alt=""
           style={{

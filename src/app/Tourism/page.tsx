@@ -21,7 +21,6 @@ import ReadMoreCard from "../../components/CompTourism/ReadMoreCard";
 import TipCard from "../../components/CompTourism/TipCard";
 import SimpleTextTitle from "../../components/CompTourism/SimpleTextTitle";
 import AccordionMenu from "../../components/AccordionMenu/AccordionMenu";
-import Image from "next/image";
 
 const Tourism = () => {
   return (
@@ -794,7 +793,7 @@ const Tourism = () => {
           <Grid container spacing={3}>
             <Grid size={{ md: 3 }}>
               <Box>
-                <Image
+                <img
                   src="/public/images/Tourism/Slider/mainImg.jpg"
                   alt=""
                   style={{

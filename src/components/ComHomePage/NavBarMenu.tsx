@@ -3,7 +3,7 @@ import { FC } from "react";
 import { INavbarMenuProps } from "../../types/intefaces";
 import { useMedia } from "../../context/MediaQueryContext";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 
 const NavbarMenu: FC<INavbarMenuProps> = ({
   NavBarMenuArr,
@@ -15,8 +15,7 @@ const NavbarMenu: FC<INavbarMenuProps> = ({
 
 }) => {
   let isXs = useMedia();
-  let Router = useRouter()
-  let  activeLink   = Router.pathname ;  
+  let  activeLink   = usePathname ;  
   return (
     <>
       {NavBarMenuArr.map(({ icon, title, link, placeholder, textTitle }) => {
@@ -47,12 +46,12 @@ const NavbarMenu: FC<INavbarMenuProps> = ({
                     borderBottom: !isXs ?  "3px  solid  #000"  : "none"
                   }
                 }}
-                style={{
-                  paddingBottom: "0.5rem",
-                  borderBottom: id === StateID || link === activeLink
-                    ? "3px  solid var(--dark-color)"
-                    : "",
-                }}
+                // style={{
+                //   paddingBottom: "0.5rem",
+                //   borderBottom: id === StateID || link === activeLink
+                //     ? "3px  solid var(--dark-color)"
+                //     : "",
+                // }}
               >
                 {icon}
                 <Typography

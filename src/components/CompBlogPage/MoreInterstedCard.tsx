@@ -1,6 +1,5 @@
 import { MarkCard, MarkCardText } from '@/elements/CusComponets'
 import { Box, Typography } from '@mui/material'
-import Image from 'next/image'
 import Link from 'next/link'
 import { FC } from 'react'
 
@@ -16,7 +15,7 @@ const MoreInterstedCard: FC<IMoreInterstedCardProps> = ({ coverCard, markCard, t
         <Link href={link}>
             <Box>
                 <Box sx={{ position: "relative", height: "150px" }}>
-                    <Image src={coverCard} alt="" style={{ objectFit: "cover", objectPosition: "center", width: "100%", height: "100%", borderRadius: '1rem' }} />
+                    <img src={coverCard} alt="" style={{ objectFit: "cover", objectPosition: "center", width: "100%", height: "100%", borderRadius: '1rem' }} />
                     <MarkCard >
                         <MarkCardText sx={{ bgcolor: "var(--primary-color)" }}>{markCard}</MarkCardText>
                     </MarkCard>

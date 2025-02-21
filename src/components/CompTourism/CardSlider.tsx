@@ -2,7 +2,6 @@ import { Box, Typography } from "@mui/material";
 import { FC } from "react";
 import PhotoSizeSelectActualOutlinedIcon from "@mui/icons-material/PhotoSizeSelectActualOutlined";
 import Link from "next/link";
-import Image from "next/image";
 import { CusCountPhoto } from "@/elements/CusComponets";
 interface CardSliderProps {
   link: string;
@@ -13,7 +12,7 @@ const CardSlider: FC<CardSliderProps> = ({ cover, link }) => {
   return (
     <Link href={link}>
       <Box sx={{ position: "relative" }}>
-        <Image src={cover} alt="" className="rounded-lg" />
+        <img src={cover} alt="" className="rounded-lg" />
         <CusCountPhoto>
           <PhotoSizeSelectActualOutlinedIcon sx={{
             "path": {

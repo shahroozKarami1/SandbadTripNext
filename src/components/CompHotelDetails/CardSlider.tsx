@@ -2,7 +2,6 @@ import { FC } from "react";
 import { ICardSliderProps } from "../../types/intefaces";
 import { Box, Typography } from "@mui/material";
 import { CusInnerBigBox, CusInnerBox, CusSmallImgBox, DarkOverlay } from "../../elements/CusComponets";
-import Image from "next/image";
 
 const CardSlider: FC<ICardSliderProps> = ({
   count,
@@ -16,7 +15,7 @@ const CardSlider: FC<ICardSliderProps> = ({
       {!isMainImg ? (
         <CusSmallImgBox>
           <DarkOverlay />
-          <Image src={coverImg} alt="" className="rounded-r-md" />
+          <img src={coverImg} alt="" className="rounded-r-md" />
           <CusInnerBox>
             <Typography sx={{ fontWeight: "bold", color: "#fff" }}>
               {title}
@@ -28,7 +27,7 @@ const CardSlider: FC<ICardSliderProps> = ({
         </CusSmallImgBox>
       ) : (
         <CusInnerBigBox>
-          <Image
+          <img
             src={coverImg}
             alt=""
             style={{

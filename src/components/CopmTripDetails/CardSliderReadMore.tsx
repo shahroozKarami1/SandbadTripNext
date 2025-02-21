@@ -1,3 +1,4 @@
+"use client"
 import React, { FC } from "react";
 import { ICardSliderReadMore } from "../../types/intefaces";
 import { Box, IconButton, Typography } from "@mui/material";
@@ -32,7 +33,7 @@ const CardOfSlider: FC<{ coverImg: string }> = ({ coverImg }) => {
         borderRadius: "1rem",
       }}
     >
-      <Image
+      <img
         src={coverImg}
         alt=""
         style={{
@@ -138,8 +139,8 @@ const CardSliderReadMore: FC<ICardSliderReadMore> = ({
                 borderTop={"1px solid #ccc"}
                 paddingTop={"0.5rem"}
               >
-                <Image
-                  src={comment?.profile}
+                <img
+                  src={comment?.profile ? comment.profile : ""}
                   style={{ width: "30px", borderRadius: "50%" }}
                   alt=""
                 />

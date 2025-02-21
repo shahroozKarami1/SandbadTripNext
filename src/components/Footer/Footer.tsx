@@ -9,8 +9,8 @@ import PinterestIcon from "@mui/icons-material/Pinterest";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import XIcon from "@mui/icons-material/X";
-import { Link } from "react-router-dom";
 import { useMedia } from "../../context/MediaQueryContext";
+import Link from "next/link";
 function Footer() {
   let isXs = useMedia()
   return (
@@ -18,9 +18,9 @@ function Footer() {
     <Grid container spacing={2}>
       <Grid size={{ md: 8, xs: 12 }}>
         <Box display={"flex"} alignItems={"center"} justifyContent={"end"}  >
-          <Link to={"/"}>
+          <Link href={"/"}>
             <Box sx={{ width: "100px", height: "100px", marginLeft: "1rem" }}>
-              <Image
+              <img
                 src="/public/images/AllNewLogos/textLogo.svg"
                 alt=""
                 style={{
@@ -53,22 +53,22 @@ function Footer() {
               }}
             >
               <ListItem>
-                <Link to={"/"}>شرایط استفاده</Link>
+                <Link href={"/"}>شرایط استفاده</Link>
               </ListItem>
               <ListItem>
-                <Link to={"/"}>بیانیه حریم خصوصی و کوکی ها</Link>
+                <Link href={"/"}>بیانیه حریم خصوصی و کوکی ها</Link>
               </ListItem>
               <ListItem>
-                <Link to={"/"}>رضایت کوکی</Link>
+                <Link href={"/"}>رضایت کوکی</Link>
               </ListItem>
               <ListItem>
-                <Link to={"/"}>نقشه سایت</Link>
+                <Link href={"/"}>نقشه سایت</Link>
               </ListItem>
               <ListItem>
-                <Link to={"/"}>نحوه کار سایت</Link>
+                <Link href={"/"}>نحوه کار سایت</Link>
               </ListItem>
               <ListItem>
-                <Link to={"/"}>با ما تماس بگیرید</Link>
+                <Link href={"/"}>با ما تماس بگیرید</Link>
               </ListItem>
             </List>
             <Typography

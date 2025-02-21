@@ -1,4 +1,5 @@
-import { Box, Input, InputAdornment, styled, Typography } from "@mui/material";
+"use client"
+import { Box, Input, InputAdornment, Typography } from "@mui/material";
 import PrimaryBtn from "../PrimaryBtn/PrimaryBtn";
 import CheckInOut from "../DataPicker/CheckInOut";
 import { useMedia } from "../../context/MediaQueryContext";

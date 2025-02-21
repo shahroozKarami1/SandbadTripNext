@@ -1,3 +1,4 @@
+"use client"
 import { Button, TextField, Typography } from "@mui/material";
 import { useRef, useState } from "react";
 import AddPhotoAlternateIcon from "@mui/icons-material/AddPhotoAlternate";

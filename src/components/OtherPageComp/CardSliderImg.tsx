@@ -4,7 +4,8 @@ import { FC } from "react";
 const CardSliderImg: FC<{ Image: string }> = ({ Image }) => {
   return (
     <Box sx={{ height: "350px", width: "100%" }}>
-      <Image
+      <img
+        alt=""
         src={Image}
         style={{
           objectFit: "cover",

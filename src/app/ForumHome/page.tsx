@@ -8,7 +8,6 @@ import SliderWrapper from "../../components/SliderWraper/SliderWrapper";
 import TitleSection from "../../components/ComHomePage/TitleSection";
 import { useMedia } from "../../context/MediaQueryContext";
 import Link from "next/link";
-import Image from "next/image";
 import { CusMainBox, CusTgSubText } from "@/elements/CusComponets";
 const Formus = () => {
   let isXs = useMedia()
@@ -45,7 +44,7 @@ const Formus = () => {
           <Grid container justifyContent={"center"} alignItems={"flex-end"}>
             <Grid size={{ md: 6 }}  >
               <Box display={"flex"} flexDirection={isXs ? "column" : "row"} gap={2}>
-                <Image
+                <img
                   src="/public/images/Formus/bgImg.svg"
                   alt=""
                   style={{

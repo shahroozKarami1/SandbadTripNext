@@ -94,11 +94,11 @@ const Trips = () => {
         </Grid>
 
         <SliderWrapper numberOfShowSlider={5}>
-          <AiCardPlanning text="لندن" Image="/public/images/NextTrip/img1.jpg" />
-          <AiCardPlanning text="امارات" Image="/public/images/NextTrip/img2.jpg" />
-          <AiCardPlanning text="پکن" Image="/public/images/NextTrip/img3.jpg" />
-          <AiCardPlanning text="لس آنجلس" Image="/public/images/NextTrip/img4.jpg" />
-          <AiCardPlanning text="لندن" Image="/public/images/NextTrip/img5.jpg" />
+          <AiCardPlanning text="لندن" image="/public/images/NextTrip/img1.jpg" />
+          <AiCardPlanning text="امارات" image="/public/images/NextTrip/img2.jpg" />
+          <AiCardPlanning text="پکن" image="/public/images/NextTrip/img3.jpg" />
+          <AiCardPlanning text="لس آنجلس" image="/public/images/NextTrip/img4.jpg" />
+          <AiCardPlanning text="لندن" image="/public/images/NextTrip/img5.jpg" />
         </SliderWrapper>
       </Container>
     </Box>

@@ -13,7 +13,6 @@ import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import ToolTipCustom from "../ToolTipCustom/ToolTipCustom";
 import ReportGmailerrorredIcon from '@mui/icons-material/ReportGmailerrorred';
-import Image from "next/image";
 import Link from "next/link";
 const CardHeaderSlider: FC<ICardHeaderSliderProps> = ({
   conutOfLike,
@@ -36,7 +35,7 @@ const CardHeaderSlider: FC<ICardHeaderSliderProps> = ({
               <Box key={id} height={"300px"}>
                 <DarkOverlay />
 
-                <Image
+                <img
                   src={imgSrc}
                   alt=""
                   className="rounded-lg   w-full  h-full  object-cover object-center  "
