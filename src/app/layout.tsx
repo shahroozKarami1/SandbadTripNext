@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import "../styles/mainStyles.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ClientLayout from "@/components/ClientLayout/ClientLayout";
 import { MediaProvider } from "@/context/MediaQueryContext";
+import "../styles/mainStyles.css";
 
 export const metadata: Metadata = {
     title: "سندباد تریپ",

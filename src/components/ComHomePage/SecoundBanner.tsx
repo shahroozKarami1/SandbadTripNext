@@ -27,7 +27,7 @@ const SecoundBanner = () => {
               <Typography sx={{ fontSize: "0.90rem", fontWeight: "light" }}>
                 ساخته شده توسط <u>شهروز</u>
               </Typography>
-              <img src="/public/images/AllNewLogos/singleLogo.svg" alt="" style={{ width: "40px" }} />
+              <img src="/images/AllNewLogos/singleLogo.svg" alt="" style={{ width: "40px" }} />
             </Box>
             <Typography sx={{ fontSize: "1.7rem", fontWeight: "bold" }}>
               با هم رفتن راحت تر از همیشه است !
@@ -45,7 +45,7 @@ const SecoundBanner = () => {
         </Grid>
         <Grid size={{ md: 6 }} sx={{ marginTop: isXs ? "2rem" : "0rem" }}>
           <img
-            src="/public/images/secoundBannerImg/caption.jpg"
+            src="/images/secoundBannerImg/caption.jpg"
             className="rounded-md"
             alt=""
           />

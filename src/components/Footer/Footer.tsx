@@ -21,7 +21,7 @@ function Footer() {
           <Link href={"/"}>
             <Box sx={{ width: "100px", height: "100px", marginLeft: "1rem" }}>
               <img
-                src="/public/images/AllNewLogos/textLogo.svg"
+                src="/images/AllNewLogos/textLogo.svg"
                 alt=""
                 style={{
                   objectFit: "cover",

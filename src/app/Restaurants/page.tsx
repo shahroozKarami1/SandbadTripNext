@@ -41,17 +41,17 @@ const Restaurans = () => {
           <Grid container spacing={3}>
             <MainCardsRestaurant
               disc="4.3 میلیون رستوران - همه چیز، از غذاهای خیابانی گرفته تا غذاهای عالی"
-              logo="/public/images/ResturantImgs/cardImg1.png"
+              logo="/images/ResturantImgs/cardImg1.png"
               title="بهترین  مکان ها برای خوردن رو پیدا کن"
             />
             <MainCardsRestaurant
               disc=" میلیون ها بررسی و عکس رستوران از جامعه جهانی سفر ما"
-              logo="/public/images/ResturantImgs/cardImg2.png"
+              logo="/images/ResturantImgs/cardImg2.png"
               title="آخرین  بازدید ها را ببینید"
             />
             <MainCardsRestaurant
               disc=" در رستوران های سراسر جهان به صورت آنلاین رزرو کنید"
-              logo="/public/images/ResturantImgs/cardImg3.png"
+              logo="/images/ResturantImgs/cardImg3.png"
               title="جدول رزرو ها"
             />
           </Grid>

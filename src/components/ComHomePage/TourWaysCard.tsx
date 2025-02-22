@@ -16,7 +16,7 @@ const TourWaysCard: FC<ITourWaysCardProps> = ({
   link,
 }) => {
   return (
-    <Box sx={{ direction: "rtl" }}>
+    <Box sx={{ direction: "rtl"   }}>
       <Link href={link ? link : "/"}>
         <Box sx={{ position: "relative", margin: "0 0.5rem" }}>
           <img
@@ -24,6 +24,7 @@ const TourWaysCard: FC<ITourWaysCardProps> = ({
             alt=""
             className="rounded-lg  "
             style={{
+              borderRadius  : "1rem" ,  
               height: "255px",
               width: "100%",
             }}

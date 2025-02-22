@@ -25,8 +25,8 @@ const DistinationCard: FC<IDistinationCardProps> = ({
       gap={2}
       margin={"0  0.70rem"}
     >
-      <Link href={"/"}>
-        <img src={Image} alt="" className="rounded-lg  " style={{ height: isXs ? "100%" : "300px" }} />
+      <Link href={"/"} >
+        <img src={Image} alt="" className="rounded-lg" style={{ height: isXs ? "100%" : "300px"  ,  borderRadius : "1rem"}} />
       </Link>
       <Box
         display={"flex"}

@@ -6,19 +6,19 @@ const TheBestdistination = () => {
     // <Box  display={"flex"} gap={2 }  sx={{marginTop : "2rem"}}>
     <SliderWrapper numberOfShowSlider={3} ArrowPosition="30%">
       <DistinationCard
-        Image="/public/images/TheBestDistination/image1.jpg"
+        Image="/images/TheBestDistination/image1.jpg"
         item={30}
         name="شهروز کرمی"
         title="3 روز خانوادگی در رم"
       />
       <DistinationCard
-        Image="/public/images/TheBestDistination/image2.jpg"
+        Image="/images/TheBestDistination/image2.jpg"
         item={30}
         name="رضا فاطمی"
         title="3 روز خانوادگی در رم"
       />
       <DistinationCard
-        Image="/public/images/TheBestDistination/image3.jpg"
+        Image="/images/TheBestDistination/image3.jpg"
         item={30}
         name="سعید احمدی"
         title="3 روز خانوادگی در رم"

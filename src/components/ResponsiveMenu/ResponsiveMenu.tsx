@@ -52,7 +52,7 @@ const ResponsiveMenu = () => {
         <Box width={"132px"} height={"80px"}>
           <Link href={"/"}>
             <img
-              src="/public/images/responsiveLogo/Image.svg"
+              src="/images/AllNewLogos/persian vertical 2-01.svg"
               style={{
                 objectFit: "cover",
                 objectPosition: "center",

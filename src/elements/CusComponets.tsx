@@ -55,7 +55,7 @@ export const CusSearchBtn = styled(Button)({
   marginLeft: "0.5rem",
 });
 export const CusFirstBanner = styled(Box)({
-  backgroundImage: `url(${FirstBannerImg})`,
+  backgroundImage: `url(${FirstBannerImg.src})`,
   height: "500px",
   backgroundPosition: "right",
   backgroundSize: "cover",
@@ -68,6 +68,7 @@ export const CusFirstBanner = styled(Box)({
 
 export const CusSectionTitle = styled(Box)({
   marginTop: "3rem ",
+  marginBottom: "1rem",
   display: "flex",
   alignItems: "center",
   justifyContent: "space-between",
@@ -98,6 +99,7 @@ export const CusCard = styled(Box)({
   position: "relative",
   overflow: "hidden",
   margin: "0  0.5rem",
+  borderRadius : "1rem"  ,  
   direction: "rtl",
 });
 export const CusStickyMenu = styled(Box)({

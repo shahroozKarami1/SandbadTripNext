@@ -32,7 +32,7 @@ const HomeClient = () => {
         };
     }, []);
     return (
-        <Box>
+        <Box  >
             {isShowStickyMenu && <MainHeader />}
             {!isShowStickyMenu && <TopBarHome />}
             <Container >
@@ -78,19 +78,19 @@ const HomeClient = () => {
                 <NextTripSection
                     dataNextTripArr={[
                         {
-                            Image: "/public/images/NextTrip/img4.jpg",
+                            Image: "/images/NextTrip/img4.jpg",
                             title: "آمستردام /  آلمان",
                         },
                         {
-                            Image: "/public/images/NextTrip/img1.jpg",
+                            Image: "/images/NextTrip/img1.jpg",
                             title: "آمستردام /  آلمان",
                         },
                         {
-                            Image: "/public/images/NextTrip/img2.jpg",
+                            Image: "/images/NextTrip/img2.jpg",
                             title: "آمستردام /  آلمان",
                         },
                         {
-                            Image: "/public/images/NextTrip/img3.jpg",
+                            Image: "/images/NextTrip/img3.jpg",
                             title: "آمستردام /  آلمان",
                         },
                     ]}
@@ -99,19 +99,19 @@ const HomeClient = () => {
                 <NextTripSection
                     dataNextTripArr={[
                         {
-                            Image: "/public/images/NextTrip/img6.jpg",
+                            Image: "/images/NextTrip/img6.jpg",
                             title: "آمستردام /  آلمان",
                         },
                         {
-                            Image: "/public/images/NextTrip/img7.jpg",
+                            Image: "/images/NextTrip/img7.jpg",
                             title: "آمستردام /  آلمان",
                         },
                         {
-                            Image: "/public/images/NextTrip/img8.jpg",
+                            Image: "/images/NextTrip/img8.jpg",
                             title: "آمستردام /  آلمان",
                         },
                         {
-                            Image: "/public/images/NextTrip/img5.jpg",
+                            Image: "/images/NextTrip/img5.jpg",
                             title: "آمستردام /  آلمان",
                         },
                     ]}
@@ -128,6 +128,7 @@ const HomeClient = () => {
                 </Box>
                 <FallDistinationSec />
             </Container>
+            
         </Box>
     )
 }

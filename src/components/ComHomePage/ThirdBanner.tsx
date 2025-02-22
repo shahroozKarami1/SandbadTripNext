@@ -9,12 +9,12 @@ const ThirdBanner = () => {
       <Container>
         <Grid container sx={{ overflow: "hidden" }} spacing={4} flexDirection={isXs ? "column-reverse" : "row"}>
           <Grid size={{ md: 7 }}>
-            <img src="/public/images/ThirdBanner/ThirdBanner.png" alt="" />
+            <img src="/images/ThirdBanner/ThirdBanner.png" alt="" />
           </Grid>
           <Grid size={{ md: 5 }}>
             <Box display={"flex"} flexDirection={"column"} justifyContent={"center"} gap={1} sx={{ height: "100%" }}>
               <Box>
-                <img src="/public/images/ThirdBanner/TopImg.svg" alt="" />
+                <img src="/images/ThirdBanner/TopImg.svg" alt="" />
               </Box>
               <Typography sx={{ fontWeight: "bold", fontSize: "3rem" }}>جوایز انتخاب مسافران بهترین از بهترین ها</Typography>
               <Typography sx={{ marginTop: "1rem", fontWeight: "light", fontSize: "1.1rem" }}>

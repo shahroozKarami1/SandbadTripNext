@@ -6,9 +6,18 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 
 const MoreExploreCard: FC<IMoreExploreCardProps> = ({ Image, disc }) => {
   return (
-    <Box display={"flex"} flexDirection={"column"} alignItems={"center"} margin={"  0 1rem"}>
+    <Box display={"flex"} flexDirection={"column"} alignItems={"center"} margin={"0  1rem"} >
       <Box sx={{ position: "relative" }}>
-        <img src={Image} alt="" className="rounded-lg" />
+        <Box>
+        <img src={Image} alt="" className="rounded-lg" style={{
+          width : "100%" ,  
+          height : '100%'  ,
+          objectFit : 'cover' , 
+          borderRadius : "1rem" , 
+          objectPosition : "center"
+        }} />
+
+        </Box>
         <CusBoxIconHeart>
           <FavoriteBorderIcon />
         </CusBoxIconHeart>

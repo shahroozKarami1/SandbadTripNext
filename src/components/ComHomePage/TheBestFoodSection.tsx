@@ -5,19 +5,19 @@ const TheBestFoodSection = () => {
   return (
     <SliderWrapper numberOfShowSlider={4} ArrowPosition="42%">
       <BestFoodsCard
-        image="/public/images/TheBastFood/image1.jpg"
+        image="/images/TheBastFood/image1.jpg"
         name="ماکارونی"
       />
       <BestFoodsCard
-        image="/public/images/TheBastFood/image2.jpg"
+        image="/images/TheBastFood/image2.jpg"
         name="ماکارونی"
       />
       <BestFoodsCard
-        image="/public/images/TheBastFood/image3.jpg"
+        image="/images/TheBastFood/image3.jpg"
         name="ماکارونی"
       />
       <BestFoodsCard
-        image="/public/images/TheBastFood/image4.jpg"
+        image="/images/TheBastFood/image4.jpg"
         name="ماکارونی"
       />
     </SliderWrapper>

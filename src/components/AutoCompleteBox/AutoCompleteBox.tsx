@@ -9,7 +9,7 @@ const AutoCompleteBox = () => {
       <AutoCompleteItem
         IsNearby={false}
         country="خراسان رضوی / ایران"
-        cover="/public/images/NextTrip/img7.jpg"
+        cover="/images/NextTrip/img7.jpg"
         name="مشهد"
       />
       <Box sx={{ margin: "1rem  0 " }}>
@@ -21,13 +21,13 @@ const AutoCompleteBox = () => {
       <AutoCompleteItem
         IsNearby={false}
         country=" تبریز / ایران"
-        cover="/public/images/NextTrip/img8.jpg"
+        cover="/images/NextTrip/img8.jpg"
         name="عمارت ایل گلی"
       />
       <AutoCompleteItem
         IsNearby={false}
         country=" تبریز / ایران"
-        cover="/public/images/NextTrip/img1.jpg"
+        cover="/images/NextTrip/img1.jpg"
         name="عمارت ایل گلی"
       />
     </CusAutoComplete>

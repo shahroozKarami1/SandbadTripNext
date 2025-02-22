@@ -20,7 +20,7 @@ const TopBarHome = () => {
               <Grid size={{ md: 2 }}>
                 <Box sx={{ width: "150px", height: "100px" }}>
                   <img
-                    src="/public/images/AllNewLogos/persian vertical 2-01.svg"
+                    src="/images/AllNewLogos/persian vertical 2-01.svg"
                     alt=""
                     style={{
                       objectFit: "cover",
