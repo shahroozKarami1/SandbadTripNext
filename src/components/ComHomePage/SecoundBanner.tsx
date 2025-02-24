@@ -44,11 +44,20 @@ const SecoundBanner = () => {
           </Box>
         </Grid>
         <Grid size={{ md: 6 }} sx={{ marginTop: isXs ? "2rem" : "0rem" }}>
-          <img
+         <Box sx={{width : "100%" , height : "100%"}}>
+         <img
             src="/images/secoundBannerImg/caption.jpg"
-            className="rounded-md"
+            className="rounded-md" 
+            style={{
+              objectFit : "cover" , 
+              objectPosition : "center" ,  
+              width : "100%" ,  
+              height : "100%" ,
+              borderRadius : "0.5rem"
+            }}
             alt=""
           />
+         </Box>
         </Grid>
       </Grid>
     </CusSecoundBanner>

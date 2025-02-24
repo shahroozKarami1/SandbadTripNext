@@ -21,7 +21,7 @@ const TravelersChoice = () => {
         <Grid container>
           <Grid size={{ md: 12 }}>
             <Box sx={{ marginTop: "2rem" }}>
-              <img src="public/images/TravelersChoice/MainBanner.jpg" alt="" />
+              <img src="/images/TravelersChoice/MainBanner.jpg" alt="" />
             </Box>
           </Grid>
         </Grid>
@@ -61,27 +61,27 @@ const TravelersChoice = () => {
 
               <CardBestChoice
                 link="TravelersChoice-Hotels"
-                cover="/public/images/TravelersChoice/coverImgs/img1.jpg"
+                cover="/images/TravelersChoice/coverImgs/img1.jpg"
                 text="مقاصد"
               />
               <CardBestChoice
                 link="TravelersChoice-Hotels"
-                cover="/public/images/TravelersChoice/coverImgs/img2.jpg"
+                cover="/images/TravelersChoice/coverImgs/img2.jpg"
                 text="سواحل"
               />
               <CardBestChoice
                 link="TravelersChoice-Hotels"
-                cover="/public/images/TravelersChoice/coverImgs/img3.jpg"
+                cover="/images/TravelersChoice/coverImgs/img3.jpg"
                 text="هتل ها"
               />
               <CardBestChoice
                 link="TravelersChoice-Hotels"
-                cover="/public/images/TravelersChoice/coverImgs/img4.jpg"
+                cover="/images/TravelersChoice/coverImgs/img4.jpg"
                 text="کارهایی  برای انجام"
               />
               <CardBestChoice
                 link="TravelersChoice-Hotels"
-                cover="/public/images/TravelersChoice/coverImgs/img5.jpg"
+                cover="/images/TravelersChoice/coverImgs/img5.jpg"
                 text="رستوران ها"
               />
             </Grid>
@@ -94,17 +94,17 @@ const TravelersChoice = () => {
         />
 
         <SliderWrapper numberOfShowSlider={5} ArrowPosition="40%">
-          <AiCardPlanning text="لندن" image="/public/images/NextTrip/img1.jpg" />
+          <AiCardPlanning text="لندن" image="/images/NextTrip/img1.jpg" />
           <AiCardPlanning
             text="امارات"
-            image="/public/images/NextTrip/img2.jpg"
+            image="/images/NextTrip/img2.jpg"
           />
-          <AiCardPlanning text="پکن" image="/public/images/NextTrip/img3.jpg" />
+          <AiCardPlanning text="پکن" image="/images/NextTrip/img3.jpg" />
           <AiCardPlanning
             text="لس آنجلس"
-            image="/public/images/NextTrip/img4.jpg"
+            image="/images/NextTrip/img4.jpg"
           />
-          <AiCardPlanning text="لندن" image="/public/images/NextTrip/img5.jpg" />{" "}
+          <AiCardPlanning text="لندن" image="/images/NextTrip/img5.jpg" />{" "}
         </SliderWrapper>
       </Container>
     </Box>

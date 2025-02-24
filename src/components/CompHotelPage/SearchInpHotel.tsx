@@ -108,7 +108,7 @@ const SearchInpHotel = () => {
           <BedIcon />
         </Box>
       </CusBtnAddTraveler>
-      {isShowAddTraveler && (
+      {/* {isShowAddTraveler && (
         <AddTravelerCard
           BoxRef={BoxTravelerRef}
           adultsState={countOfAdults}
@@ -116,7 +116,7 @@ const SearchInpHotel = () => {
           setAdult={setCountOfAdults}
           setRoom={setCountOfRooms}
         />
-      )}
+      )} */}
       <PrimaryBtn text="پیدا کردن هتل" />
       {
         isOpenAutoCompleteBox &&

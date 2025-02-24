@@ -17,7 +17,15 @@ const NextTripSection: FC<IPorpsNextTrip> = ({
           return (
             <Box key={index}>
               <CusCard  >
-                <img src={Image} alt="" className="rounded-lg" />
+                <Box sx={{ height: '300px', width: "100%" }}>
+                  <img src={Image} alt="" className="rounded-lg" style={{
+                    objectFit: "cover",
+                    objectPosition: "center",
+                    width: "100%",
+                    height: "100%",
+                  }} />
+
+                </Box>
                 <CusTPSimpleCard>{title}</CusTPSimpleCard>
               </CusCard>
             </Box>

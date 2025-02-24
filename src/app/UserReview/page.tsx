@@ -1,3 +1,4 @@
+"use client"
 import { Box, Container, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import InpSearch from "@/components/InpSearch/InpSearch";
@@ -36,17 +37,17 @@ function UserReview() {
                 />
                 <Box display={"flex"} gap={3} sx={{ marginTop: "2rem" }}>
                   <img
-                    src="/public/images/UserRview/mainImgs/img1.png"
+                    src="/images/UserRview/mainImgs/img1.png"
                     style={{ width: isXs ? "120px" : "200px" }}
                     alt=""
                   />
                   <img
-                    src="/public/images/UserRview/mainImgs/img2.png"
+                    src="/images/UserRview/mainImgs/img2.png"
                     style={{ width: isXs ? "120px" : "200px" }}
                     alt=""
                   />
                   <img
-                    src="/public/images/UserRview/mainImgs/img3.png"
+                    src="/images/UserRview/mainImgs/img3.png"
                     style={{ width: isXs ? "120px" : "200px" }}
                     alt=""
                   />
@@ -79,14 +80,14 @@ function UserReview() {
               <BeenHereCards
                 name="برج میلاد"
                 location="تهران ایران"
-                image="/public/images/Hotelmg/BestChoice/img1.jpg"
+                image="/images/Hotelmg/BestChoice/img1.jpg"
               />
             </Grid>
             <Grid size={{ md: 4 }}>
               <BeenHereCards
                 name="برج میلاد"
                 location="تهران ایران"
-                image="/public/images/Hotelmg/BestChoice/img1.jpg"
+                image="/images/Hotelmg/BestChoice/img1.jpg"
               />
             </Grid>
           </Grid>
@@ -96,7 +97,7 @@ function UserReview() {
             <Link href={"/"}>
               <Box sx={{ position: "relative" }}>
                 <img
-                  src="/public/images/UserRview/cardImg.png"
+                  src="/images/UserRview/cardImg.png"
                   alt=""
                   style={{ objectFit: "cover" }}
                 />

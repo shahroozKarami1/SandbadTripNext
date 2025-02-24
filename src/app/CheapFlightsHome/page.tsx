@@ -1,3 +1,4 @@
+"use client"
 import { Box, Container, Typography } from "@mui/material";
 import MainBanner from "../../components/MainBanner/MainBanner";
 import Grid from "@mui/material/Grid2";
@@ -12,7 +13,7 @@ import InpFlightPage from "../../components/CompFlightPage/InpFlightPage";
 const Flights = () => {
   return (
     <Box>
-      <MainBanner bannerUrl="/public/images/FlightsImg/Banner.png">
+      <MainBanner bannerUrl="/images/FlightsImg/Banner.png">
         <Container sx={{ height: "100%" }}>
           <Grid
             container
@@ -105,7 +106,7 @@ const Flights = () => {
                   <ReviewsCard
                     comment=" من نمی توانم به اندازه کافی از شرکت هواپیمایی امریکن ایرلاینز به خاطر همه حمایت هایشان در پرواز از لندن به فیلادلفیا تشکر کنم."
                     link="/"
-                    profile="/public/images/FlightsImg/profileSample.jpg"
+                    profile="/images/FlightsImg/profileSample.jpg"
                     score={63.0}
                     title="خطوط هوایی آمریکا"
                     topRateIn="رتبه برتر در خدمات مشتری (به عنوان مثال نگرش، مراقبت، کمک)"
@@ -115,7 +116,7 @@ const Flights = () => {
                   <ReviewsCard
                     comment=" من نمی توانم به اندازه کافی از شرکت هواپیمایی امریکن ایرلاینز به خاطر همه حمایت هایشان در پرواز از لندن به فیلادلفیا تشکر کنم."
                     link="/"
-                    profile="/public/images/FlightsImg/profileSample.jpg"
+                    profile="/images/FlightsImg/profileSample.jpg"
                     score={63.0}
                     title="خطوط هوایی آمریکا"
                     topRateIn="رتبه برتر در خدمات مشتری (به عنوان مثال نگرش، مراقبت، کمک)"
@@ -125,7 +126,7 @@ const Flights = () => {
                   <ReviewsCard
                     comment=" من نمی توانم به اندازه کافی از شرکت هواپیمایی امریکن ایرلاینز به خاطر همه حمایت هایشان در پرواز از لندن به فیلادلفیا تشکر کنم."
                     link="/"
-                    profile="/public/images/FlightsImg/profileSample.jpg"
+                    profile="/images/FlightsImg/profileSample.jpg"
                     score={63.0}
                     title="خطوط هوایی آمریکا"
                     topRateIn="رتبه برتر در خدمات مشتری (به عنوان مثال نگرش، مراقبت، کمک)"
@@ -135,7 +136,7 @@ const Flights = () => {
                   <ReviewsCard
                     comment=" من نمی توانم به اندازه کافی از شرکت هواپیمایی امریکن ایرلاینز به خاطر همه حمایت هایشان در پرواز از لندن به فیلادلفیا تشکر کنم."
                     link="/"
-                    profile="/public/images/FlightsImg/profileSample.jpg"
+                    profile="/images/FlightsImg/profileSample.jpg"
                     score={63.0}
                     title="خطوط هوایی آمریکا"
                     topRateIn="رتبه برتر در خدمات مشتری (به عنوان مثال نگرش، مراقبت، کمک)"

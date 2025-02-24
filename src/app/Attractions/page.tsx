@@ -1,3 +1,4 @@
+"use client"
 import { Box, Container, Typography } from "@mui/material";
 import InpSearch from "@/components/InpSearch/InpSearch";
 import { CusThingsToDoPage } from "@/elements/CusComponets";
@@ -75,7 +76,7 @@ const ThingsToDo = () => {
               score={935}
               isDetails={true}
               disc="گشت روز قلعه هایدلبرگ و شهر از فرانکفورت147"
-              Image="/public/images/frankfordDistination/img1.jpg"
+              Image="/images/frankfordDistination/img1.jpg"
             />
             <TourWaysCard
               link="/Attractions/AttractionsDetails"
@@ -83,7 +84,7 @@ const ThingsToDo = () => {
               score={935}
               isDetails={true}
               disc="گشت روز قلعه هایدلبرگ و شهر از فرانکفورت147"
-              Image="/public/images/frankfordDistination/img4.jpg"
+              Image="/images/frankfordDistination/img4.jpg"
             />
             <TourWaysCard
               link="/Attractions/AttractionsDetails"
@@ -91,7 +92,7 @@ const ThingsToDo = () => {
               score={935}
               isDetails={true}
               disc="گشت روز قلعه هایدلبرگ و شهر از فرانکفورت147"
-              Image="/public/images/frankfordDistination/img3.jpg"
+              Image="/images/frankfordDistination/img3.jpg"
             />
             <TourWaysCard
               link="/Attractions/AttractionsDetails"
@@ -99,7 +100,7 @@ const ThingsToDo = () => {
               score={935}
               isDetails={true}
               disc="گشت روز قلعه هایدلبرگ و شهر از فرانکفورت147"
-              Image="/public/images/frankfordDistination/img2.jpg"
+              Image="/images/frankfordDistination/img2.jpg"
             />
             <TourWaysCard
               link="/Attractions/AttractionsDetails"
@@ -107,7 +108,7 @@ const ThingsToDo = () => {
               score={935}
               isDetails={true}
               disc="گشت روز قلعه هایدلبرگ و شهر از فرانکفورت147"
-              Image="/public/images/frankfordDistination/img1.jpg"
+              Image="/images/frankfordDistination/img1.jpg"
             />
           </SliderWrapper>
         </Box>
@@ -122,35 +123,35 @@ const ThingsToDo = () => {
               score={935}
               isDetails={true}
               disc="گشت روز قلعه هایدلبرگ و شهر از فرانکفورت147"
-              Image="/public/images/frankfordDistination/img1.jpg"
+              Image="/images/frankfordDistination/img1.jpg"
             />
             <TourWaysCard
               price={134}
               score={935}
               isDetails={true}
               disc="گشت روز قلعه هایدلبرگ و شهر از فرانکفورت147"
-              Image="/public/images/frankfordDistination/img4.jpg"
+              Image="/images/frankfordDistination/img4.jpg"
             />
             <TourWaysCard
               price={134}
               score={935}
               isDetails={true}
               disc="گشت روز قلعه هایدلبرگ و شهر از فرانکفورت147"
-              Image="/public/images/frankfordDistination/img3.jpg"
+              Image="/images/frankfordDistination/img3.jpg"
             />
             <TourWaysCard
               price={134}
               score={935}
               isDetails={true}
               disc="گشت روز قلعه هایدلبرگ و شهر از فرانکفورت147"
-              Image="/public/images/frankfordDistination/img2.jpg"
+              Image="/images/frankfordDistination/img2.jpg"
             />
             <TourWaysCard
               price={134}
               score={935}
               isDetails={true}
               disc="گشت روز قلعه هایدلبرگ و شهر از فرانکفورت147"
-              Image="/public/images/frankfordDistination/img1.jpg"
+              Image="/images/frankfordDistination/img1.jpg"
             />
           </SliderWrapper>
         </Box>
@@ -165,35 +166,35 @@ const ThingsToDo = () => {
               score={935}
               isDetails={true}
               disc="گشت روز قلعه هایدلبرگ و شهر از فرانکفورت147"
-              Image="/public/images/frankfordDistination/img1.jpg"
+              Image="/images/frankfordDistination/img1.jpg"
             />
             <TourWaysCard
               price={134}
               score={935}
               isDetails={true}
               disc="گشت روز قلعه هایدلبرگ و شهر از فرانکفورت147"
-              Image="/public/images/frankfordDistination/img4.jpg"
+              Image="/images/frankfordDistination/img4.jpg"
             />
             <TourWaysCard
               price={134}
               score={935}
               isDetails={true}
               disc="گشت روز قلعه هایدلبرگ و شهر از فرانکفورت147"
-              Image="/public/images/frankfordDistination/img3.jpg"
+              Image="/images/frankfordDistination/img3.jpg"
             />
             <TourWaysCard
               price={134}
               score={935}
               isDetails={true}
               disc="گشت روز قلعه هایدلبرگ و شهر از فرانکفورت147"
-              Image="/public/images/frankfordDistination/img2.jpg"
+              Image="/images/frankfordDistination/img2.jpg"
             />
             <TourWaysCard
               price={134}
               score={935}
               isDetails={true}
               disc="گشت روز قلعه هایدلبرگ و شهر از فرانکفورت147"
-              Image="/public/images/frankfordDistination/img1.jpg"
+              Image="/images/frankfordDistination/img1.jpg"
             />
           </SliderWrapper>
         </Box>
@@ -205,14 +206,14 @@ const ThingsToDo = () => {
               score={935}
               isDetails={true}
               disc="گشت روز قلعه هایدلبرگ و شهر از فرانکفورت147"
-              Image="/public/images/frankfordDistination/img1.jpg"
+              Image="/images/frankfordDistination/img1.jpg"
             />
             <TourWaysCard
               price={134}
               score={935}
               isDetails={true}
               disc="گشت روز قلعه هایدلبرگ و شهر از فرانکفورت147"
-              Image="/public/images/frankfordDistination/img4.jpg"
+              Image="/images/frankfordDistination/img4.jpg"
             />
             <TourWaysCard
               price={134}
@@ -226,14 +227,14 @@ const ThingsToDo = () => {
               score={935}
               isDetails={true}
               disc="گشت روز قلعه هایدلبرگ و شهر از فرانکفورت147"
-              Image="/public/images/frankfordDistination/img2.jpg"
+              Image="/images/frankfordDistination/img2.jpg"
             />
             <TourWaysCard
               price={134}
               score={935}
               isDetails={true}
               disc="گشت روز قلعه هایدلبرگ و شهر از فرانکفورت147"
-              Image="/public/images/frankfordDistination/img1.jpg"
+              Image="/images/frankfordDistination/img1.jpg"
             />
           </SliderWrapper>
         </Box>

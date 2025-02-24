@@ -1,3 +1,4 @@
+"use client"
 import { Box, Container, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import InpSearch from "../../components/InpSearch/InpSearch";
@@ -45,7 +46,7 @@ const Formus = () => {
             <Grid size={{ md: 6 }}  >
               <Box display={"flex"} flexDirection={isXs ? "column" : "row"} gap={2}>
                 <img
-                  src="/public/images/Formus/bgImg.svg"
+                  src="/images/Formus/bgImg.svg"
                   alt=""
                   style={{
                     width: "250px"
@@ -127,17 +128,17 @@ const Formus = () => {
           <SliderWrapper numberOfShowSlider={3} ArrowPosition="35%">
             <PopularFourmsCard
               name="شهر نیویورک"
-              coverImg="/public/images/Formus/popularFormus/img1.jpg"
+              coverImg="/images/Formus/popularFormus/img1.jpg"
               numberTopics={21700}
             />
             <PopularFourmsCard
               name="شهر نیویورک"
-              coverImg="/public/images/Formus/popularFormus/img2.jpg"
+              coverImg="/images/Formus/popularFormus/img2.jpg"
               numberTopics={21700}
             />
             <PopularFourmsCard
               name="شهر نیویورک"
-              coverImg="/public/images/Formus/popularFormus/img3.jpg"
+              coverImg="/images/Formus/popularFormus/img3.jpg"
               numberTopics={21700}
             />
           </SliderWrapper>

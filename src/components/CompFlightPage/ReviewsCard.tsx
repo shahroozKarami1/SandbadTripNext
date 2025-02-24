@@ -29,7 +29,7 @@ const ReviewsCard: FC<IReviewsCardProps> = ({
           بالاترین امتیاز در <span className="font-light">{topRateIn}</span>
         </Typography>
         <Box display={"flex"} alignItems={"flex-start"} gap={1} sx={{ marginTop: "1rem" }}>
-          <img src={profile} alt="" className="rounded-full" style={{ width: "40px" }} />
+          <img src={profile} alt="" className="rounded-full" style={{ width: "40px" ,  borderRadius : "50%" }} />
           <Typography sx={{ fontSize: "0.80rem" }}>{comment}</Typography>
         </Box>
       </CusReviewCard>

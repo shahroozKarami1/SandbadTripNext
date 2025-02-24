@@ -1,3 +1,4 @@
+"use client"
 import { Box, Container, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import BtnMenus from "../../components/CompCruises/BtnMenus";
@@ -79,7 +80,7 @@ const Cruises = () => {
           >
             <Grid size={{ md: 4 }}>
               <CardDetails
-                coverImg="/public/images/Cruises/DetialsCards/img1.svg"
+                coverImg="/images/Cruises/DetialsCards/img1.svg"
                 disc="  برای مشاهده جزئیات کشتی، بررسی ها، عکس ها و برنامه های سفر، یک
               کشتی را انتخاب کنید"
                 title="صفحات Ship-tinerary™ را کاوش کنید"
@@ -87,7 +88,7 @@ const Cruises = () => {
             </Grid>
             <Grid size={{ md: 4 }}>
               <CardDetails
-                coverImg="/public/images/Cruises/DetialsCards/img3.svg"
+                coverImg="/images/Cruises/DetialsCards/img3.svg"
                 disc="  برای مشاهده جزئیات کشتی، بررسی ها، عکس ها و برنامه های سفر، یک
               کشتی را انتخاب کنید"
                 title="صفحات Ship-tinerary™ را کاوش کنید"
@@ -95,7 +96,7 @@ const Cruises = () => {
             </Grid>
             <Grid size={{ md: 4 }}>
               <CardDetails
-                coverImg="/public/images/Cruises/DetialsCards/img3.svg"
+                coverImg="/images/Cruises/DetialsCards/img3.svg"
                 disc="  برای مشاهده جزئیات کشتی، بررسی ها، عکس ها و برنامه های سفر، یک
               کشتی را انتخاب کنید"
                 title="صفحات Ship-tinerary™ را کاوش کنید"
@@ -155,28 +156,28 @@ const Cruises = () => {
             <Grid size={{ md: 3, xs: 6 }}>
               <CardWhiteBottom
                 link="/"
-                coverImg="/public/images/Cruises/popularDistination/img1.jpg"
+                coverImg="/images/Cruises/popularDistination/img1.jpg"
                 name="برمودا"
               />
             </Grid>
             <Grid size={{ md: 3, xs: 6 }}>
               <CardWhiteBottom
                 link="/"
-                coverImg="/public/images/Cruises/popularDistination/img2.jpg"
+                coverImg="/images/Cruises/popularDistination/img2.jpg"
                 name="هاوایی"
               />
             </Grid>
             <Grid size={{ md: 3, xs: 6 }}>
               <CardWhiteBottom
                 link="/"
-                coverImg="/public/images/Cruises/popularDistination/img3.jpg"
+                coverImg="/images/Cruises/popularDistination/img3.jpg"
                 name="کیش"
               />
             </Grid>
             <Grid size={{ md: 3  , xs  :  6 }}>
               <CardWhiteBottom
                 link="/"
-                coverImg="/public/images/Cruises/popularDistination/img4.jpg"
+                coverImg="/images/Cruises/popularDistination/img4.jpg"
                 name="باهاماس"
               />
             </Grid>
@@ -189,28 +190,28 @@ const Cruises = () => {
             <Grid size={{ md: 3  ,  xs :  6}}>
               <CardWhiteBottom
                 link="/"
-                coverImg="/public/images/Cruises/popularDistination/img3.jpg"
+                coverImg="/images/Cruises/popularDistination/img3.jpg"
                 name="آسیا"
               />
             </Grid>
             <Grid size={{ md: 3  ,  xs :  6 }}>
               <CardWhiteBottom
                 link="/"
-                coverImg="/public/images/Cruises/popularDistination/img4.jpg"
+                coverImg="/images/Cruises/popularDistination/img4.jpg"
                 name="آسیا"
               />
             </Grid>
             <Grid size={{ md: 3  ,  xs :  6 }}>
               <CardWhiteBottom
                 link="/"
-                coverImg="/public/images/Cruises/popularDistination/img1.jpg"
+                coverImg="/images/Cruises/popularDistination/img1.jpg"
                 name="آسیا"
               />
             </Grid>
             <Grid size={{ md: 3  , xs :  6 }}>
               <CardWhiteBottom
                 link="/"
-                coverImg="/public/images/Cruises/popularDistination/img2.jpg"
+                coverImg="/images/Cruises/popularDistination/img2.jpg"
                 name="آسیا"
               />
             </Grid>
@@ -223,28 +224,28 @@ const Cruises = () => {
             <Grid size={{ md: 3  , xs :  6 }}>
               <CardWhiteBottom
                 link="/"
-                coverImg="/public/images/Cruises/popularDistination/img2.jpg"
+                coverImg="/images/Cruises/popularDistination/img2.jpg"
                 name="+15 روز"
               />
             </Grid>
             <Grid size={{ md: 3    , xs :  6}}>
               <CardWhiteBottom
                 link="/"
-                coverImg="/public/images/Cruises/popularDistination/img3.jpg"
+                coverImg="/images/Cruises/popularDistination/img3.jpg"
                 name="8روز"
               />
             </Grid>
             <Grid size={{ md: 3   , xs :  6 }}>
               <CardWhiteBottom
                 link="/"
-                coverImg="/public/images/Cruises/popularDistination/img4.jpg"
+                coverImg="/images/Cruises/popularDistination/img4.jpg"
                 name="2روز"
               />
             </Grid>
             <Grid size={{ md: 3  , xs :  6 }}>
               <CardWhiteBottom
                 link="/"
-                coverImg="/public/images/Cruises/popularDistination/img1.jpg"
+                coverImg="/images/Cruises/popularDistination/img1.jpg"
                 name="10-12 روز"
               />
             </Grid>

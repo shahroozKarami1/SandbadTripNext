@@ -12,7 +12,7 @@ const AutoCompleteBox = () => {
         cover="/images/NextTrip/img7.jpg"
         name="مشهد"
       />
-      <Box sx={{ margin: "1rem  0 " }}>
+      <Box sx={{ margin: "1rem  " }}>
         <Typography sx={{ fontSize: "0.90rem", fontWeight: "bold" }}>
           بیشترین بازدید
         </Typography>

@@ -94,7 +94,7 @@ const Profile = () => {
                     {!isXs && (
                       <Box width={"120px"}>
                         <img
-                          src="/public/images/NextTrip/img7.jpg"
+                          src="/images/NextTrip/img7.jpg"
                           alt=""
                           style={{
                             objectFit: "cover",
@@ -109,7 +109,7 @@ const Profile = () => {
                       {isXs && (
                         <Box width={"80px"}>
                           <img
-                            src="/public/images/NextTrip/img7.jpg"
+                            src="/images/NextTrip/img7.jpg"
                             alt=""
                             style={{
                               objectFit: "cover",

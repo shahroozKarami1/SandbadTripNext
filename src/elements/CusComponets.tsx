@@ -112,7 +112,7 @@ export const CusStickyMenu = styled(Box)({
   paddingTop: "1rem"
 });
 export const CusThingsToDoPage = styled(Box)({
-  background: `linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(${MainBanner})`,
+  background: `linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(${MainBanner.src})`,
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
@@ -299,10 +299,12 @@ export const CusSearchCard = styled(Box)({
 export const CusAutoComplete = styled(Box)({
   backgroundColor: "#fff",
   boxShadow: "-1px 20px 22px 0px rgba(0,0,0,0.75)",
-  padding: "1rem",
   display: "flex",
   flexDirection: 'column',
+  right : 0 , 
+   
   position: "absolute",
+  overflowX : "hidden" ,  
   width: "100%",
   zIndex: 200,
   borderBottomRightRadius: "1rem",
@@ -392,7 +394,7 @@ export const CusAddPlaceBtn = styled(Button)({
 export const CusAutoCompleteItem = styled(Box)({
   display: "flex",
   alignItems: "center",
-  margin: '0.75rem  0',
+  margin: '0.75rem  1rem  ',
   cursor: "pointer",
   transition: "all  0.25s  ease",
   "&:hover": {
@@ -727,6 +729,7 @@ export const BoxOverLay = styled(Box)({
   position: "absolute",
   height: "100%",
   width: "100%",
+  right :  0 ,  
   inset: 0,
   background: "linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 100%)",
 });
@@ -875,7 +878,7 @@ export const CusIconAiCardPlanning = styled(AutoAwesomeOutlinedIcon)({
   "&.MuiSvgIcon-root  ": {
     backgroundColor: "#F2ECF9",
     borderRadius: "50%",
-    fontSize: "2.5rem",
+    fontSize: "1.5rem",
     padding: "0.5rem",
     "& path": {
       color: "#784AB1"

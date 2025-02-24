@@ -1,3 +1,4 @@
+"use client"
 import { Box, Container, Typography } from "@mui/material";
 import InpSearch from "../../components/InpSearch/InpSearch";
 import Grid from "@mui/material/Grid2";
@@ -12,7 +13,7 @@ const Restaurans = () => {
   const isXs = useMedia();
   return (
     <Box>
-      <MainBanner bannerUrl={"/public/images/ResturantImgs/Banner.jpg"}>
+      <MainBanner bannerUrl={"/images/ResturantImgs/Banner.jpg"}>
         <Container sx={{ height: "100%" }}>
           <Grid
             container
@@ -64,28 +65,28 @@ const Restaurans = () => {
           />
           <SliderWrapper numberOfShowSlider={4} ArrowPosition="35%">
             <CardWithReviewAndPlace
-              cardCover="/public/images/ResturantImgs/otherImgs/img1.jpg"
+              cardCover="/images/ResturantImgs/otherImgs/img1.jpg"
               countOfReviews={7500}
               link="/"
               textPlace="دبی / امارات متحده عربی"
               titleCard="رستوران بوف سیاه"
             />
             <CardWithReviewAndPlace
-              cardCover="/public/images/ResturantImgs/otherImgs/img2.jpg"
+              cardCover="/images/ResturantImgs/otherImgs/img2.jpg"
               countOfReviews={7500}
               link="/"
               textPlace="دبی / امارات متحده عربی"
               titleCard="رستوران بوف سیاه"
             />
             <CardWithReviewAndPlace
-              cardCover="/public/images/ResturantImgs/otherImgs/img3.jpg"
+              cardCover="/images/ResturantImgs/otherImgs/img3.jpg"
               countOfReviews={7500}
               link="/"
               textPlace="دبی / امارات متحده عربی"
               titleCard="رستوران بوف سیاه"
             />
             <CardWithReviewAndPlace
-              cardCover="/public/images/ResturantImgs/otherImgs/img4.jpg"
+              cardCover="/images/ResturantImgs/otherImgs/img4.jpg"
               countOfReviews={7500}
               link="/"
               textPlace="دبی / امارات متحده عربی"
@@ -101,28 +102,28 @@ const Restaurans = () => {
           />
           <SliderWrapper numberOfShowSlider={4}  ArrowPosition="35%">
             <CardWithReviewAndPlace
-              cardCover="/public/images/ResturantImgs/otherImgs/img1.jpg"
+              cardCover="/images/ResturantImgs/otherImgs/img1.jpg"
               countOfReviews={7500}
               link="/"
               textPlace="دبی / امارات متحده عربی"
               titleCard="رستوران بوف سیاه"
             />
             <CardWithReviewAndPlace
-              cardCover="/public/images/ResturantImgs/otherImgs/img2.jpg"
+              cardCover="/images/ResturantImgs/otherImgs/img2.jpg"
               countOfReviews={7500}
               link="/"
               textPlace="دبی / امارات متحده عربی"
               titleCard="رستوران بوف سیاه"
             />
             <CardWithReviewAndPlace
-              cardCover="/public/images/ResturantImgs/otherImgs/img3.jpg"
+              cardCover="/images/ResturantImgs/otherImgs/img3.jpg"
               countOfReviews={7500}
               link="/"
               textPlace="دبی / امارات متحده عربی"
               titleCard="رستوران بوف سیاه"
             />
             <CardWithReviewAndPlace
-              cardCover="/public/images/ResturantImgs/otherImgs/img4.jpg"
+              cardCover="/images/ResturantImgs/otherImgs/img4.jpg"
               countOfReviews={7500}
               link="/"
               textPlace="دبی / امارات متحده عربی"
@@ -138,28 +139,28 @@ const Restaurans = () => {
           />
           <SliderWrapper numberOfShowSlider={4}  ArrowPosition="35%">
             <CardWithReviewAndPlace
-              cardCover="/public/images/ResturantImgs/otherImgs/img1.jpg"
+              cardCover="/images/ResturantImgs/otherImgs/img1.jpg"
               countOfReviews={7500}
               link="/"
               textPlace="دبی / امارات متحده عربی"
               titleCard="رستوران بوف سیاه"
             />
             <CardWithReviewAndPlace
-              cardCover="/public/images/ResturantImgs/otherImgs/img2.jpg"
+              cardCover="/images/ResturantImgs/otherImgs/img2.jpg"
               countOfReviews={7500}
               link="/"
               textPlace="دبی / امارات متحده عربی"
               titleCard="رستوران بوف سیاه"
             />
             <CardWithReviewAndPlace
-              cardCover="/public/images/ResturantImgs/otherImgs/img3.jpg"
+              cardCover="/images/ResturantImgs/otherImgs/img3.jpg"
               countOfReviews={7500}
               link="/"
               textPlace="دبی / امارات متحده عربی"
               titleCard="رستوران بوف سیاه"
             />
             <CardWithReviewAndPlace
-              cardCover="/public/images/ResturantImgs/otherImgs/img4.jpg"
+              cardCover="/images/ResturantImgs/otherImgs/img4.jpg"
               countOfReviews={7500}
               link="/"
               textPlace="دبی / امارات متحده عربی"
@@ -175,28 +176,28 @@ const Restaurans = () => {
           />
           <SliderWrapper numberOfShowSlider={4}  ArrowPosition="35%">
             <CardWithReviewAndPlace
-              cardCover="/public/images/ResturantImgs/otherImgs/img1.jpg"
+              cardCover="/images/ResturantImgs/otherImgs/img1.jpg"
               countOfReviews={7500}
               link="/"
               textPlace="دبی / امارات متحده عربی"
               titleCard="رستوران بوف سیاه"
             />
             <CardWithReviewAndPlace
-              cardCover="/public/images/ResturantImgs/otherImgs/img2.jpg"
+              cardCover="/images/ResturantImgs/otherImgs/img2.jpg"
               countOfReviews={7500}
               link="/"
               textPlace="دبی / امارات متحده عربی"
               titleCard="رستوران بوف سیاه"
             />
             <CardWithReviewAndPlace
-              cardCover="/public/images/ResturantImgs/otherImgs/img3.jpg"
+              cardCover="/images/ResturantImgs/otherImgs/img3.jpg"
               countOfReviews={7500}
               link="/"
               textPlace="دبی / امارات متحده عربی"
               titleCard="رستوران بوف سیاه"
             />
             <CardWithReviewAndPlace
-              cardCover="/public/images/ResturantImgs/otherImgs/img4.jpg"
+              cardCover="/images/ResturantImgs/otherImgs/img4.jpg"
               countOfReviews={7500}
               link="/"
               textPlace="دبی / امارات متحده عربی"
@@ -212,28 +213,28 @@ const Restaurans = () => {
           />
           <SliderWrapper numberOfShowSlider={4}  ArrowPosition="35%">
             <CardWithReviewAndPlace
-              cardCover="/public/images/ResturantImgs/otherImgs/img1.jpg"
+              cardCover="/images/ResturantImgs/otherImgs/img1.jpg"
               countOfReviews={7500}
               link="/"
               textPlace="دبی / امارات متحده عربی"
               titleCard="رستوران بوف سیاه"
             />
             <CardWithReviewAndPlace
-              cardCover="/public/images/ResturantImgs/otherImgs/img2.jpg"
+              cardCover="/images/ResturantImgs/otherImgs/img2.jpg"
               countOfReviews={7500}
               link="/"
               textPlace="دبی / امارات متحده عربی"
               titleCard="رستوران بوف سیاه"
             />
             <CardWithReviewAndPlace
-              cardCover="/public/images/ResturantImgs/otherImgs/img3.jpg"
+              cardCover="/images/ResturantImgs/otherImgs/img3.jpg"
               countOfReviews={7500}
               link="/"
               textPlace="دبی / امارات متحده عربی"
               titleCard="رستوران بوف سیاه"
             />
             <CardWithReviewAndPlace
-              cardCover="/public/images/ResturantImgs/otherImgs/img4.jpg"
+              cardCover="/images/ResturantImgs/otherImgs/img4.jpg"
               countOfReviews={7500}
               link="/"
               textPlace="دبی / امارات متحده عربی"

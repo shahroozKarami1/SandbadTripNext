@@ -9,7 +9,15 @@ const ThirdBanner = () => {
       <Container>
         <Grid container sx={{ overflow: "hidden" }} spacing={4} flexDirection={isXs ? "column-reverse" : "row"}>
           <Grid size={{ md: 7 }}>
-            <img src="/images/ThirdBanner/ThirdBanner.png" alt="" />
+            <Box sx={{width : "100%" ,  height : "100%"}}>
+            <img src="/images/ThirdBanner/ThirdBanner.png" alt="" style={{
+              objectFit : "cover" ,   
+              objectPosition : "center" , 
+              width : "100%" ,  
+              height : "100%"
+            }}/>
+
+            </Box>
           </Grid>
           <Grid size={{ md: 5 }}>
             <Box display={"flex"} flexDirection={"column"} justifyContent={"center"} gap={1} sx={{ height: "100%" }}>

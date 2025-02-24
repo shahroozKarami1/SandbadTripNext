@@ -75,7 +75,7 @@ const Trips = () => {
             <StartAndBuildCard
               colorBack="#EAFAF4"
               colorBtn={{ colorBack: `var(--primary-color)`, colorText: "var(--dark-color)" }}
-              cover="/public/images/Trips/BuildAndStartCards/img2.png"
+              cover="/images/Trips/BuildAndStartCards/img2.png"
               disc="مقاصد برتر، رستوران‌ها و کارهایی که باید انجام دهید را مرور کنید و در حین رفتن، موارد مورد علاقه خود را در برنامه سفر خود ذخیره کنید."
               textBtn="خودت انجامش بده"
               title="سفر خود را از ابتدا بسازید"
@@ -85,7 +85,7 @@ const Trips = () => {
             <StartAndBuildCard
               colorBack="#DBCCFD"
               colorBtn={{ colorBack: "#301D49", colorText: "#fff" }}
-              cover="/public/images/Trips/BuildAndStartCards/img1.png"
+              cover="/images/Trips/BuildAndStartCards/img1.png"
               disc="به چهار سوال کوتاه پاسخ دهید و با استفاده از هوش مصنوعی، عکس‌های شخصی‌سازی شده را دریافت کنید، با راهنمایی نظرات مسافران."
               textBtn="AI trip builder را امتحان کنید"
               title="سفر را در چند دقیقه با هوش مصنوعی شروع کنید"
@@ -93,12 +93,12 @@ const Trips = () => {
           </Grid>
         </Grid>
 
-        <SliderWrapper numberOfShowSlider={5}>
-          <AiCardPlanning text="لندن" image="/public/images/NextTrip/img1.jpg" />
-          <AiCardPlanning text="امارات" image="/public/images/NextTrip/img2.jpg" />
-          <AiCardPlanning text="پکن" image="/public/images/NextTrip/img3.jpg" />
-          <AiCardPlanning text="لس آنجلس" image="/public/images/NextTrip/img4.jpg" />
-          <AiCardPlanning text="لندن" image="/public/images/NextTrip/img5.jpg" />
+        <SliderWrapper numberOfShowSlider={5} >
+          <AiCardPlanning text="لندن" image="/images/NextTrip/img1.jpg" />
+          <AiCardPlanning text="امارات" image="/images/NextTrip/img2.jpg" />
+          <AiCardPlanning text="پکن" image="/images/NextTrip/img3.jpg" />
+          <AiCardPlanning text="لس آنجلس" image="/images/NextTrip/img4.jpg" />
+          <AiCardPlanning text="لندن" image="/images/NextTrip/img5.jpg" />
         </SliderWrapper>
       </Container>
     </Box>

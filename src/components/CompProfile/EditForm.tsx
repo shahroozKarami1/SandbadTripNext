@@ -47,7 +47,7 @@ const EditForm: FC<IEditForm> = ({ openState, setState }) => {
           <Grid size={{ md: 2 }}>
             <Box width={"120px"}>
               <img
-                src="/public/images/NextTrip/img4.jpg"
+                src="/images/NextTrip/img4.jpg"
                 alt=""
                 style={{
                   height: "100%",

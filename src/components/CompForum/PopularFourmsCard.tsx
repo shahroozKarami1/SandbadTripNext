@@ -14,13 +14,13 @@ const PopularFourmsCard: FC<IPopularFourmsCardProps> = ({
         <img
           src={coverImg}
           alt=""
-          className="rounded-lg"
-          style={{ height: "300px" }}
+          style={{ height: "300px"  ,  borderRadius : "1rem"}}
         />
         <Box
           gap={1}
           display={"flex"}
           flexDirection={"column"}
+   
           sx={{ marginTop: "0.5rem" }}
         >
           <Typography sx={{ fontWeight: "bold" }}>{name}</Typography>

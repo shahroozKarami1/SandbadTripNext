@@ -46,7 +46,7 @@ const FirstStep: FC<{ changePageHandler: () => void }> = ({
             <CardForFirstTrip
               changePageHandler={changePageHandler}
               countryName="ایالات متحده آمریکا"
-              coverImg="/public/images/TripBuilderImg/FirstStepCards/img1.jpg"
+              coverImg="/images/TripBuilderImg/FirstStepCards/img1.jpg"
               titleImg="لاس وگاس"
             />
           </Grid>
@@ -54,7 +54,7 @@ const FirstStep: FC<{ changePageHandler: () => void }> = ({
             <CardForFirstTrip
               changePageHandler={changePageHandler}
               countryName="ایالات متحده آمریکا"
-              coverImg="/public/images/TripBuilderImg/FirstStepCards/img2.jpg"
+              coverImg="/images/TripBuilderImg/FirstStepCards/img2.jpg"
               titleImg="لاس وگاس"
             />
           </Grid>
@@ -62,7 +62,7 @@ const FirstStep: FC<{ changePageHandler: () => void }> = ({
             <CardForFirstTrip
               changePageHandler={changePageHandler}
               countryName="ایالات متحده آمریکا"
-              coverImg="/public/images/TripBuilderImg/FirstStepCards/img3.jpg"
+              coverImg="/images/TripBuilderImg/FirstStepCards/img3.jpg"
               titleImg="لاس وگاس"
             />
           </Grid>
@@ -70,7 +70,7 @@ const FirstStep: FC<{ changePageHandler: () => void }> = ({
             <CardForFirstTrip
               changePageHandler={changePageHandler}
               countryName="ایالات متحده آمریکا"
-              coverImg="/public/images/TripBuilderImg/FirstStepCards/img4.jpg"
+              coverImg="/images/TripBuilderImg/FirstStepCards/img4.jpg"
               titleImg="لاس وگاس"
             />
           </Grid>
@@ -78,7 +78,7 @@ const FirstStep: FC<{ changePageHandler: () => void }> = ({
             <CardForFirstTrip
               changePageHandler={changePageHandler}
               countryName="ایالات متحده آمریکا"
-              coverImg="/public/images/TripBuilderImg/FirstStepCards/img5.jpg"
+              coverImg="/images/TripBuilderImg/FirstStepCards/img5.jpg"
               titleImg="لاس وگاس"
             />
           </Grid>
@@ -86,7 +86,7 @@ const FirstStep: FC<{ changePageHandler: () => void }> = ({
             <CardForFirstTrip
               changePageHandler={changePageHandler}
               countryName="ایالات متحده آمریکا"
-              coverImg="/public/images/TripBuilderImg/FirstStepCards/img6.jpg"
+              coverImg="/images/TripBuilderImg/FirstStepCards/img6.jpg"
               titleImg="لاس وگاس"
             />
           </Grid>

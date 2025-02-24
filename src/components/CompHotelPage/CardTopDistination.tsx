@@ -2,6 +2,7 @@
 import { FC, useState } from "react";
 import { ICardTopDistinationProps } from "../../types/intefaces";
 import { Box, Button, Typography } from "@mui/material";
+import { Height } from "@mui/icons-material";
 
 const CardTopDistination: FC<ICardTopDistinationProps> = ({
   diec,
@@ -23,7 +24,16 @@ const CardTopDistination: FC<ICardTopDistinationProps> = ({
       sx={{ direction: "rtl" }}
       margin={"0  0.5rem"}
     >
-      <img src={Image} className="rounded-md" alt="" />
+      <Box sx ={{width  :  "100%" ,  Height : "100%"}}>
+      <img src={Image} className="rounded-md" alt="" style={{
+        width : "100%" , 
+        height : "100%" ,  
+        objectFit : 'cover' ,  
+        borderRadius : "1rem" ,  
+        objectPosition : "center"
+      }}/>
+
+      </Box>
       <Box
         display={"flex"}
         flexDirection={"column"}
