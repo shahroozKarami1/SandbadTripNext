@@ -90,6 +90,10 @@ export const CusBoxIconHeart = styled(Box)({
   position: "absolute",
   top: "10px",
   right: "10px",
+  display: "flex",
+  cursor: "pointer",
+  alignItems: 'center',
+  justifyContent: "center",
   backgroundColor: "#fff",
   borderRadius: "50%",
   padding: "0.5rem",
@@ -99,7 +103,7 @@ export const CusCard = styled(Box)({
   position: "relative",
   overflow: "hidden",
   margin: "0  0.5rem",
-  borderRadius : "1rem"  ,  
+  borderRadius: "1rem",
   direction: "rtl",
 });
 export const CusStickyMenu = styled(Box)({
@@ -301,10 +305,10 @@ export const CusAutoComplete = styled(Box)({
   boxShadow: "-1px 20px 22px 0px rgba(0,0,0,0.75)",
   display: "flex",
   flexDirection: 'column',
-  right : 0 , 
-   
+  right: 0,
+
   position: "absolute",
-  overflowX : "hidden" ,  
+  overflowX: "hidden",
   width: "100%",
   zIndex: 200,
   borderBottomRightRadius: "1rem",
@@ -729,7 +733,7 @@ export const BoxOverLay = styled(Box)({
   position: "absolute",
   height: "100%",
   width: "100%",
-  right :  0 ,  
+  right: 0,
   inset: 0,
   background: "linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 100%)",
 });

@@ -1,11 +1,11 @@
 :root {
   /* --primary-color: #00aa6c; */
-  --primary-color: #F15A29;
+  --primary-color: #f15a29;
   --primary-color-50: #f15b29ee;
   --dark-color: #000000;
   --gray-color: #adaaad;
   --gray-back: #f2f2f2;
   --yellow-color: #fdc735;
-  --main-font: AzarMehr;
+  --main-font: Pinar;
   --main-shadow: 1px 3px 12px -4px rgba(0, 0, 0, 0.75);
 }

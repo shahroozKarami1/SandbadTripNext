@@ -49,7 +49,7 @@ const TravelersChoiceHotels = () => {
             }}
           >
             <img
-              src="/public/images/BestChoiceDetails/Banner/logo.png"
+              src="/images/BestChoiceDetails/Banner/logo.png"
               style={{
                 width: '100px'
               }}
@@ -77,7 +77,7 @@ const TravelersChoiceHotels = () => {
               style={{
                 width: "100px"
               }}
-              src="/public/images/BestChoiceDetails/Banner/logo.png"
+              src="/images/BestChoiceDetails/Banner/logo.png"
               className="ml-5"
               alt=""
             />

@@ -109,25 +109,25 @@ const HotelDetails = () => {
                   <Grid size={{ md: 2 }}>
                     <CardSlider
                       count={118}
-                      coverImg="/public/images/HotelDetail/ImgSlider/img1.jpg"
+                      coverImg="/images/HotelDetail/ImgSlider/img1.jpg"
                       isMainImg={false}
                       title="منو"
                     />
                     <CardSlider
                       count={118}
-                      coverImg="/public/images/HotelDetail/ImgSlider/img1.jpg"
+                      coverImg="/images/HotelDetail/ImgSlider/img1.jpg"
                       isMainImg={false}
                       title="منو"
                     />
                     <CardSlider
                       count={1965}
-                      coverImg="/public/images/HotelDetail/ImgSlider/img2.jpg"
+                      coverImg="/images/HotelDetail/ImgSlider/img2.jpg"
                       isMainImg={false}
                       title="غذا"
                     />
                     <CardSlider
                       count={15}
-                      coverImg="/public/images/HotelDetail/ImgSlider/img3.jpg"
+                      coverImg="/images/HotelDetail/ImgSlider/img3.jpg"
                       isMainImg={false}
                       title="داخلی"
                     />
@@ -136,15 +136,15 @@ const HotelDetails = () => {
                 <Grid size={{ md: 10, xs: 12 }}>
                   <Slider {...settings}>
                     <CardSlider
-                      coverImg="/public/images/HotelDetail/ImgSlider/bigImg.jpg"
+                      coverImg="/images/HotelDetail/ImgSlider/bigImg.jpg"
                       isMainImg={true}
                     />
                     <CardSlider
-                      coverImg="/public/images/HotelDetail/ImgSlider/bigImg2.jpg"
+                      coverImg="/images/HotelDetail/ImgSlider/bigImg2.jpg"
                       isMainImg={true}
                     />
                     <CardSlider
-                      coverImg="/public/images/HotelDetail/ImgSlider/bigImg.jpg"
+                      coverImg="/images/HotelDetail/ImgSlider/bigImg.jpg"
                       isMainImg={true}
                     />
                   </Slider>
@@ -216,7 +216,7 @@ const HotelDetails = () => {
                     date="18 خرداد"
                     likeCount={5}
                     name="محمد سعید احمدی  کوپایی"
-                    profile="/public/images//NextTrip/img1.jpg"
+                    profile="/images//NextTrip/img1.jpg"
                     reviewBody="من و خانمم اصلا راضی نبودیم با این   که غذاخوری‌هایی با تجربه‌های شگفت‌انگیز غذایی داشتیم، از رفتن به کباب سرای مسلم برای جشن سالگرد ازدواجمان هیجان‌زده بودیم.
 متأسفانه ما بسیار ناامید شدیم. 22 دوره که عموماً فاقد طعم بودند، به حداقل مهارت پخت و پز نیاز داشتند و عمدتاً فاقد مواد اولیه با کیفیت بودند.
 مهمتر از آن ما احساس می کردیم که بسیار عجله داریم. سرویس نه تنها در نقاطی آشفته بود، بلکه شخصی دائماً پشت میز بود، اما به ندرت همان فرد بود. من بسیاری از ناهار سه ساعته تنبل را با تنها 4 دوره تجربه کرده ام. این 22 دوره انجام شد و در 2.5 ساعت گردگیری شد.
@@ -229,7 +229,7 @@ const HotelDetails = () => {
                     date="18 خرداد"
                     likeCount={5}
                     name="محمد سعید احمدی  کوپایی"
-                    profile="/public/images//NextTrip/img1.jpg"
+                    profile="/images//NextTrip/img1.jpg"
                     reviewBody="من و خانمم که به خود اعتراف می‌کردم که غذاخوری‌هایی با تجربه‌های شگفت‌انگیز غذایی داشتیم، از رفتن به موگاریتز برای جشن سالگرد ازدواجمان هیجان‌زده بودیم.
 متأسفانه ما بسیار ناامید شدیم. 22 دوره که عموماً فاقد طعم بودند، به حداقل مهارت پخت و پز نیاز داشتند و عمدتاً فاقد مواد اولیه با کیفیت بودند.
 مهمتر از آن ما احساس می کردیم که بسیار عجله داریم. سرویس نه تنها در نقاطی آشفته بود، بلکه شخصی دائماً پشت میز بود، اما به ندرت همان فرد بود. من بسیاری از ناهار سه ساعته تنبل را با تنها 4 دوره تجربه کرده ام. این 22 دوره انجام شد و در 2.5 ساعت گردگیری شد.
@@ -242,7 +242,7 @@ const HotelDetails = () => {
                     date="18 خرداد"
                     likeCount={5}
                     name="محمد سعید احمدی  کوپایی"
-                    profile="/public/images//NextTrip/img1.jpg"
+                    profile="/images//NextTrip/img1.jpg"
                     reviewBody="من و خانمم که به خود اعتراف می‌کردم که غذاخوری‌هایی با تجربه‌های شگفت‌انگیز غذایی داشتیم، از رفتن به موگاریتز برای جشن سالگرد ازدواجمان هیجان‌زده بودیم.
 متأسفانه ما بسیار ناامید شدیم. 22 دوره که عموماً فاقد طعم بودند، به حداقل مهارت پخت و پز نیاز داشتند و عمدتاً فاقد مواد اولیه با کیفیت بودند.
 مهمتر از آن ما احساس می کردیم که بسیار عجله داریم. سرویس نه تنها در نقاطی آشفته بود، بلکه شخصی دائماً پشت میز بود، اما به ندرت همان فرد بود. من بسیاری از ناهار سه ساعته تنبل را با تنها 4 دوره تجربه کرده ام. این 22 دوره انجام شد و در 2.5 ساعت گردگیری شد.
@@ -255,7 +255,7 @@ const HotelDetails = () => {
                     date="18 خرداد"
                     likeCount={5}
                     name="محمد سعید احمدی  کوپایی"
-                    profile="/public/images//NextTrip/img1.jpg"
+                    profile="/images//NextTrip/img1.jpg"
                     reviewBody="من و خانمم که به خود اعتراف می‌کردم که غذاخوری‌هایی با تجربه‌های شگفت‌انگیز غذایی داشتیم، از رفتن به موگاریتز برای جشن سالگرد ازدواجمان هیجان‌زده بودیم.
 متأسفانه ما بسیار ناامید شدیم. 22 دوره که عموماً فاقد طعم بودند، به حداقل مهارت پخت و پز نیاز داشتند و عمدتاً فاقد مواد اولیه با کیفیت بودند.
 مهمتر از آن ما احساس می کردیم که بسیار عجله داریم. سرویس نه تنها در نقاطی آشفته بود، بلکه شخصی دائماً پشت میز بود، اما به ندرت همان فرد بود. من بسیاری از ناهار سه ساعته تنبل را با تنها 4 دوره تجربه کرده ام. این 22 دوره انجام شد و در 2.5 ساعت گردگیری شد.
@@ -335,7 +335,7 @@ const HotelDetails = () => {
                     marginTop={"2rem"}
                   >
                     <img
-                      src="/public/images/HotelDetail/bigMap.png"
+                      src="/images/HotelDetail/bigMap.png"
                       alt=""
                       className="rounded-lg  w-full"
                     />
@@ -350,14 +350,14 @@ const HotelDetails = () => {
                     <Grid size={{ md: 6 }}>
                       <CardNearBy
                         countOfLike={124}
-                        coverCard="/public/images/Hotelmg/TopDistination/img2.jpg"
+                        coverCard="/images/Hotelmg/TopDistination/img2.jpg"
                         linkCard="/"
                         mileAway={4.6}
                         titleCard="هتل قو تهران"
                       />
                       <CardNearBy
                         countOfLike={124}
-                        coverCard="/public/images/Hotelmg/TopDistination/img3.jpg"
+                        coverCard="/images/Hotelmg/TopDistination/img3.jpg"
                         linkCard="/"
                         mileAway={4.6}
                         titleCard="هتل قو تهران"
@@ -366,14 +366,14 @@ const HotelDetails = () => {
                     <Grid size={{ md: 6 }}>
                       <CardNearBy
                         countOfLike={124}
-                        coverCard="/public/images/Hotelmg/TopDistination/img4.jpg"
+                        coverCard="/images/Hotelmg/TopDistination/img4.jpg"
                         linkCard="/"
                         mileAway={4.6}
                         titleCard="هتل قو تهران"
                       />
                       <CardNearBy
                         countOfLike={124}
-                        coverCard="/public/images/Hotelmg/TopDistination/img1.jpg"
+                        coverCard="/images/Hotelmg/TopDistination/img1.jpg"
                         linkCard="/"
                         mileAway={4.6}
                         titleCard="هتل قو تهران"

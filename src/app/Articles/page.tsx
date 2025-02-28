@@ -17,17 +17,17 @@ function Article() {
           <MainSlider >
             <CardSlider
               disc="به علاوه، کجا می توانید آن را برای خودتان در سراسر ایالات متحده ببینید."
-              poster="/public/images/Articles/MainSlider/img1.jpg"
+              poster="/images/Articles/MainSlider/img1.jpg"
               title="چرا باید برای برداشت روغن زیتون در پاییز امسال سفر کنید؟"
             />
             <CardSlider
               disc="به علاوه، کجا می توانید آن را برای خودتان در سراسر ایالات متحده ببینید."
-              poster="/public/images/Articles/MainSlider/img2.jpg"
+              poster="/images/Articles/MainSlider/img2.jpg"
               title="چرا باید برای برداشت روغن زیتون در پاییز امسال سفر کنید؟"
             />
             <CardSlider
               disc="به علاوه، کجا می توانید آن را برای خودتان در سراسر ایالات متحده ببینید."
-              poster="/public/images/Articles/MainSlider/img1.jpg"
+              poster="/images/Articles/MainSlider/img1.jpg"
               title="چرا باید برای برداشت روغن زیتون در پاییز امسال سفر کنید؟"
             />
           </MainSlider>
@@ -53,19 +53,19 @@ function Article() {
         <Grid container sx={{ marginTop: "2rem" }} spacing={2}>
           <Grid size={{ md: 3 }}>
             <CardInsidetext
-              cover="/public/images/Articles/imgSectionOne/smallImg1.jpg"
+              cover="/images/Articles/imgSectionOne/smallImg1.jpg"
               link="/"
               text="چگونه در فلورانس واقعاً خوب غذا بخوریم - فراتر از نقاط توریستی."
             />
             <CardInsidetext
-              cover="/public/images/Articles/imgSectionOne/smallImg2.jpg"
+              cover="/images/Articles/imgSectionOne/smallImg2.jpg"
               link="/"
               text="چگونه در فلورانس واقعاً خوب غذا بخوریم - فراتر از نقاط توریستی."
             />
           </Grid>
           <Grid size={{ md: 9 }}>
             <CardInsidetext
-              cover="/public/images/Articles/imgSectionOne/BigImg.jpg"
+              cover="/images/Articles/imgSectionOne/BigImg.jpg"
               link="/Articles/ArticleDetails"
               text="چگونه در فلورانس واقعاً خوب غذا بخوریم - فراتر از نقاط توریستی."
               isBigImage={true}
@@ -76,21 +76,21 @@ function Article() {
           <Grid size={{ md: 4 }}>
             <CardHorizontal
               link="/Articles/ArticleDetails"
-              coverCard="/public/images/Articles/CardHorizontal/img1.jpg"
+              coverCard="/images/Articles/CardHorizontal/img1.jpg"
               text="چرا باید برای برداشت روغن زیتون در پاییز امسال سفر کنید؟"
             />
           </Grid>
           <Grid size={{ md: 4 }}>
             <CardHorizontal
               link="/Articles/ArticleDetails"
-              coverCard="/public/images/Articles/CardHorizontal/img2.jpg"
+              coverCard="/images/Articles/CardHorizontal/img2.jpg"
               text="بهترین مکان برای اقامت در دوبلین"
             />
           </Grid>
           <Grid size={{ md: 4 }}>
             <CardHorizontal
               link="/Articles/ArticleDetails"
-              coverCard="/public/images/Articles/CardHorizontal/img3.jpg"
+              coverCard="/images/Articles/CardHorizontal/img3.jpg"
               text="چرا باید برای برداشت روغن زیتون در پاییز امسال سفر کنید؟"
             />
           </Grid>
@@ -104,16 +104,16 @@ function Article() {
         />
         <SliderWrapper numberOfShowSlider={3} ArrowPosition="35%">
           <MoreExploreCard
-            disc="7 بهترین سفر با قطار پاییزی در ایالات متحده"
-            Image="/public/images/Articles/CardHeartIcon/img1.jpg"
+            disc=" بهترین سفر با قطار پاییزی در ایالات متحده"
+            Image="/images/Articles/CardHeartIcon/img1.jpg"
           />
           <MoreExploreCard
-            disc="7 بهترین سفر با قطار پاییزی در ایالات متحده"
-            Image="/public/images/Articles/CardHeartIcon/img2.jpg"
+            disc=" بهترین سفر با قطار پاییزی در ایالات متحده"
+            Image="/images/Articles/CardHeartIcon/img2.jpg"
           />
           <MoreExploreCard
-            disc="7 بهترین سفر با قطار پاییزی در ایالات متحده"
-            Image="/public/images/Articles/CardHeartIcon/img3.jpg"
+            disc=" بهترین سفر با قطار پاییزی در ایالات متحده"
+            Image="/images/Articles/CardHeartIcon/img3.jpg"
           />
         </SliderWrapper>
         <TitleCenter
@@ -131,7 +131,7 @@ function Article() {
             <Grid container spacing={1}>
               <Grid size={{ md: 6 }}>
                 <CardInsidetext
-                  cover="/public/images/Articles/PlaceToVisitImg/img1.jpg"
+                  cover="/images/Articles/PlaceToVisitImg/img1.jpg"
                   link="/Articles/ArticleDetails"
                   text="چگونه در فلورانس واقعاً خوب غذا بخوریم - فراتر از نقاط توریستی."
                   isBigImage={false}
@@ -139,7 +139,7 @@ function Article() {
               </Grid>
               <Grid size={{ md: 6 }}>
                 <CardInsidetext
-                  cover="/public/images/Articles/PlaceToVisitImg/img2.jpg"
+                  cover="/images/Articles/PlaceToVisitImg/img2.jpg"
                   link="/Articles/ArticleDetails"
                   text="چگونه در فلورانس واقعاً خوب غذا بخوریم - فراتر از نقاط توریستی."
                   isBigImage={false}
@@ -147,7 +147,7 @@ function Article() {
               </Grid>
               <Grid size={{ md: 12 }}>
                 <CardInsidetext
-                  cover="/public/images/Articles/PlaceToVisitImg/img7.jpg"
+                  cover="/images/Articles/PlaceToVisitImg/img7.jpg"
                   link="/Articles/ArticleDetails"
                   text="چگونه در فلورانس واقعاً خوب غذا بخوریم - فراتر از نقاط توریستی."
                   isBigImage={true}
@@ -157,7 +157,7 @@ function Article() {
           </Grid>
           <Grid size={{ md: 2 }} display={"flex"} height={"100%"}>
             <CardInsidetext
-              cover="/public/images/Articles/PlaceToVisitImg/img4.jpg"
+              cover="/images/Articles/PlaceToVisitImg/img4.jpg"
               link="/Articles/ArticleDetails"
               text="چگونه در فلورانس واقعاً خوب غذا بخوریم - فراتر از نقاط توریستی."
               isBigImage={false}
@@ -165,13 +165,13 @@ function Article() {
           </Grid>
           <Grid size={{ md: 2 }}>
             <CardInsidetext
-              cover="/public/images/Articles/PlaceToVisitImg/img5.jpg"
+              cover="/images/Articles/PlaceToVisitImg/img5.jpg"
               link="/Articles/ArticleDetails"
               text="چگونه در فلورانس واقعاً خوب غذا بخوریم - فراتر از نقاط توریستی."
               isBigImage={false}
             />
             <CardInsidetext
-              cover="/public/images/Articles/PlaceToVisitImg/img5.jpg"
+              cover="/images/Articles/PlaceToVisitImg/img5.jpg"
               link="/Articles/ArticleDetails"
               text="چگونه در فلورانس واقعاً خوب غذا بخوریم - فراتر از نقاط توریستی."
               isBigImage={false}
@@ -180,7 +180,7 @@ function Article() {
           <Grid size={{ md: 2 }}>
             <Box>
               <CardInsidetext
-                cover="/public/images/Articles/PlaceToVisitImg/img6.jpg"
+                cover="/images/Articles/PlaceToVisitImg/img6.jpg"
                 link="/Articles/ArticleDetails"
                 text="چگونه در فلورانس واقعاً خوب غذا بخوریم - فراتر از نقاط توریستی."
                 isBigImage={false}
@@ -198,19 +198,19 @@ function Article() {
         <SliderWrapper numberOfShowSlider={3} ArrowPosition="35%">
           <CardTextFooter
             link="/Articles/ArticleDetails"
-            Image="/public/images/Articles/interpidCard/img1.jpg"
+            Image="/images/Articles/interpidCard/img1.jpg"
             subTitle="از پرو تا ژاپن، محبوب‌ترین برنامه‌های سفر مشترک Intrepid را برای مسافران انفرادی کشف کنید."
             title="برترین ماجراهای «انفرادی بروید، با هم سفر کنید»."
           />
           <CardTextFooter
             link="/Articles/ArticleDetails"
-            Image="/public/images/Articles/interpidCard/img2.jpg"
+            Image="/images/Articles/interpidCard/img2.jpg"
             subTitle="از پرو تا ژاپن، محبوب‌ترین برنامه‌های سفر مشترک Intrepid را برای مسافران انفرادی کشف کنید."
             title="برترین ماجراهای «انفرادی بروید، با هم سفر کنید»."
           />
           <CardTextFooter
             link="/Articles/ArticleDetails"
-            Image="/public/images/Articles/interpidCard/img3.jpg"
+            Image="/images/Articles/interpidCard/img3.jpg"
             subTitle="از پرو تا ژاپن، محبوب‌ترین برنامه‌های سفر مشترک Intrepid را برای مسافران انفرادی کشف کنید."
             title="برترین ماجراهای «انفرادی بروید، با هم سفر کنید»."
           />
@@ -225,15 +225,15 @@ function Article() {
         <SliderWrapper numberOfShowSlider={3} ArrowPosition="35%">
           <MoreExploreCard
             disc="7 بهترین سفر با قطار پاییزی در ایالات متحده"
-            Image="/public/images/Articles/CardHeartIcon/img1.jpg"
+            Image="/images/Articles/CardHeartIcon/img1.jpg"
           />
           <MoreExploreCard
             disc="7 بهترین سفر با قطار پاییزی در ایالات متحده"
-            Image="/public/images/Articles/CardHeartIcon/img2.jpg"
+            Image="/images/Articles/CardHeartIcon/img2.jpg"
           />
           <MoreExploreCard
             disc="7 بهترین سفر با قطار پاییزی در ایالات متحده"
-            Image="/public/images/Articles/CardHeartIcon/img3.jpg"
+            Image="/images/Articles/CardHeartIcon/img3.jpg"
           />
         </SliderWrapper>
 
@@ -248,51 +248,51 @@ function Article() {
             <Grid container spacing={2}>
               <Grid size={{ md: 4 }}>
                 <CardInsidetext
-                  cover="/public/images/TheBestDistination/image1.jpg"
+                  cover="/images/TheBestDistination/image1.jpg"
                   link="/"
                   text="چگونه در فلورانس واقعاً خوب غذا بخوریم - فراتر از نقاط توریستی."
                 />
                 <CardInsidetext
-                  cover="/public/images/TheBestDistination/image2.jpg"
+                  cover="/images/TheBestDistination/image2.jpg"
                   link="/"
                   text="چگونه در فلورانس واقعاً خوب غذا بخوریم - فراتر از نقاط توریستی."
                 />
                 <CardInsidetext
-                  cover="/public/images/TheBestDistination/image3.jpg"
-                  link="/"
-                  text="چگونه در فلورانس واقعاً خوب غذا بخوریم - فراتر از نقاط توریستی."
-                />
-              </Grid>
-              <Grid size={{ md: 4 }}>
-                <CardInsidetext
-                  cover="/public/images/NextTrip/img1.jpg"
-                  link="/"
-                  text="چگونه در فلورانس واقعاً خوب غذا بخوریم - فراتر از نقاط توریستی."
-                />
-                <CardInsidetext
-                  cover="/public/images/NextTrip/img2.jpg"
-                  link="/"
-                  text="چگونه در فلورانس واقعاً خوب غذا بخوریم - فراتر از نقاط توریستی."
-                />
-                <CardInsidetext
-                  cover="/public/images/NextTrip/img3.jpg"
+                  cover="/images/TheBestDistination/image3.jpg"
                   link="/"
                   text="چگونه در فلورانس واقعاً خوب غذا بخوریم - فراتر از نقاط توریستی."
                 />
               </Grid>
               <Grid size={{ md: 4 }}>
                 <CardInsidetext
-                  cover="/public/images/NextTrip/img4.jpg"
+                  cover="/images/NextTrip/img1.jpg"
                   link="/"
                   text="چگونه در فلورانس واقعاً خوب غذا بخوریم - فراتر از نقاط توریستی."
                 />
                 <CardInsidetext
-                  cover="/public/images/NextTrip/img5.jpg"
+                  cover="/images/NextTrip/img2.jpg"
                   link="/"
                   text="چگونه در فلورانس واقعاً خوب غذا بخوریم - فراتر از نقاط توریستی."
                 />
                 <CardInsidetext
-                  cover="/public/images/Articles/imgSectionOne/smallImg2.jpg"
+                  cover="/images/NextTrip/img3.jpg"
+                  link="/"
+                  text="چگونه در فلورانس واقعاً خوب غذا بخوریم - فراتر از نقاط توریستی."
+                />
+              </Grid>
+              <Grid size={{ md: 4 }}>
+                <CardInsidetext
+                  cover="/images/NextTrip/img4.jpg"
+                  link="/"
+                  text="چگونه در فلورانس واقعاً خوب غذا بخوریم - فراتر از نقاط توریستی."
+                />
+                <CardInsidetext
+                  cover="/images/NextTrip/img5.jpg"
+                  link="/"
+                  text="چگونه در فلورانس واقعاً خوب غذا بخوریم - فراتر از نقاط توریستی."
+                />
+                <CardInsidetext
+                  cover="/images/Articles/imgSectionOne/smallImg2.jpg"
                   link="/"
                   text="چگونه در فلورانس واقعاً خوب غذا بخوریم - فراتر از نقاط توریستی."
                 />

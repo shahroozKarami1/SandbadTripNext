@@ -19,7 +19,7 @@ const HomeClient = () => {
     let [isShowStickyMenu, SetIsShowStickyMenu] = useState(false);
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 200) {
+            if (window.scrollY > 5) {
                 SetIsShowStickyMenu(true);
             } else {
                 SetIsShowStickyMenu(false);

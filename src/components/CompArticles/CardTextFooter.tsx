@@ -4,12 +4,24 @@ import { Box, Typography } from "@mui/material";
 
 const CardTextFooter: FC<ICardTextFooterProps> = ({ Image, subTitle, title }) => {
   return (
-    <Box margin={"0.5rem"}>
-      <img
-        src={Image}
-        alt=""
-        className="rounded-lg  transition-all cursor-pointer  hover:opacity-70"
-      />
+    <Box sx={{width : "200px"   }}>
+      <Box sx={{
+        height: "100%",
+        width: "100%"
+      }}>
+        <img
+          src={Image}
+          style={{
+            objectFit: "cover",
+            objectPosition: "center",
+            height: "100%",
+            width: "100%" , 
+            borderRadius : "1rem  "
+          }}
+          alt=""
+          className="rounded-lg  transition-all cursor-pointer  hover:opacity-70"
+        />
+      </Box>
       <Box
         display={"flex"}
         flexDirection={"column"}

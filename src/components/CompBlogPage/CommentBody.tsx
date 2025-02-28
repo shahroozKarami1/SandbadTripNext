@@ -15,7 +15,7 @@ const CommentBody: FC<ICommentBodyProps> = ({ commentBody, commentDate, name, pr
             <Box >
                 <Box display={"flex"} alignItems={"flex-start"} gap={2}>
                     <Box width={"250px"} mt={"0.75rem"}>
-                        <img src={profile ? profile : "/public/images/user.jpg"} alt=""
+                        <img src={profile ? profile : "/images/user.jpg"} alt=""
                             style={{ borderRadius: "0.75rem", objectFit: "cover", objectPosition: 'center', width: "100%", height: "100%" }} />
                     </Box>
                     <Box display={"flex"} flexDirection={"column"}  >
@@ -71,12 +71,12 @@ const CommentBody: FC<ICommentBodyProps> = ({ commentBody, commentDate, name, pr
             <Box sx={{ margin: " 0 2rem" }}>
                 {
                     isReplyComment && (
-                        replyComment?.map(({ commentBody, commentDate, name, profile }) => {
+                        replyComment?.map(({ commentBody, commentDate, name, profile }, index) => {
                             return (
-                                <Box >
+                                <Box key={index} >
                                     <Box display={"flex"} alignItems={"flex-start"} gap={2}>
                                         <Box width={"250px"} mt={"0.75rem"}>
-                                            <img src={profile ? profile : "/public/images/user.jpg"} alt=""
+                                            <img src={profile ? profile : "/images/user.jpg"} alt=""
                                                 style={{ borderRadius: "0.75rem", objectFit: "cover", objectPosition: 'center', width: "100%", height: "100%" }} />
                                         </Box>
                                         <Box display={"flex"} flexDirection={"column"}  >

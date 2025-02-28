@@ -39,8 +39,8 @@ const MainBlogCard: FC<IMainBlogCardProps> = ({
         {title}
       </Typography>
       <Box>
-        {paragrapth.map((text) => {
-          return <Typography sx={{ marginTop: "1rem", color: "#444" }}>{text}</Typography>;
+        {paragrapth.map((text ,  index)  => {
+          return <Typography  key={index} sx={{ marginTop: "1rem", color: "#444" }}>{text}</Typography>;
         })}
       </Box>
     </Box>

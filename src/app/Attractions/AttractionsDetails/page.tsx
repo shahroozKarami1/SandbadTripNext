@@ -1,3 +1,4 @@
+"use client"
 import {
   Box,
   Container,
@@ -117,7 +118,7 @@ const ThingsToDoDetails = () => {
           <Grid size={{ md: 7, xs: 12 }}>
             <Box sx={{ position: "relative" }} height={"409px"}>
               <img
-                src="/public/images/ThingsToDoDetails/Banner/mainImg.jpg"
+                src="/images/ThingsToDoDetails/Banner/mainImg.jpg"
                 style={{
                   objectFit: "cover",
                   height: "100%",
@@ -135,7 +136,7 @@ const ThingsToDoDetails = () => {
             <Box display={"flex"} flexDirection={"column"} gap={1}>
               <Box height={"200px"}>
                 <img
-                  src="/public/images/ThingsToDoDetails/Banner/img1.jpg"
+                  src="/images/ThingsToDoDetails/Banner/img1.jpg"
                   alt=""
                   style={{
                     objectFit: "cover",
@@ -148,7 +149,7 @@ const ThingsToDoDetails = () => {
               </Box>
               <Box height={"200px"}>
                 <img
-                  src="/public/images/ThingsToDoDetails/Banner/img2.jpg"
+                  src="/images/ThingsToDoDetails/Banner/img2.jpg"
                   alt=""
                   style={{
                     objectFit: "cover",
@@ -334,28 +335,28 @@ const ThingsToDoDetails = () => {
               price={134}
               score={935}
               disc="سافاری صحرای دبی در تپه های شنی، 60 دقیقه ای تی وی، شتر سواری، باربیکیو"
-              Image="/public/images/ThingsToDoDetails/Simllerexp/img1.jpg"
+              Image="/images/ThingsToDoDetails/Simllerexp/img1.jpg"
               isDetails={true}
             />
             <TourWaysCard
               price={134}
               score={935}
               disc="سافاری صحرای دبی در تپه های شنی، 60 دقیقه ای تی وی، شتر سواری، باربیکیو"
-              Image="/public/images/ThingsToDoDetails/Simllerexp/img2.jpg"
+              Image="/images/ThingsToDoDetails/Simllerexp/img2.jpg"
               isDetails={true}
             />
             <TourWaysCard
               price={134}
               score={935}
               disc="سافاری صحرای دبی در تپه های شنی، 60 دقیقه ای تی وی، شتر سواری، باربیکیو"
-              Image="/public/images/ThingsToDoDetails/Simllerexp/img3.jpg"
+              Image="/images/ThingsToDoDetails/Simllerexp/img3.jpg"
               isDetails={true}
             />
             <TourWaysCard
               price={134}
               score={935}
               disc="سافاری صحرای دبی در تپه های شنی، 60 دقیقه ای تی وی، شتر سواری، باربیکیو"
-              Image="/public/images/ThingsToDoDetails/Simllerexp/img4.jpg"
+              Image="/images/ThingsToDoDetails/Simllerexp/img4.jpg"
               isDetails={true}
             />
           </SliderWrapper>
@@ -375,7 +376,7 @@ const ThingsToDoDetails = () => {
               countContributions={10}
               mainText="تور عالی و مکان های بسیار زیبای بازدید شده. اطلاعات عالی و نکات تاریخی در مورد مکان ها. آب و هوا هم عالی بود و حمل و نقل عالی بود"
               name="shahrooz2022"
-              profile="/public/images/NextTrip/img6.jpg"
+              profile="/images/NextTrip/img6.jpg"
               title="تور بزرگ ابوظبی"
             />
             <OperatorCard
@@ -383,7 +384,7 @@ const ThingsToDoDetails = () => {
               countContributions={10}
               mainText="تور عالی و مکان های بسیار زیبای بازدید شده. اطلاعات عالی و نکات تاریخی در مورد مکان ها. آب و هوا هم عالی بود و حمل و نقل عالی بود"
               name="shahrooz2022"
-              profile="/public/images/NextTrip/img7.jpg"
+              profile="/images/NextTrip/img7.jpg"
               title="تور بزرگ ابوظبی"
             />
             <OperatorCard
@@ -391,7 +392,7 @@ const ThingsToDoDetails = () => {
               countContributions={10}
               mainText="تور عالی و مکان های بسیار زیبای بازدید شده. اطلاعات عالی و نکات تاریخی در مورد مکان ها. آب و هوا هم عالی بود و حمل و نقل عالی بود"
               name="shahrooz2022"
-              profile="/public/images/NextTrip/img4.jpg"
+              profile="/images/NextTrip/img4.jpg"
               title="تور بزرگ ابوظبی"
             />
             <OperatorCard
@@ -399,7 +400,7 @@ const ThingsToDoDetails = () => {
               countContributions={10}
               mainText="تور عالی و مکان های بسیار زیبای بازدید شده. اطلاعات عالی و نکات تاریخی در مورد مکان ها. آب و هوا هم عالی بود و حمل و نقل عالی بود"
               name="shahrooz2022"
-              profile="/public/images/NextTrip/img6.jpg"
+              profile="/images/NextTrip/img6.jpg"
               title="تور بزرگ ابوظبی"
             />
           </SliderWrapper>
@@ -413,27 +414,27 @@ const ThingsToDoDetails = () => {
           />
           <SliderWrapper numberOfShowSlider={5}>
             <TinyCardSingleText
-              cover="/public/images/ThingsToDoDetails/Simllerexp/img1.jpg"
+              cover="/images/ThingsToDoDetails/Simllerexp/img1.jpg"
               link="/"
               text="تورهای شهری"
             />
             <TinyCardSingleText
-              cover="/public/images/ThingsToDoDetails/Simllerexp/img2.jpg"
+              cover="/images/ThingsToDoDetails/Simllerexp/img2.jpg"
               link="/"
               text="تورهای  کویری"
             />
             <TinyCardSingleText
-              cover="/public/images/ThingsToDoDetails/Simllerexp/img3.jpg"
+              cover="/images/ThingsToDoDetails/Simllerexp/img3.jpg"
               link="/"
               text="تورهای شهری"
             />
             <TinyCardSingleText
-              cover="/public/images/ThingsToDoDetails/Simllerexp/img4.jpg"
+              cover="/images/ThingsToDoDetails/Simllerexp/img4.jpg"
               link="/"
               text="تورهای آفرود"
             />
             <TinyCardSingleText
-              cover="/public/images/ThingsToDoDetails/Simllerexp/img1.jpg"
+              cover="/images/ThingsToDoDetails/Simllerexp/img1.jpg"
               link="/"
               text="تورهای شهری"
             />
@@ -481,7 +482,7 @@ const ThingsToDoDetails = () => {
                   date="18 خرداد"
                   likeCount={5}
                   name="محمد سعید احمدی  کوپایی"
-                  profile="/public/images//NextTrip/img1.jpg"
+                  profile="/images//NextTrip/img1.jpg"
                   reviewBody="من و خانمم اصلا راضی نبودیم با این   که غذاخوری‌هایی با تجربه‌های شگفت‌انگیز غذایی داشتیم، از رفتن به کباب سرای مسلم برای جشن سالگرد ازدواجمان هیجان‌زده بودیم.
 متأسفانه ما بسیار ناامید شدیم. 22 دوره که عموماً فاقد طعم بودند، به حداقل مهارت پخت و پز نیاز داشتند و عمدتاً فاقد مواد اولیه با کیفیت بودند.
 مهمتر از آن ما احساس می کردیم که بسیار عجله داریم. سرویس نه تنها در نقاطی آشفته بود، بلکه شخصی دائماً پشت میز بود، اما به ندرت همان فرد بود. من بسیاری از ناهار سه ساعته تنبل را با تنها 4 دوره تجربه کرده ام. این 22 دوره انجام شد و در 2.5 ساعت گردگیری شد.
@@ -494,7 +495,7 @@ const ThingsToDoDetails = () => {
                   date="18 خرداد"
                   likeCount={5}
                   name="محمد سعید احمدی  کوپایی"
-                  profile="/public/images//NextTrip/img1.jpg"
+                  profile="/images//NextTrip/img1.jpg"
                   reviewBody="من و خانمم که به خود اعتراف می‌کردم که غذاخوری‌هایی با تجربه‌های شگفت‌انگیز غذایی داشتیم، از رفتن به موگاریتز برای جشن سالگرد ازدواجمان هیجان‌زده بودیم.
 متأسفانه ما بسیار ناامید شدیم. 22 دوره که عموماً فاقد طعم بودند، به حداقل مهارت پخت و پز نیاز داشتند و عمدتاً فاقد مواد اولیه با کیفیت بودند.
 مهمتر از آن ما احساس می کردیم که بسیار عجله داریم. سرویس نه تنها در نقاطی آشفته بود، بلکه شخصی دائماً پشت میز بود، اما به ندرت همان فرد بود. من بسیاری از ناهار سه ساعته تنبل را با تنها 4 دوره تجربه کرده ام. این 22 دوره انجام شد و در 2.5 ساعت گردگیری شد.
@@ -507,7 +508,7 @@ const ThingsToDoDetails = () => {
                   date="18 خرداد"
                   likeCount={5}
                   name="محمد سعید احمدی  کوپایی"
-                  profile="/public/images//NextTrip/img1.jpg"
+                  profile="/images//NextTrip/img1.jpg"
                   reviewBody="من و خانمم که به خود اعتراف می‌کردم که غذاخوری‌هایی با تجربه‌های شگفت‌انگیز غذایی داشتیم، از رفتن به موگاریتز برای جشن سالگرد ازدواجمان هیجان‌زده بودیم.
 متأسفانه ما بسیار ناامید شدیم. 22 دوره که عموماً فاقد طعم بودند، به حداقل مهارت پخت و پز نیاز داشتند و عمدتاً فاقد مواد اولیه با کیفیت بودند.
 مهمتر از آن ما احساس می کردیم که بسیار عجله داریم. سرویس نه تنها در نقاطی آشفته بود، بلکه شخصی دائماً پشت میز بود، اما به ندرت همان فرد بود. من بسیاری از ناهار سه ساعته تنبل را با تنها 4 دوره تجربه کرده ام. این 22 دوره انجام شد و در 2.5 ساعت گردگیری شد.
@@ -520,7 +521,7 @@ const ThingsToDoDetails = () => {
                   date="18 خرداد"
                   likeCount={5}
                   name="محمد سعید احمدی  کوپایی"
-                  profile="/public/images//NextTrip/img1.jpg"
+                  profile="/images//NextTrip/img1.jpg"
                   reviewBody="من و خانمم که به خود اعتراف می‌کردم که غذاخوری‌هایی با تجربه‌های شگفت‌انگیز غذایی داشتیم، از رفتن به موگاریتز برای جشن سالگرد ازدواجمان هیجان‌زده بودیم.
 متأسفانه ما بسیار ناامید شدیم. 22 دوره که عموماً فاقد طعم بودند، به حداقل مهارت پخت و پز نیاز داشتند و عمدتاً فاقد مواد اولیه با کیفیت بودند.
 مهمتر از آن ما احساس می کردیم که بسیار عجله داریم. سرویس نه تنها در نقاطی آشفته بود، بلکه شخصی دائماً پشت میز بود، اما به ندرت همان فرد بود. من بسیاری از ناهار سه ساعته تنبل را با تنها 4 دوره تجربه کرده ام. این 22 دوره انجام شد و در 2.5 ساعت گردگیری شد.
@@ -589,28 +590,28 @@ const ThingsToDoDetails = () => {
               price={134}
               score={935}
               disc="سافاری صحرای دبی در تپه های شنی، 60 دقیقه ای تی وی، شتر سواری، باربیکیو"
-              Image="/public/images/ThingsToDoDetails/Simllerexp/img1.jpg"
+              Image="/images/ThingsToDoDetails/Simllerexp/img1.jpg"
               isDetails={true}
             />
             <TourWaysCard
               price={134}
               score={935}
               disc="سافاری صحرای دبی در تپه های شنی، 60 دقیقه ای تی وی، شتر سواری، باربیکیو"
-              Image="/public/images/ThingsToDoDetails/Simllerexp/img2.jpg"
+              Image="/images/ThingsToDoDetails/Simllerexp/img2.jpg"
               isDetails={true}
             />
             <TourWaysCard
               price={134}
               score={935}
               disc="سافاری صحرای دبی در تپه های شنی، 60 دقیقه ای تی وی، شتر سواری، باربیکیو"
-              Image="/public/images/ThingsToDoDetails/Simllerexp/img3.jpg"
+              Image="/images/ThingsToDoDetails/Simllerexp/img3.jpg"
               isDetails={true}
             />
             <TourWaysCard
               price={134}
               score={935}
               disc="سافاری صحرای دبی در تپه های شنی، 60 دقیقه ای تی وی، شتر سواری، باربیکیو"
-              Image="/public/images/ThingsToDoDetails/Simllerexp/img4.jpg"
+              Image="/images/ThingsToDoDetails/Simllerexp/img4.jpg"
               isDetails={true}
             />
           </SliderWrapper>
@@ -627,28 +628,28 @@ const ThingsToDoDetails = () => {
               price={134}
               score={935}
               disc="سافاری صحرای دبی در تپه های شنی، 60 دقیقه ای تی وی، شتر سواری، باربیکیو"
-              Image="/public/images/ThingsToDoDetails/Simllerexp/img1.jpg"
+              Image="/images/ThingsToDoDetails/Simllerexp/img1.jpg"
               isDetails={true}
             />
             <TourWaysCard
               price={134}
               score={935}
               disc="سافاری صحرای دبی در تپه های شنی، 60 دقیقه ای تی وی، شتر سواری، باربیکیو"
-              Image="/public/images/ThingsToDoDetails/Simllerexp/img2.jpg"
+              Image="/images/ThingsToDoDetails/Simllerexp/img2.jpg"
               isDetails={true}
             />
             <TourWaysCard
               price={134}
               score={935}
               disc="سافاری صحرای دبی در تپه های شنی، 60 دقیقه ای تی وی، شتر سواری، باربیکیو"
-              Image="/public/images/ThingsToDoDetails/Simllerexp/img3.jpg"
+              Image="/images/ThingsToDoDetails/Simllerexp/img3.jpg"
               isDetails={true}
             />
             <TourWaysCard
               price={134}
               score={935}
               disc="سافاری صحرای دبی در تپه های شنی، 60 دقیقه ای تی وی، شتر سواری، باربیکیو"
-              Image="/public/images/ThingsToDoDetails/Simllerexp/img4.jpg"
+              Image="/images/ThingsToDoDetails/Simllerexp/img4.jpg"
               isDetails={true}
             />
           </SliderWrapper>

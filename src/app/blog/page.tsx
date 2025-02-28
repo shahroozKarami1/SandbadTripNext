@@ -1,4 +1,5 @@
-import { Box, Container, styled, Typography } from "@mui/material";
+"use client"
+import { Box, Container, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import GuideCard from "@/components/CompBlogPage/GuideCard";
 import ServicesCard from "@/components/CompBlogPage/ServicesCard";
@@ -28,7 +29,7 @@ const Blog = () => {
             <CusInnerBlogBox>
               <Box>
                 <img
-                  src="/public/images/imgBlog/mainBanner.jpg"
+                  src="/images/imgBlog/mainBanner.jpg"
                   alt=""
                   style={{
                     borderRadius: "0.5rem",
@@ -41,7 +42,7 @@ const Blog = () => {
                 <ChipsBlog text="ایران گردی" />
               </Box>
               <MainTitle isSubTitle={true} subTitle="معرفی معروف‌ترین رستوران‌ها و فست‌فودی‌های شهر شعر" title="بهترین رستوران های شیراز برای شکم‌گردهای حرفه‌ای" />
-              <WriterProfile name="شهروز کرمی" profile="/public/images/Hotelmg/ResortsImgs/img2.jpg" />
+              <WriterProfile name="شهروز کرمی" profile="/images/Hotelmg/ResortsImgs/img2.jpg" />
               <SingleParagraph text="خوشگذرانی در رستوران‌ها و کافه‌ها بخش مهمی از سفر است. تصور کنید به اصفهان بروید و طعم بریونی آن را نچشید یا در سفر به شهرهای استان گیلان به فکر خوردن باقالی‌قاتوق و ترش‌تره نباشید. سفر به شیراز هم تنها در بازدید از حافظیه و شاه‌چراغ و خرید از بازار وکیل خلاصه نمی‌شود و باید سری هم به بهترین رستوران های شیراز زد." />
               <SingleParagraph text="غذاهای رنگارنگی مثل کلم‌پلو شیرازی، دوپیازه، دمپختک، عرقیات شیرازی و شربت‌های شیرازی رنگ و روی واقعی به سفر می‌دهد که چشیدن طعم آن‌ها برای هر شکم‌گرد و اهل سفر یک تجربه فوق‌العاده است. شاید بپرسید بهترین رستوران های شیراز برای چشیدن طعم واقعی غذاهای شیرازی کدام است؟ جواب این سوال را می‌توانید در این مطلب مجله گردشگری علی بابا پیدا کنید." />
 
@@ -63,7 +64,7 @@ const Blog = () => {
                   link: "/",
                   text: "آدرس رستوران هفت‌خوان شیراز روی گوگل مپ",
                 }}
-                cover="/public/images/NextTrip/img5.jpg"
+                cover="/images/NextTrip/img5.jpg"
                 paragrapth={[
                   "تصور کنید به بازار و مسجد وکیل و شاه‌چراغ رفته‌اید، بعد از نیمروز گشت‌وگذار، دلتان هوای خانه را می‌کند که هم خستگی از تن به در کنید و هم غذایی سنتی و خانگی میل کنید. اینجاست که باید سری به خانه سنتی پرهامی بزنید. این خانه قدیمی یکی از بهترین رستوران های شیراز به سبک سنتی است که کاملا حس و حال قدیم را به شما منتقل می‌کند.",
 
@@ -78,7 +79,7 @@ const Blog = () => {
                   link: "/",
                   text: "آدرس رستوران هفت‌خوان شیراز روی گوگل مپ",
                 }}
-                cover="/public/images/NextTrip/img2.jpg"
+                cover="/images/NextTrip/img2.jpg"
                 paragrapth={[
                   "تصور کنید به بازار و مسجد وکیل و شاه‌چراغ رفته‌اید، بعد از نیمروز گشت‌وگذار، دلتان هوای خانه را می‌کند که هم خستگی از تن به در کنید و هم غذایی سنتی و خانگی میل کنید. اینجاست که باید سری به خانه سنتی پرهامی بزنید. این خانه قدیمی یکی از بهترین رستوران های شیراز به سبک سنتی است که کاملا حس و حال قدیم را به شما منتقل می‌کند.",
 
@@ -93,7 +94,7 @@ const Blog = () => {
                   link: "/",
                   text: "آدرس رستوران هفت‌خوان شیراز روی گوگل مپ",
                 }}
-                cover="/public/images/NextTrip/img8.jpg"
+                cover="/images/NextTrip/img8.jpg"
                 paragrapth={[
                   "تصور کنید به بازار و مسجد وکیل و شاه‌چراغ رفته‌اید، بعد از نیمروز گشت‌وگذار، دلتان هوای خانه را می‌کند که هم خستگی از تن به در کنید و هم غذایی سنتی و خانگی میل کنید. اینجاست که باید سری به خانه سنتی پرهامی بزنید. این خانه قدیمی یکی از بهترین رستوران های شیراز به سبک سنتی است که کاملا حس و حال قدیم را به شما منتقل می‌کند.",
 
@@ -108,7 +109,7 @@ const Blog = () => {
                   link: "/",
                   text: "آدرس رستوران هفت‌خوان شیراز روی گوگل مپ",
                 }}
-                cover="/public/images/NextTrip/img6.jpg"
+                cover="/images/NextTrip/img6.jpg"
                 paragrapth={[
                   "تصور کنید به بازار و مسجد وکیل و شاه‌چراغ رفته‌اید، بعد از نیمروز گشت‌وگذار، دلتان هوای خانه را می‌کند که هم خستگی از تن به در کنید و هم غذایی سنتی و خانگی میل کنید. اینجاست که باید سری به خانه سنتی پرهامی بزنید. این خانه قدیمی یکی از بهترین رستوران های شیراز به سبک سنتی است که کاملا حس و حال قدیم را به شما منتقل می‌کند.",
 
@@ -125,7 +126,7 @@ const Blog = () => {
             <CusInnerBlogBox>
               <Box sx={{ display: 'flex', gap: 2 }}>
                 <Box sx={{ width: "120px", height: "80px" }}>
-                  <img src="/public/images/NextTrip/img5.jpg" alt="" style={{ objectFit: "cover", borderRadius: "0.5rem", height: "100%", width: "100%", objectPosition: "center" }} />
+                  <img src="/images/NextTrip/img5.jpg" alt="" style={{ objectFit: "cover", borderRadius: "0.5rem", height: "100%", width: "100%", objectPosition: "center" }} />
                 </Box>
                 <Box display={"flex"} flexDirection={"column"} gap={1}>
                   <Box display={"flex"} alignItems={"center"} gap={2}>
@@ -151,13 +152,13 @@ const Blog = () => {
               <Grid container spacing={2}>
 
                 <Grid size={{ md: 4, xs: 6 }}>
-                  <MoreInterstedCard link="/" coverCard="/public/images/NextTrip/img7.jpg" markCard="استان مازندران" textCard="دریاچه لفور سوادکوه؛ ماجراجویی در جنگل‌های بکر مازندران" />
+                  <MoreInterstedCard link="/" coverCard="/images/NextTrip/img7.jpg" markCard="استان مازندران" textCard="دریاچه لفور سوادکوه؛ ماجراجویی در جنگل‌های بکر مازندران" />
                 </Grid>
                 <Grid size={{ md: 4, xs: 6 }}>
-                  <MoreInterstedCard link="/" coverCard="/public/images/NextTrip/img8.jpg" markCard="استان مازندران" textCard="دریاچه لفور سوادکوه؛ ماجراجویی در جنگل‌های بکر مازندران" />
+                  <MoreInterstedCard link="/" coverCard="/images/NextTrip/img8.jpg" markCard="استان مازندران" textCard="دریاچه لفور سوادکوه؛ ماجراجویی در جنگل‌های بکر مازندران" />
                 </Grid>
                 <Grid size={{ md: 4, xs: 6 }}>
-                  <MoreInterstedCard link="/" coverCard="/public/images/NextTrip/img3.jpg" markCard="استان مازندران" textCard="دریاچه لفور سوادکوه؛ ماجراجویی در جنگل‌های بکر مازندران" />
+                  <MoreInterstedCard link="/" coverCard="/images/NextTrip/img3.jpg" markCard="استان مازندران" textCard="دریاچه لفور سوادکوه؛ ماجراجویی در جنگل‌های بکر مازندران" />
                 </Grid>
               </Grid>
 
@@ -197,61 +198,61 @@ const Blog = () => {
               </CusTitleRightSide>
               <GuideCard
                 isVisitorNumber={false}
-                cover="/public/images/NextTrip/img8.jpg"
+                cover="/images/NextTrip/img8.jpg"
                 link="/"
                 text="بندر عباس"
               />
               <GuideCard
                 isVisitorNumber={false}
-                cover="/public/images/NextTrip/img6.jpg"
+                cover="/images/NextTrip/img6.jpg"
                 link="/"
                 text="کیش"
               />
               <GuideCard
                 isVisitorNumber={false}
-                cover="/public/images/NextTrip/img2.jpg"
+                cover="/images/NextTrip/img2.jpg"
                 link="/"
                 text="قشم"
               />
               <GuideCard
                 isVisitorNumber={false}
-                cover="/public/images/NextTrip/img3.jpg"
+                cover="/images/NextTrip/img3.jpg"
                 link="/"
                 text="شیراز"
               />
               <GuideCard
                 isVisitorNumber={false}
-                cover="/public/images/NextTrip/img1.jpg"
+                cover="/images/NextTrip/img1.jpg"
                 link="/"
                 text="مشهد"
               />
               <GuideCard
                 isVisitorNumber={false}
-                cover="/public/images/NextTrip/img8.jpg"
+                cover="/images/NextTrip/img8.jpg"
                 link="/"
                 text="بندر عباس"
               />
               <GuideCard
                 isVisitorNumber={false}
-                cover="/public/images/NextTrip/img6.jpg"
+                cover="/images/NextTrip/img6.jpg"
                 link="/"
                 text="کیش"
               />
               <GuideCard
                 isVisitorNumber={false}
-                cover="/public/images/NextTrip/img2.jpg"
+                cover="/images/NextTrip/img2.jpg"
                 link="/"
                 text="قشم"
               />
               <GuideCard
                 isVisitorNumber={false}
-                cover="/public/images/NextTrip/img3.jpg"
+                cover="/images/NextTrip/img3.jpg"
                 link="/"
                 text="شیراز"
               />
               <GuideCard
                 isVisitorNumber={false}
-                cover="/public/images/NextTrip/img1.jpg"
+                cover="/images/NextTrip/img1.jpg"
                 link="/"
                 text="مشهد"
               />
@@ -262,7 +263,7 @@ const Blog = () => {
               <GuideCard
                 isVisitorNumber={true}
                 visitorNumber={255500}
-                cover="/public/images/Tourism/Slider/img3.jpg"
+                cover="/images/Tourism/Slider/img3.jpg"
                 link="/"
                 text="
 اطلاعیه پیش‌فروش بلیط قطار | دی ماه ۱۴۰۳"
@@ -270,7 +271,7 @@ const Blog = () => {
               <GuideCard
                 isVisitorNumber={true}
                 visitorNumber={255500}
-                cover="/public/images/Tourism/Slider/img5.jpg"
+                cover="/images/Tourism/Slider/img5.jpg"
                 link="/"
                 text="
 اطلاعیه پیش‌فروش بلیط قطار | دی ماه ۱۴۰۳"
@@ -278,7 +279,7 @@ const Blog = () => {
               <GuideCard
                 isVisitorNumber={true}
                 visitorNumber={255500}
-                cover="/public/images/Tourism/Slider/img3.jpg"
+                cover="/images/Tourism/Slider/img3.jpg"
                 link="/"
                 text="
 اطلاعیه پیش‌فروش بلیط قطار | دی ماه ۱۴۰۳"
@@ -286,7 +287,7 @@ const Blog = () => {
               <GuideCard
                 isVisitorNumber={true}
                 visitorNumber={255500}
-                cover="/public/images/Tourism/Slider/img3.jpg"
+                cover="/images/Tourism/Slider/img3.jpg"
                 link="/"
                 text="
 اطلاعیه پیش‌فروش بلیط قطار | دی ماه ۱۴۰۳"
