@@ -1,3 +1,4 @@
+"use client"
 import NextTripSection from "@/components/ComHomePage/NextTripSection";
 import BadgeBoxes from "@/components/CompTravelerChoiceHotel/BadgeBoxes";
 import CardComment from "@/components/CompTravelerChoiceHotel/CardComment";
@@ -24,11 +25,11 @@ const TravelersChoiceHotels = () => {
   return (
     <Box>
       {isXs ? (
-        <Box position={"relative"} height={400}>
+        <Box position={"relative"} width={"100%"}>
           <DarkOverlay />
 
           <img
-            src="/public/images/BestChoiceDetails/Banner/MainBanner.png"
+            src="/images/BestChoiceDetails/Banner/MainBanner.png"
             style={{
               objectFit: "cover",
               height: "100%",
@@ -51,7 +52,10 @@ const TravelersChoiceHotels = () => {
             <img
               src="/images/BestChoiceDetails/Banner/logo.png"
               style={{
-                width: '100px'
+                width: '100px',
+                objectFit: "cover",
+                height: "100%",
+                objectPosition: 'center'
               }}
               alt=""
             />
@@ -69,7 +73,13 @@ const TravelersChoiceHotels = () => {
         <Box position={"relative"}>
           <DarkOverlay />
           <img
-            src="/public/images/BestChoiceDetails/Banner/MainBanner.png"
+            src="/images/BestChoiceDetails/Banner/MainBanner.png"
+            style={{
+              objectFit: "cover",
+              objectPosition: "center",
+              height: "100%",
+              width: '100%'
+            }}
             alt=""
           />
           <CusInnerMainBanner>
@@ -123,15 +133,15 @@ const TravelersChoiceHotels = () => {
           <Box sx={{ bgcolor: "#F2F1EC", borderRadius: "1rem" }}>
             <FadeSlider>
               <CardSlider
-                cover="/public/images/BestChoiceDetails/FadeSliderImgs/img1.jpg"
+                cover="/images/BestChoiceDetails/FadeSliderImgs/img1.jpg"
                 link="/"
               />
               <CardSlider
-                cover="/public/images/BestChoiceDetails/FadeSliderImgs/img2.jpg"
+                cover="/images/BestChoiceDetails/FadeSliderImgs/img2.jpg"
                 link="/"
               />
               <CardSlider
-                cover="/public/images/BestChoiceDetails/FadeSliderImgs/img3.jpg"
+                cover="/images/BestChoiceDetails/FadeSliderImgs/img3.jpg"
                 link="/"
               />
             </FadeSlider>
@@ -215,19 +225,19 @@ const TravelersChoiceHotels = () => {
             CommentBody="خدمات بی عیب و نقص، امکانات تمیز، تخت خواب های شیک با بالش های انتخابی شما، غذای عالی، می توانم ادامه دهم. از لحظه ورود تا خروج احساس می کنید یک VIP هستید. من واقعا از اقامتم لذت بردم، احتمالا یکی از بهترین هتل هایی که تا به حال در آن اقامت داشته ام."
             date="نوامبر 2024"
             email="@shahroozKarami"
-            profile="/public/images/NextTrip/img1.jpg"
+            profile="/images/NextTrip/img1.jpg"
           />
           <CardComment
             CommentBody="خدمات بی عیب و نقص، امکانات تمیز، تخت خواب های شیک با بالش های انتخابی شما، غذای عالی، می توانم ادامه دهم. از لحظه ورود تا خروج احساس می کنید یک VIP هستید. من واقعا از اقامتم لذت بردم، احتمالا یکی از بهترین هتل هایی که تا به حال در آن اقامت داشته ام."
             date="نوامبر 2024"
             email="@shahroozKarami"
-            profile="/public/images/NextTrip/img1.jpg"
+            profile="/images/NextTrip/img1.jpg"
           />
           <CardComment
             CommentBody="خدمات بی عیب و نقص، امکانات تمیز، تخت خواب های شیک با بالش های انتخابی شما، غذای عالی، می توانم ادامه دهم. از لحظه ورود تا خروج احساس می کنید یک VIP هستید. من واقعا از اقامتم لذت بردم، احتمالا یکی از بهترین هتل هایی که تا به حال در آن اقامت داشته ام."
             date="نوامبر 2024"
             email="@shahroozKarami"
-            profile="/public/images/NextTrip/img1.jpg"
+            profile="/images/NextTrip/img1.jpg"
           />
         </SliderWrapper>
 
@@ -239,7 +249,7 @@ const TravelersChoiceHotels = () => {
                 { icon: <SpaOutlinedIcon />, title: "آبگرم" },
                 { icon: <PoolIcon />, title: "استخرگرم" },
               ]}
-              cover="/public/images/BestChoiceDetails/cardRideSideImg/img1.jpg"
+              cover="/images/BestChoiceDetails/cardRideSideImg/img1.jpg"
               disc=" را ببینید، جایی که مناظر استوایی ایده‌آل با طرح‌های الهام‌گرفته از طبیعت ملاقات می‌کند. محیطی منزوی و فقط برای بزرگسالان را با اقامتگاه‌های مدرن، استخرهای خصوصی و مناظر شگفت‌انگیز تصور کنید. گشت‌های هیجان‌انگیز مانند غواصی، غواصی و ماهیگیری فقط چند قدم با دسترسی به ساحل فاصله دارند. از غذاهای شگفت انگیز در رستوران هتل لذت ببرید و در آبگرم آرامش بخش با درمان های جوان کننده استراحت کنید. در استخر بی نهایت شیرجه بزنید یا به مرکز تناسب اندام بروید. با خدمات عالی، آب و هوای استثنایی، و احساس مخفی گاه، این یک مکان ایده آل است."
               link=""
               location="ایران-تهران"
@@ -255,7 +265,7 @@ const TravelersChoiceHotels = () => {
                 { icon: <SpaOutlinedIcon />, title: "آبگرم" },
                 { icon: <PoolIcon />, title: "استخرگرم" },
               ]}
-              cover="/public/images/BestChoiceDetails/cardRideSideImg/img2.jpg"
+              cover="/images/BestChoiceDetails/cardRideSideImg/img2.jpg"
               disc=" را ببینید، جایی که مناظر استوایی ایده‌آل با طرح‌های الهام‌گرفته از طبیعت ملاقات می‌کند. محیطی منزوی و فقط برای بزرگسالان را با اقامتگاه‌های مدرن، استخرهای خصوصی و مناظر شگفت‌انگیز تصور کنید. گشت‌های هیجان‌انگیز مانند غواصی، غواصی و ماهیگیری فقط چند قدم با دسترسی به ساحل فاصله دارند. از غذاهای شگفت انگیز در رستوران هتل لذت ببرید و در آبگرم آرامش بخش با درمان های جوان کننده استراحت کنید. در استخر بی نهایت شیرجه بزنید یا به مرکز تناسب اندام بروید. با خدمات عالی، آب و هوای استثنایی، و احساس مخفی گاه، این یک مکان ایده آل است."
               link=""
               location="ایران-تهران"
@@ -271,7 +281,7 @@ const TravelersChoiceHotels = () => {
                 { icon: <SpaOutlinedIcon />, title: "آبگرم" },
                 { icon: <PoolIcon />, title: "استخرگرم" },
               ]}
-              cover="/public/images/BestChoiceDetails/cardRideSideImg/img1.jpg"
+              cover="/images/BestChoiceDetails/cardRideSideImg/img1.jpg"
               disc=" را ببینید، جایی که مناظر استوایی ایده‌آل با طرح‌های الهام‌گرفته از طبیعت ملاقات می‌کند. محیطی منزوی و فقط برای بزرگسالان را با اقامتگاه‌های مدرن، استخرهای خصوصی و مناظر شگفت‌انگیز تصور کنید. گشت‌های هیجان‌انگیز مانند غواصی، غواصی و ماهیگیری فقط چند قدم با دسترسی به ساحل فاصله دارند. از غذاهای شگفت انگیز در رستوران هتل لذت ببرید و در آبگرم آرامش بخش با درمان های جوان کننده استراحت کنید. در استخر بی نهایت شیرجه بزنید یا به مرکز تناسب اندام بروید. با خدمات عالی، آب و هوای استثنایی، و احساس مخفی گاه، این یک مکان ایده آل است."
               link=""
               location="ایران-تهران"
@@ -287,7 +297,7 @@ const TravelersChoiceHotels = () => {
                 { icon: <SpaOutlinedIcon />, title: "آبگرم" },
                 { icon: <PoolIcon />, title: "استخرگرم" },
               ]}
-              cover="/public/images/BestChoiceDetails/cardRideSideImg/img2.jpg"
+              cover="/images/BestChoiceDetails/cardRideSideImg/img2.jpg"
               disc=" را ببینید، جایی که مناظر استوایی ایده‌آل با طرح‌های الهام‌گرفته از طبیعت ملاقات می‌کند. محیطی منزوی و فقط برای بزرگسالان را با اقامتگاه‌های مدرن، استخرهای خصوصی و مناظر شگفت‌انگیز تصور کنید. گشت‌های هیجان‌انگیز مانند غواصی، غواصی و ماهیگیری فقط چند قدم با دسترسی به ساحل فاصله دارند. از غذاهای شگفت انگیز در رستوران هتل لذت ببرید و در آبگرم آرامش بخش با درمان های جوان کننده استراحت کنید. در استخر بی نهایت شیرجه بزنید یا به مرکز تناسب اندام بروید. با خدمات عالی، آب و هوای استثنایی، و احساس مخفی گاه، این یک مکان ایده آل است."
               link=""
               location="ایران-تهران"
@@ -303,7 +313,7 @@ const TravelersChoiceHotels = () => {
                 { icon: <SpaOutlinedIcon />, title: "آبگرم" },
                 { icon: <PoolIcon />, title: "استخرگرم" },
               ]}
-              cover="/public/images/BestChoiceDetails/cardRideSideImg/img2.jpg"
+              cover="/images/BestChoiceDetails/cardRideSideImg/img2.jpg"
               disc=" را ببینید، جایی که مناظر استوایی ایده‌آل با طرح‌های الهام‌گرفته از طبیعت ملاقات می‌کند. محیطی منزوی و فقط برای بزرگسالان را با اقامتگاه‌های مدرن، استخرهای خصوصی و مناظر شگفت‌انگیز تصور کنید. گشت‌های هیجان‌انگیز مانند غواصی، غواصی و ماهیگیری فقط چند قدم با دسترسی به ساحل فاصله دارند. از غذاهای شگفت انگیز در رستوران هتل لذت ببرید و در آبگرم آرامش بخش با درمان های جوان کننده استراحت کنید. در استخر بی نهایت شیرجه بزنید یا به مرکز تناسب اندام بروید. با خدمات عالی، آب و هوای استثنایی، و احساس مخفی گاه، این یک مکان ایده آل است."
               link=""
               location="ایران-تهران"
@@ -319,7 +329,7 @@ const TravelersChoiceHotels = () => {
                 { icon: <SpaOutlinedIcon />, title: "آبگرم" },
                 { icon: <PoolIcon />, title: "استخرگرم" },
               ]}
-              cover="/public/images/BestChoiceDetails/cardRideSideImg/img1.jpg"
+              cover="/images/BestChoiceDetails/cardRideSideImg/img1.jpg"
               disc=" را ببینید، جایی که مناظر استوایی ایده‌آل با طرح‌های الهام‌گرفته از طبیعت ملاقات می‌کند. محیطی منزوی و فقط برای بزرگسالان را با اقامتگاه‌های مدرن، استخرهای خصوصی و مناظر شگفت‌انگیز تصور کنید. گشت‌های هیجان‌انگیز مانند غواصی، غواصی و ماهیگیری فقط چند قدم با دسترسی به ساحل فاصله دارند. از غذاهای شگفت انگیز در رستوران هتل لذت ببرید و در آبگرم آرامش بخش با درمان های جوان کننده استراحت کنید. در استخر بی نهایت شیرجه بزنید یا به مرکز تناسب اندام بروید. با خدمات عالی، آب و هوای استثنایی، و احساس مخفی گاه، این یک مکان ایده آل است."
               link=""
               location="ایران-تهران"
@@ -335,7 +345,7 @@ const TravelersChoiceHotels = () => {
                 { icon: <SpaOutlinedIcon />, title: "آبگرم" },
                 { icon: <PoolIcon />, title: "استخرگرم" },
               ]}
-              cover="/public/images/BestChoiceDetails/cardRideSideImg/img2.jpg"
+              cover="/images/BestChoiceDetails/cardRideSideImg/img2.jpg"
               disc=" را ببینید، جایی که مناظر استوایی ایده‌آل با طرح‌های الهام‌گرفته از طبیعت ملاقات می‌کند. محیطی منزوی و فقط برای بزرگسالان را با اقامتگاه‌های مدرن، استخرهای خصوصی و مناظر شگفت‌انگیز تصور کنید. گشت‌های هیجان‌انگیز مانند غواصی، غواصی و ماهیگیری فقط چند قدم با دسترسی به ساحل فاصله دارند. از غذاهای شگفت انگیز در رستوران هتل لذت ببرید و در آبگرم آرامش بخش با درمان های جوان کننده استراحت کنید. در استخر بی نهایت شیرجه بزنید یا به مرکز تناسب اندام بروید. با خدمات عالی، آب و هوای استثنایی، و احساس مخفی گاه، این یک مکان ایده آل است."
               link=""
               location="ایران-تهران"
@@ -348,19 +358,19 @@ const TravelersChoiceHotels = () => {
         <NextTripSection
           dataNextTripArr={[
             {
-              Image: "/public/images/NextTrip/img4.jpg",
+              Image: "/images/NextTrip/img4.jpg",
               title: "آمستردام /  آلمان",
             },
             {
-              Image: "/public/images/NextTrip/img1.jpg",
+              Image: "/images/NextTrip/img1.jpg",
               title: "آمستردام /  آلمان",
             },
             {
-              Image: "/public/images/NextTrip/img2.jpg",
+              Image: "/images/NextTrip/img2.jpg",
               title: "آمستردام /  آلمان",
             },
             {
-              Image: "/public/images/NextTrip/img3.jpg",
+              Image: "/images/NextTrip/img3.jpg",
               title: "آمستردام /  آلمان",
             },
           ]}

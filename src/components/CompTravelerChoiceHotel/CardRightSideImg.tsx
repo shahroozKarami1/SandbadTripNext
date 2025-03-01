@@ -23,7 +23,7 @@ const CardRightSideImg: FC<ICardRightSideImgProps> = ({
     <Link href={link}>
       <Grid container margin={"1rem  0"} alignItems={"center"}>
         <Grid size={{ md: 5 }}>
-          <Box height={"350px"} width={"100%"}>
+          <Box height={"400px"} width={"100%"}>
             <img
               src={cover}
               alt=""
@@ -85,9 +85,9 @@ const CardRightSideImg: FC<ICardRightSideImgProps> = ({
             </Typography>
             ‌
             <Box display={"flex"} gap={1}>
-              {badgeDetails.map(({ icon, title }) => {
+              {badgeDetails.map(({ icon, title } ,  index) => {
                 return (
-                  <BadgeBoxes icon={icon} text={title} bgColor="#F2F1EC" />
+                  <BadgeBoxes  key={index} icon={icon} text={title} bgColor="#F2F1EC" />
                 );
               })}
             </Box>

@@ -60,27 +60,27 @@ const TravelersChoice = () => {
               </TextsForDisc>
 
               <CardBestChoice
-                link="TravelersChoice-Hotels"
+                link="TravelersChoice/TravelersChoice-Hotels"
                 cover="/images/TravelersChoice/coverImgs/img1.jpg"
                 text="مقاصد"
               />
               <CardBestChoice
-                link="TravelersChoice-Hotels"
+                link="TravelersChoice/TravelersChoice-Hotels"
                 cover="/images/TravelersChoice/coverImgs/img2.jpg"
                 text="سواحل"
               />
               <CardBestChoice
-                link="TravelersChoice-Hotels"
+                link="TravelersChoice/TravelersChoice-Hotels"
                 cover="/images/TravelersChoice/coverImgs/img3.jpg"
                 text="هتل ها"
               />
               <CardBestChoice
-                link="TravelersChoice-Hotels"
+                link="TravelersChoice/TravelersChoice-Hotels"
                 cover="/images/TravelersChoice/coverImgs/img4.jpg"
                 text="کارهایی  برای انجام"
               />
               <CardBestChoice
-                link="TravelersChoice-Hotels"
+                link="TravelersChoice/TravelersChoice-Hotels"
                 cover="/images/TravelersChoice/coverImgs/img5.jpg"
                 text="رستوران ها"
               />
