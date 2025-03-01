@@ -70,9 +70,9 @@ const LoginBox: FC<IProfileBox> = ({ setOpen, open }) => {
           >
             <img
               style={{
-                width: "50px",
+              width: "50px",
               }}
-              src="/public/images/singleLogo.svg"
+              src="/images/AllNewLogos/singleLogo.svg"
               alt=""
             />
             <Typography sx={{ fontSize: "1.5rem" }}>

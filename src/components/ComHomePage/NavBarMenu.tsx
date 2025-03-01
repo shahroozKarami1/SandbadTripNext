@@ -15,7 +15,7 @@ const NavbarMenu: FC<INavbarMenuProps> = ({
 
 }) => {
   let isXs = useMedia();
-  let  activeLink   = usePathname ;  
+  let  activeLink   = usePathname() ;  
   return (
     <>
       {NavBarMenuArr.map(({ icon, title, link, placeholder, textTitle }) => {
@@ -46,12 +46,12 @@ const NavbarMenu: FC<INavbarMenuProps> = ({
                     borderBottom: !isXs ?  "3px  solid  #000"  : "none"
                   }
                 }}
-                // style={{
-                //   paddingBottom: "0.5rem",
-                //   borderBottom: id === StateID || link === activeLink
-                //     ? "3px  solid var(--dark-color)"
-                //     : "",
-                // }}
+                style={{
+                  paddingBottom: "0.5rem",
+                  borderBottom: id === StateID || link === activeLink
+                    ? "3px  solid var(--dark-color)"
+                    : "",
+                }}
               >
                 {icon}
                 <Typography

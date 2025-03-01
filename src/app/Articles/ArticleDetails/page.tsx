@@ -40,19 +40,19 @@ const ArticleDetails = () => {
                 <AvatarGroup max={4}>
                   <Avatar
                     alt="Remy Sharp"
-                    src="/public/images/NextTrip/img1.jpg"
+                    src="/images/NextTrip/img1.jpg"
                   />
                   <Avatar
                     alt="Travis Howard"
-                    src="/public/images/NextTrip/img2.jpg"
+                    src="/images/NextTrip/img2.jpg"
                   />
                   <Avatar
                     alt="Cindy Baker"
-                    src="/public/images/NextTrip/img3.jpg"
+                    src="/images/NextTrip/img3.jpg"
                   />
                   <Avatar
                     alt="Agnes Walker"
-                    src="/public/images/NextTrip/img4.jpg"
+                    src="/images/NextTrip/img4.jpg"
                   />
                   <Avatar
                     alt="Trevor Henderson"
@@ -69,7 +69,7 @@ const ArticleDetails = () => {
         <Grid container>
           <Grid size={{ md: 12 }}>
             <img
-              src="/public/images/ArticleDetails/Banner/bigBanner.jpg"
+              src="/images/ArticleDetails/Banner/bigBanner.jpg"
               alt=""
             />
           </Grid>
@@ -104,7 +104,7 @@ const ArticleDetails = () => {
                     text: "نکته: اگر می‌خواهید کوتاه‌ترین رانندگی را داشته باشید، به فرودگاه سانتا باربارا پرواز کنید، در غیر این صورت، حدود چهار ساعت از SFO یا LAX فاصله دارد که می‌توانید به راحتی آن را به یک سفر جاده‌ای ساحلی تبدیل کنید.",
                   },
                 ]}
-                coverArticle="/public/images/ArticleDetails/coverArticle/img1.jpg"
+                coverArticle="/images/ArticleDetails/coverArticle/img1.jpg"
                 title="ساحل پیسمو، کالیفرنیا"
                 topic="برای علاقه مندان به پروانه"
               />
@@ -117,22 +117,14 @@ const ArticleDetails = () => {
               price={134}
               score={935}
               disc="گشت روز قلعه هایدلبرگ و شهر از فرانکفورت147"
-              Image="/public/images/frankfordDistination/img1.jpg"
+              Image="/images/frankfordDistination/img1.jpg"
             />
             <TourWaysCard
               isDetails={true}
               price={134}
               score={935}
               disc="گشت روز قلعه هایدلبرگ و شهر از فرانکفورت147"
-              Image="/public/images/frankfordDistination/img1.jpg"
-            />
-
-            <TourWaysCard
-              isDetails={true}
-              price={134}
-              score={935}
-              disc="گشت روز قلعه هایدلبرگ و شهر از فرانکفورت147"
-              Image="/public/images/frankfordDistination/img2.jpg"
+              Image="/images/frankfordDistination/img1.jpg"
             />
 
             <TourWaysCard
@@ -140,7 +132,7 @@ const ArticleDetails = () => {
               price={134}
               score={935}
               disc="گشت روز قلعه هایدلبرگ و شهر از فرانکفورت147"
-              Image="/public/images/frankfordDistination/img3.jpg"
+              Image="/images/frankfordDistination/img2.jpg"
             />
 
             <TourWaysCard
@@ -148,7 +140,15 @@ const ArticleDetails = () => {
               price={134}
               score={935}
               disc="گشت روز قلعه هایدلبرگ و شهر از فرانکفورت147"
-              Image="/public/images/frankfordDistination/img4.jpg"
+              Image="/images/frankfordDistination/img3.jpg"
+            />
+
+            <TourWaysCard
+              isDetails={true}
+              price={134}
+              score={935}
+              disc="گشت روز قلعه هایدلبرگ و شهر از فرانکفورت147"
+              Image="/images/frankfordDistination/img4.jpg"
             />
           </SliderWrapper>
           <Box display={"flex"} alignItems={"center"} justifyContent={"center"} margin={"5rem 0"}>
@@ -174,7 +174,7 @@ const ArticleDetails = () => {
                     text: "نکته: اگر می‌خواهید کوتاه‌ترین رانندگی را داشته باشید، به فرودگاه سانتا باربارا پرواز کنید، در غیر این صورت، حدود چهار ساعت از SFO یا LAX فاصله دارد که می‌توانید به راحتی آن را به یک سفر جاده‌ای ساحلی تبدیل کنید.",
                   },
                 ]}
-                coverArticle="/public/images/ArticleDetails/coverArticle/img2.jpg"
+                coverArticle="/images/ArticleDetails/coverArticle/img2.jpg"
                 title="ساحل پیسمو، کالیفرنیا"
                 topic="برای علاقه مندان به پروانه"
               />
@@ -186,22 +186,14 @@ const ArticleDetails = () => {
               isDetails={true}
               score={935}
               disc="گشت روز قلعه هایدلبرگ و شهر از فرانکفورت147"
-              Image="/public/images/frankfordDistination/img1.jpg"
+              Image="/images/frankfordDistination/img1.jpg"
             />
             <TourWaysCard
               price={134}
               score={935}
               isDetails={true}
               disc="گشت روز قلعه هایدلبرگ و شهر از فرانکفورت147"
-              Image="/public/images/frankfordDistination/img1.jpg"
-            />
-
-            <TourWaysCard
-              price={134}
-              isDetails={true}
-              score={935}
-              disc="گشت روز قلعه هایدلبرگ و شهر از فرانکفورت147"
-              Image="/public/images/frankfordDistination/img2.jpg"
+              Image="/images/frankfordDistination/img1.jpg"
             />
 
             <TourWaysCard
@@ -209,7 +201,15 @@ const ArticleDetails = () => {
               isDetails={true}
               score={935}
               disc="گشت روز قلعه هایدلبرگ و شهر از فرانکفورت147"
-              Image="/public/images/frankfordDistination/img3.jpg"
+              Image="/images/frankfordDistination/img2.jpg"
+            />
+
+            <TourWaysCard
+              price={134}
+              isDetails={true}
+              score={935}
+              disc="گشت روز قلعه هایدلبرگ و شهر از فرانکفورت147"
+              Image="/images/frankfordDistination/img3.jpg"
             />
 
             <TourWaysCard
@@ -217,7 +217,7 @@ const ArticleDetails = () => {
               score={935}
               isDetails={true}
               disc="گشت روز قلعه هایدلبرگ و شهر از فرانکفورت147"
-              Image="/public/images/frankfordDistination/img4.jpg"
+              Image="/images/frankfordDistination/img4.jpg"
             />
           </SliderWrapper>
           <Box display={"flex"} alignItems={"center"} justifyContent={"center"} margin={"5rem 0"}>

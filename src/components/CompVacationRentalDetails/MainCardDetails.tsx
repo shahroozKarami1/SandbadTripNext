@@ -14,7 +14,6 @@ import CheckInOut from "../DataPicker/CheckInOut";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import MoreDetailsSectionCard from "./MoreDetailsSectionCard";
 import Link from "next/link";
-import Image from "next/Image";
 const CardDetails: FC<{
   icon?: React.ReactNode;
   text?: string;
@@ -80,7 +79,7 @@ const MainCardDetails: FC<IMainCardDetailsProps> = ({
             {cardSliderImgs.map((src) => {
               return (
                 <Box height={"200px"} width={"100%"}>
-                  <Image
+                  <img
                     src={src}
                     alt=""
                     style={{

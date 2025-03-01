@@ -130,7 +130,7 @@ const RoundTripInp = () => {
                   placeholder="تاریخ خود را وارد کنید"
                   style={{
                     border: 0,
-                    padding: "2rem 0.5rem",
+                    // padding: "2rem 0.5rem",
                   }}
                   range
                   rangeHover

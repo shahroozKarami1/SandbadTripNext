@@ -15,7 +15,13 @@ const CardSlider: FC<ICardSliderProps> = ({
       {!isMainImg ? (
         <CusSmallImgBox>
           <DarkOverlay />
-          <img src={coverImg} alt="" className="rounded-r-md" />
+          <img src={coverImg} alt=""  style={{
+            objectFit : "cover" ,  
+            objectPosition : "center" ,  
+            width : '100%' , 
+            height : "100%",
+            borderTopRightRadius : "0.5rem"
+          }} />
           <CusInnerBox>
             <Typography sx={{ fontWeight: "bold", color: "#fff" }}>
               {title}

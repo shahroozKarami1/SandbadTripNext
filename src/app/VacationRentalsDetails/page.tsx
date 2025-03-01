@@ -160,9 +160,9 @@ const VacationRentalDetails = () => {
                 ],
               }}
               cardSliderImgs={[
-                "/public/images/RentDetails/SliderCard/img1.jpg",
-                "/public/images/RentDetails/SliderCard/img2.jpg",
-                "/public/images/RentDetails/SliderCard/img3.jpg",
+                "/images/RentDetails/SliderCard/img1.jpg",
+                "/images/RentDetails/SliderCard/img2.jpg",
+                "/images/RentDetails/SliderCard/img3.jpg",
               ]}
               countOfBathroom={2}
               countOfBedroom={3}
@@ -188,9 +188,9 @@ const VacationRentalDetails = () => {
                 ],
               }}
               cardSliderImgs={[
-                "/public/images/RentDetails/SliderCard/img1.jpg",
-                "/public/images/RentDetails/SliderCard/img2.jpg",
-                "/public/images/RentDetails/SliderCard/img3.jpg",
+                "/images/RentDetails/SliderCard/img1.jpg",
+                "/images/RentDetails/SliderCard/img2.jpg",
+                "/images/RentDetails/SliderCard/img3.jpg",
               ]}
               countOfBathroom={2}
               countOfBedroom={3}
@@ -216,9 +216,9 @@ const VacationRentalDetails = () => {
                 ],
               }}
               cardSliderImgs={[
-                "/public/images/RentDetails/SliderCard/img1.jpg",
-                "/public/images/RentDetails/SliderCard/img2.jpg",
-                "/public/images/RentDetails/SliderCard/img3.jpg",
+                "/images/RentDetails/SliderCard/img1.jpg",
+                "/images/RentDetails/SliderCard/img2.jpg",
+                "/images/RentDetails/SliderCard/img3.jpg",
               ]}
               countOfBathroom={2}
               countOfBedroom={3}
@@ -244,9 +244,9 @@ const VacationRentalDetails = () => {
                 ],
               }}
               cardSliderImgs={[
-                "/public/images/RentDetails/SliderCard/img1.jpg",
-                "/public/images/RentDetails/SliderCard/img2.jpg",
-                "/public/images/RentDetails/SliderCard/img3.jpg",
+                "/images/RentDetails/SliderCard/img1.jpg",
+                "/images/RentDetails/SliderCard/img2.jpg",
+                "/images/RentDetails/SliderCard/img3.jpg",
               ]}
               countOfBathroom={2}
               countOfBedroom={3}
@@ -272,9 +272,9 @@ const VacationRentalDetails = () => {
                 ],
               }}
               cardSliderImgs={[
-                "/public/images/RentDetails/SliderCard/img1.jpg",
-                "/public/images/RentDetails/SliderCard/img2.jpg",
-                "/public/images/RentDetails/SliderCard/img3.jpg",
+                "/images/RentDetails/SliderCard/img1.jpg",
+                "/images/RentDetails/SliderCard/img2.jpg",
+                "/images/RentDetails/SliderCard/img3.jpg",
               ]}
               countOfBathroom={2}
               countOfBedroom={3}
@@ -300,9 +300,9 @@ const VacationRentalDetails = () => {
                 ],
               }}
               cardSliderImgs={[
-                "/public/images/RentDetails/SliderCard/img1.jpg",
-                "/public/images/RentDetails/SliderCard/img2.jpg",
-                "/public/images/RentDetails/SliderCard/img3.jpg",
+                "/images/RentDetails/SliderCard/img1.jpg",
+                "/images/RentDetails/SliderCard/img2.jpg",
+                "/images/RentDetails/SliderCard/img3.jpg",
               ]}
               countOfBathroom={2}
               countOfBedroom={3}

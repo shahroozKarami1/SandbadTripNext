@@ -209,7 +209,6 @@ export const DarkOverlay = () => {
           "linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 50%)",
         zIndex: 0,
         borderRadius: "0.5rem",
-
         height: "100%",
         width: "100%",
       }}
@@ -470,15 +469,16 @@ export const CusCardTextBox = styled(Box)({
 });
 
 export const CusPosterSlider = styled(Box)({
-  height: "70vh",
+  height: "60vh",
+  marginTop: "1.5rem",
   width: "100%",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
   backgroundPosition: "center",
+  padding: "2rem 0 ",
   display: "flex",
-  alignItems: "flex-end",
   justifyContent: "flex-end",
-  padding: "4rem",
+  flexDirection: "column",
   position: "relative",
 });
 export const CusInp = styled(TextField)({
@@ -550,7 +550,7 @@ export const CusCardWhiteBottom = styled(Box)({
 
 export const CusRoundTripInp = styled(Box)({
   backgroundColor: "#fff",
-  borderRadius: "2rem",
+  borderRadius: "99999px",
   display: "flex",
   alignItems: "center",
   position: "relative",

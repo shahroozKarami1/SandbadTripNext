@@ -121,7 +121,7 @@ function Article() {
           subTitle="هیجان‌انگیزترین مقاصد، تجربیات، جواهرات پنهان و علاقه‌مندی‌های مسافران برای بررسی هم‌اکنون."
           title="مکان هایی برای بازدید"
         />
-        <Grid
+        {/* <Grid
           container
           spacing={1}
           justifyContent={"center"}
@@ -187,7 +187,7 @@ function Article() {
               />
             </Box>
           </Grid>
-        </Grid>
+        </Grid> */}
         <TitleSection
           isSubTitle={true}
           mainTitle={`برترین برنامه های سفر "هیجانات در فضای باز".`}

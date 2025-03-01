@@ -82,7 +82,7 @@ const FlightInp = () => {
                       1 مسافر
                     </Typography>
                   </CusBtnTraverler>
-                  {/* {isShowTravelerBox && <TravelerBox BoxRef={BoxRef ? BoxRef :  null} />} */}
+                  {isShowTravelerBox && <TravelerBox BoxRef={BoxRef ? BoxRef :  null} />}
                 </Box>
                 <CusBtnSearch>جست و جو </CusBtnSearch>
               </Box>

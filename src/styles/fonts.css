@@ -21,3 +21,7 @@
   font-family: Pinar;
   src: url(/fonts/Pinar/Pinar-Medium.ttf);
 }
+@font-face {
+    font-family: Pinar;
+    src: url(/fonts/Pinar/FD/Pinar-DS2-FD-Medium.woff2);
+}

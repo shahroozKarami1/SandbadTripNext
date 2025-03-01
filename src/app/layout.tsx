@@ -7,6 +7,9 @@ import "../styles/mainStyles.css";
 
 export const metadata: Metadata = {
     title: "سندباد تریپ",
+    icons :{
+        icon : "/images/AllNewLogos/singleLogo.svg"
+    }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
