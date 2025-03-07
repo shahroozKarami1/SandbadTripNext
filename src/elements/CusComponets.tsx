@@ -60,10 +60,9 @@ export const CusFirstBanner = styled(Box)({
   backgroundPosition: "right",
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
-  marginTop: "4rem",
   borderRadius: "0.25rem",
-
   position: "relative",
+  overflow  : "hidden"
 });
 
 export const CusSectionTitle = styled(Box)({
@@ -120,6 +119,7 @@ export const CusThingsToDoPage = styled(Box)({
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
+  
   height: "70vh",
   width: "100vw",
 });
@@ -206,7 +206,7 @@ export const DarkOverlay = () => {
         position: "absolute",
         inset: 0,
         background:
-          "linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 50%)",
+          "linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 100%)",
         zIndex: 0,
         borderRadius: "0.5rem",
         height: "100%",
@@ -339,7 +339,7 @@ export const CusDarkBtnSearch = styled(Button)({
   whiteSpace: "nowrap",
   padding: "0.75rem  2rem",
   fontWeight: "bold",
-  width: "200px",
+  width : "100%"
 });
 export const CusMainBox = styled(Box)({
   margin: "3rem  0",
@@ -558,6 +558,7 @@ export const CusRoundTripInp = styled(Box)({
 export const CusReponsiveFlightInp = styled(Box)({
   backgroundColor: "#fff",
   display: 'flex',
+  width : "400px" ,  
   flexDirection: "column"
 })
 

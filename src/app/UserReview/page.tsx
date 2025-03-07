@@ -22,7 +22,7 @@ function UserReview() {
                 justifyContent={"center"}
                 alignItems={"center"}
               >
-                <Typography sx={{ fontWeight: "bold", fontSize: "2.5rem" }}>
+                <Typography sx={{ fontWeight: "bold", fontSize: "2.5rem", textAlign: isXs ? "center" : "right" }}>
                   نظر بنویسید، سفر کسی را انجام دهید
                 </Typography>
                 <Typography sx={{ textAlign: "center" }}>

@@ -5,13 +5,13 @@ function MoreExploreSection() {
   return (
     <Box  >
       <Grid container spacing={2}>
-        <Grid size={{ md: 4 }}>
+        <Grid size={{ md: 4 , xs :  12 }}>
           <MoreExploreCard Image='/images/MoreExplore/img1.jpg' disc='10 مکان باورنکردنی برای بازدید در ماه دسامبر در سراسر جهان' />
         </Grid>
-        <Grid size={{ md: 4 }}>
+        <Grid size={{ md: 4 , xs :  12 }}>
           <MoreExploreCard Image='/images/MoreExplore/img2.jpg' disc='10 مکان باورنکردنی برای بازدید در ماه دسامبر در سراسر جهان' />
         </Grid>
-        <Grid size={{ md: 4 }}>
+        <Grid size={{ md: 4  , xs :  12}}>
           <MoreExploreCard Image='/images/MoreExplore/img3.jpg' disc='10 مکان باورنکردنی برای بازدید در ماه دسامبر در سراسر جهان' />
         </Grid>
       </Grid>

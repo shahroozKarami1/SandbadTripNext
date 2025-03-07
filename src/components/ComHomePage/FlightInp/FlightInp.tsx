@@ -62,7 +62,7 @@ const FlightInp = () => {
         <Grid size={{ md: 6, xs: 12 }}>
           <Grid container alignItems={"center"}>
             <Grid size={{ md: 6, xs: 12 }}>
-              <Box>
+              <Box >
                 <DataPicker placeholder="تاریخ سفر" />
               </Box>
             </Grid>

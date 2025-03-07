@@ -20,10 +20,12 @@ const DataPicker: FC<{ placeholder: string }> = ({ placeholder }) => {
         placeholder={placeholder}
         dateSeparator="   =>    "
         style={{
-          padding: isXs ? "2rem  6rem" : "1rem  2rem  ",
+          padding: isXs ? "1rem" : "1rem  2rem  ",
           margin: isXs ? "1rem 0" : 0,
           borderRadius: "2rem",
           border: "1px  solid  #000",
+          
+          width :  isXs ?  "350px" : "80%"
         }}
         calendar={persian}
         locale={persian_fa}

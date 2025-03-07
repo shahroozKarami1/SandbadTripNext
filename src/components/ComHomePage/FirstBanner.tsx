@@ -15,7 +15,6 @@ const FirstBanner = () => {
     height: "100%",
     justifyContent: "end",
     marginLeft:   !isXs ?  "2rem" : 0,
-
   width : "100%" ,  
     backgroundColor : isXs ?  "rgba(0 ,  0 ,  0 ,  0.6)" : ""   ,  padding : isXs ?  "1rem "  :  0 
   });
@@ -25,14 +24,14 @@ const FirstBanner = () => {
     color: `var(--dark-color)`,
   });
   return (
-    <CusFirstBanner>
+    <CusFirstBanner sx={{marginTop : !isXs ? "4rem" : "0"}}>
       {
         isXs && 
         <DarkOverlay />
 
       }
       <Grid container    height={"100%"}>
-      <CusBoxBanner>
+      <CusBoxBanner sx={{marginTop : isXs ?  "0" :  "4rem"}}>
         <Box display={"flex"}   flexDirection={"column"} gap={2}>
           <Box display={"flex"} gap={1}>
             <Typography sx={{ color: "#fff", fontSize: "0.75rem" }}>

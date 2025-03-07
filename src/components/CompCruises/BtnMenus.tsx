@@ -21,7 +21,7 @@ const BtnMenus: FC<IBtnMenusProps> = ({
 
   const CusBtnMenu = styled(Button)({
     border: "1px  solid  #ccc",
-    width: "200px",
+    width: "100%",
     height: "50px",
     display: "flex",
     justifyContent: "flex-start",

@@ -14,9 +14,10 @@ import TitleSection from "../../components/ComHomePage/TitleSection";
 import CardWhiteBottom from "../../components/CompCruises/CardWhiteBottom";
 import CruisingGuide from "../../components/CompCruises/CruisingGuide";
 import { CusDarkBtnSearch } from "@/elements/CusComponets";
+import { useMedia } from "@/context/MediaQueryContext";
 
 const Cruises = () => {
-
+let  isXs =  useMedia()
   return (
     <Box>
       <Container>
@@ -42,6 +43,7 @@ const Cruises = () => {
                 alignItems={"center"}
                 justifyContent={"center"}
                 gap={1}
+                flexDirection={  isXs ?"column" : "row"}
               >
                 <BtnMenus
                   isWhereToInp={false}
@@ -78,7 +80,7 @@ const Cruises = () => {
             alignItems={"center"}
             sx={{ padding: "3rem  0" }}
           >
-            <Grid size={{ md: 4 }}>
+            <Grid size={{ md: 4 , xs :  12 }}>
               <CardDetails
                 coverImg="/images/Cruises/DetialsCards/img1.svg"
                 disc="  برای مشاهده جزئیات کشتی، بررسی ها، عکس ها و برنامه های سفر، یک
@@ -86,7 +88,7 @@ const Cruises = () => {
                 title="صفحات Ship-tinerary™ را کاوش کنید"
               />
             </Grid>
-            <Grid size={{ md: 4 }}>
+            <Grid size={{ md: 4 , xs :  12 }}>
               <CardDetails
                 coverImg="/images/Cruises/DetialsCards/img3.svg"
                 disc="  برای مشاهده جزئیات کشتی، بررسی ها، عکس ها و برنامه های سفر، یک
@@ -94,7 +96,7 @@ const Cruises = () => {
                 title="صفحات Ship-tinerary™ را کاوش کنید"
               />
             </Grid>
-            <Grid size={{ md: 4 }}>
+            <Grid size={{ md: 4  , xs :  12}}>
               <CardDetails
                 coverImg="/images/Cruises/DetialsCards/img3.svg"
                 disc="  برای مشاهده جزئیات کشتی، بررسی ها، عکس ها و برنامه های سفر، یک

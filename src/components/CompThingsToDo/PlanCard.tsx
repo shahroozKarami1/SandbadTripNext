@@ -31,8 +31,8 @@ const PlanCard: FC<IPlanCardProps> = ({ disc, icon, title }) => {
         </Typography>
         <Typography
           sx={{
-            fontWeight: "light",
-            fontSize: "0.85rem",
+            // fontWeight: "light",
+            // fontSize: "0.9rem",
             textAlign: "center",
           }}
         >

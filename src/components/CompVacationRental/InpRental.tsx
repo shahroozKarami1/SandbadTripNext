@@ -11,12 +11,12 @@ const InpRental = () => {
   let [isOpenAutoCompleteBox, setIsOpenCompleteBox] = useState<boolean>(false)
 
   return (
-    <Box  className="vacation_inp_Wrapper "  sx={{
+    <Box className="vacation_inp_Wrapper " sx={{
       borderRadius: isOpenAutoCompleteBox ? "0rem" : "2rem",
       borderTopLeftRadius: isOpenAutoCompleteBox ? "1rem" : "2rem",
       borderTopRightRadius: isOpenAutoCompleteBox ? "1rem" : "2rem",
       flexDirection: isXs ? "column" : "row",
-      gap: isXs ? 8 : 3,
+gap : 2 , 
       height: isXs ? "100%" : " 60px",
       padding: isXs ? "1rem" : 0,
     }}>
@@ -28,6 +28,7 @@ const InpRental = () => {
           fullWidth
           placeholder="سوئیت ریاست جمهوری مقابل اقیانوس | استراحتگاه ساحلی، کی وست، فلوریدا"
           sx={{
+
             width: "100%",
             ":before": {
               display: "none",
@@ -49,7 +50,7 @@ const InpRental = () => {
         gap={1}
         sx={{
           border: "1px  solid  #ccc",
-          padding: "0.5rem",
+          // padding: "0.5rem",
           borderRadius: "1rem",
         }}
       >
@@ -62,9 +63,7 @@ const InpRental = () => {
       {
         isOpenAutoCompleteBox && (
           <Box sx={{ position: "absolute", right: 0, bottom: 0, width: "100%" }}>
-
             <AutoCompleteBox />
-
           </Box>
         )
       }

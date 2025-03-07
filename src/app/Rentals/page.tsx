@@ -6,7 +6,9 @@ import Grid from "@mui/material/Grid2";
 import CardRental from "../../components/CompVacationRental/CardRental";
 import CardSingleText from "../../components/CardSingleText/CardSingleText";
 import InpRental from "../../components/CompVacationRental/InpRental";
+import { useMedia } from "@/context/MediaQueryContext";
 const Vacations = () => {
+  let  isXs  =  useMedia()
   return (
     <Box>
       <MainBanner bannerUrl="/images/VacationRental/Banner.jpg">
@@ -24,9 +26,9 @@ const Vacations = () => {
                 sx={{
                   fontWeight: "bold",
                   color: "#fff",
-                  fontSize: "2.5rem",
+                  fontSize:  isXs ? "1.5rem"  : "2.5rem",
                   textAlign: "center",
-                  marginBottom: "3rem",
+                  marginBottom:  isXs ? "1rem" : "3rem",
                 }}
               >
                 آخرین بررسی ها پایین ترین قیمت ها.{" "}

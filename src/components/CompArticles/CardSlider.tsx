@@ -10,7 +10,7 @@ const CardSlider: FC<{ poster: string; title: string; disc: string }> = ({
   title,
 }) => {
 
-  let  isXs  =  useMedia()
+  let isXs = useMedia()
   return (
     <CusPosterSlider sx={{ background: `url(${poster})` }} >
       <DarkOverlay />
@@ -23,12 +23,22 @@ const CardSlider: FC<{ poster: string; title: string; disc: string }> = ({
         gap={2}
       >
         <Typography
-          sx={{ color: "#fff", fontWeight: "bold", fontSize: "2.5rem" ,  textAlign : isXs ? "center" : "right" }}
+          sx={{
+            color: "#fff",
+            fontWeight: "bold",
+            fontSize: "2.5rem",
+            textAlign: isXs ? "center" : "right"
+          }}
         >
           {title}
         </Typography>
         <Typography
-          sx={{ fontWeight: "light", color: "#fff", fontSize: "1rem"  ,   textAlign : isXs ? "center" : "right" }}
+          sx={{
+            fontWeight: "light",
+            color: "#fff",
+            fontSize: "1rem",
+            textAlign: isXs ? "center" : "right"
+          }}
         >
           {disc}
         </Typography>

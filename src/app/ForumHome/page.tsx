@@ -43,23 +43,24 @@ const Formus = () => {
       <Box sx={{ bgcolor: "#F2F2F2", margin: "3rem  0 ", padding: "3rem" }}>
         <Container>
           <Grid container justifyContent={"center"} alignItems={"flex-end"}>
-            <Grid size={{ md: 6 }}  >
+            <Grid size={{ md: 6, xs: 12 }}  >
               <Box display={"flex"} flexDirection={isXs ? "column" : "row"} gap={2}>
                 <img
                   src="/images/Formus/bgImg.svg"
                   alt=""
                   style={{
-                    width: "250px"
+                    width: "250px",
+                    margin: "0 auto"
                   }}
                 />
-                <Typography sx={{ fontWeight: "bold", fontSize: isXs ? "1.5rem" : "2.5rem" }}>
+                <Typography sx={{ fontWeight: "bold", fontSize: isXs ? "1.5rem" : "2.5rem", textAlign: isXs ? "center" : "right", paddingY: "1rem" }}>
                   انجمن های Tripadvisor
                 </Typography>
               </Box>
             </Grid>
 
-            <Grid size={{ md: 6 }}>
-              <Box flexDirection={isXs ? "column" : "row"} display={"flex"} gap={1}  >
+            <Grid size={{ md: 6, xs: 12 }}>
+              <Box flexDirection={isXs ? "column" : "row"} display={"flex"} gap={2}  >
                 <Box width={"100%"}>
                   <InpSearch
                     isBtnSearch={false}
@@ -124,7 +125,7 @@ const Formus = () => {
       <Container>
         <Box>
           <TitleSection isSubTitle={false} mainTitle="به بحث بپیوندید" isSeeAll={false} />
-          <Typography fontWeight={"bold"} fontSize={"2.5rem"}>انجمن های محبوب مقصد</Typography>
+          <Typography fontWeight={"bold"} fontSize={isXs ? "1.5rem" : " 2rem"} mb={"2rem"}>انجمن های محبوب مقصد</Typography>
           <SliderWrapper numberOfShowSlider={3} ArrowPosition="35%">
             <PopularFourmsCard
               name="شهر نیویورک"

@@ -1,4 +1,3 @@
-"use client"
 import { Box, Menu, MenuItem } from "@mui/material";
 import { FC, useState } from "react";
 import { CusMenuBtn } from "../../elements/CusComponets";
@@ -34,10 +33,10 @@ const TopBarMenu: FC<ICusManuProps> = ({ titleMenu, subMenuArray }) => {
           "aria-labelledby": "basic-button",
         }}
       >
-        {subMenuArray.map((items , index) => {
+        {subMenuArray.map((items, index) => {
           return (
-            <MenuItem  key ={index} onClick={handleClose}  sx={{fontSize : "0.80rem"  ,  fontWeight : 'bold'    }}>
-              <Link href={items.link}>{items.text}</Link>
+            <MenuItem key={index} onClick={handleClose} sx={{ fontSize: "0.80rem", fontWeight: 'bold' }}>
+              <Link href={items.link} prefetch={true}>{items.text}</Link>
             </MenuItem>
           );
         })}
