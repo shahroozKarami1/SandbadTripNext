@@ -13,7 +13,7 @@ const CardInsidetext: FC<ICardInsideText> = ({
 
 
   return (
-    <Link href={link}>
+    <Link href={link} prefetch ={true}>
       <CusCardWrapper>
         <DarkOverlay />
         <img

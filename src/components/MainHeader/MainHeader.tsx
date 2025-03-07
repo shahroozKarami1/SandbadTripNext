@@ -1,4 +1,3 @@
-"use client"
 import { Box, Container, List } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import DarkBtn from "../DarkBtn/DarkBtn";

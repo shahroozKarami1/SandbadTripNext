@@ -12,7 +12,7 @@ interface IMoreInterstedCardProps {
 
 const MoreInterstedCard: FC<IMoreInterstedCardProps> = ({ coverCard, markCard, textCard, link }) => {
     return (
-        <Link href={link}>
+        <Link href={link} prefetch ={true}>
             <Box>
                 <Box sx={{ position: "relative", height: "150px" }}>
                     <img src={coverCard} alt="" style={{ objectFit: "cover", objectPosition: "center", width: "100%", height: "100%", borderRadius: '1rem' }} />

@@ -1,4 +1,3 @@
-"use client"
 import React, { FC } from "react";
 import { ICardSliderReadMore } from "../../types/intefaces";
 import { Box, IconButton, Typography } from "@mui/material";

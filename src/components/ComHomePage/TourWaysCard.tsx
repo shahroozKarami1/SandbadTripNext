@@ -17,7 +17,7 @@ const TourWaysCard: FC<ITourWaysCardProps> = ({
 }) => {
   return (
     <Box sx={{ direction: "rtl"   }}>
-      <Link href={link ? link : "/"}>
+      <Link prefetch = {true} href={link ? link : "/"}>
         <Box sx={{ position: "relative", margin: "0 0.5rem" }}>
           <img
             src={Image}

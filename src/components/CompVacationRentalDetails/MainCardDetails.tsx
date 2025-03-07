@@ -1,4 +1,3 @@
-"use client"
 import { FC, useState } from "react";
 import { IMainCardDetailsProps } from "../../types/intefaces";
 import { Box, Button, Typography } from "@mui/material";

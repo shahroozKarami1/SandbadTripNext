@@ -21,7 +21,7 @@ const MainBlogCard: FC<IMainBlogCardProps> = ({
         }} />
       </Box>
       <Box sx={{ marginY: "0.5rem" }}>
-        <Link href={Address.link}>
+        <Link href={Address.link} prefetch ={true}> 
           <Typography
             sx={{
               color: "var(--primary-color)",

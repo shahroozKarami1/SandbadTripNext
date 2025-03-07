@@ -14,7 +14,7 @@ const CardSingleText: FC<ICardSingleTextProps> = ({
   const isXs = useMedia();
 
   return (
-    <Link href={link ? link : "/"}>
+    <Link href={link ? link : "/"} prefetch={true}>
       <Box margin={"0  0.25rem"}>
         <Box
           sx={{ position: "relative", height: heightCard ? heightCard : "100%" }}

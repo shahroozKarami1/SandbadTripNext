@@ -10,7 +10,7 @@ const TinyCardSingleText: FC<{
 
   return (
     <CusCardWrapperTinyCard>
-      <Link href={link}>
+      <Link href={link} prefetch ={true}>
         <DarkOverlay />
         <img src={cover} alt="" style={{ borderRadius: "1rem", objectFit: "cover", width: "100%" }} />
         <CusTpCard>{text}</CusTpCard>

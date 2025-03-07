@@ -13,7 +13,7 @@ const ReviewsCard: FC<IReviewsCardProps> = ({
   topRateIn,
 }) => {
   return (
-    <Link href={link}>
+    <Link href={link} prefetch ={true}>
       <CusReviewCard  >
         <Typography sx={{ fontWeight: "bold", marginBottom: "0.5rem" }}> {title}</Typography>
         <Box display={"flex"} alignItems={"center"} gap={1}>

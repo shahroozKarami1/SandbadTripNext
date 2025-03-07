@@ -7,7 +7,7 @@ const LinkBorder: FC<{ text: string; link: string }> = ({ text, link }) => {
 
   return (
     <CusBtn>
-      <Link href={link}>{text}</Link>
+      <Link href={link} prefetch ={true}>{text}</Link>
     </CusBtn>
   );
 };

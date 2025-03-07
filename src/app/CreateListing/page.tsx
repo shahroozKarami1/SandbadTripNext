@@ -166,7 +166,7 @@ const CreateingListing = () => {
                     <Grid size={{ md: 6 }}>
                       <Box display={"flex"} gap={1} alignItems={"center"}>
                         <ConfirmationNumberOutlinedIcon />
-                        <Link href={"/"}>
+                        <Link href={"/"} prefetch={true}>
                           <Typography
                             fontSize={"0.90rem"}
                             borderBottom={"2px  solid  #000"}
@@ -179,7 +179,7 @@ const CreateingListing = () => {
                     <Grid size={{ md: 6 }}>
                       <Box display={"flex"} gap={1} alignItems={"center"}>
                         <KeyOutlinedIcon />
-                        <Link href={"/"}>
+                        <Link href={"/"} prefetch={true}>
                           <Typography
                             fontSize={"0.90rem"}
                             whiteSpace={"nowrap"}
@@ -302,7 +302,7 @@ const CreateingListing = () => {
                 sx={{ marginTop: "2rem" }}
               >
                 <DarkBtn>ذخیره و ادامه دادن</DarkBtn>
-                
+
               </Box>
             </Box>
           </Grid>

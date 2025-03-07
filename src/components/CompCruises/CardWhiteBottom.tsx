@@ -12,7 +12,7 @@ const CardWhiteBottom: FC<ICardWhiteBottomProps> = ({
 
   return (
     <>
-      <Link href={link}>
+      <Link href={link} prefetch={true}>
         <CusCardWhiteBottom sx={{ bgcolor: "#fff" }}>
           <img
             src={coverImg}

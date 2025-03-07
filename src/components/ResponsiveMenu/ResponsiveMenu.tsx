@@ -1,4 +1,3 @@
-"use client"
 import {
   Box,
   Drawer,
@@ -21,7 +20,7 @@ const CusListItemDetails: FC<{ link: string; text: string }> = ({
     <ListItem
       sx={{ marginLeft: "  4rem", marginBottom: "1rem  ", width: "100%" }}
     >
-      <Link href={link}>
+      <Link href={link} prefetch={true}>
         <Typography>{text}</Typography>
       </Link>
     </ListItem>
@@ -50,7 +49,7 @@ const ResponsiveMenu = () => {
         </IconButton>
 
         <Box width={"132px"} height={"80px"}>
-          <Link href={"/"}>
+          <Link href={"/"} prefetch={true}>
             <img
               src="/images/AllNewLogos/persian vertical 2-01.svg"
               style={{

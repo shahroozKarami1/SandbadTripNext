@@ -330,7 +330,7 @@ const ThingsToDoDetails = () => {
             isSeeAll={false}
           />
 
-          <SliderWrapper numberOfShowSlider={4}>
+          <SliderWrapper numberOfShowSlider={4} ArrowPosition="30%" >
             <TourWaysCard
               price={134}
               score={935}
@@ -370,7 +370,7 @@ const ThingsToDoDetails = () => {
             subTitle="در مورد اپراتور آن را از ما نگیرید - این چیزی است که مردم در مورد این
           اپراتور می گویند:"
           />
-          <SliderWrapper numberOfShowSlider={4}>
+          <SliderWrapper numberOfShowSlider={4} ArrowPosition="40%">
             <OperatorCard
               date="جولای 2024"
               countContributions={10}
@@ -412,7 +412,7 @@ const ThingsToDoDetails = () => {
             mainTitle="کاوش بیشتر در دبی "
             isSeeAll={false}
           />
-          <SliderWrapper numberOfShowSlider={5}>
+          <SliderWrapper numberOfShowSlider={5} ArrowPosition="40%">
             <TinyCardSingleText
               cover="/images/ThingsToDoDetails/Simllerexp/img1.jpg"
               link="/"
@@ -585,7 +585,7 @@ const ThingsToDoDetails = () => {
             isSeeAll={false}
           />
 
-          <SliderWrapper numberOfShowSlider={4}>
+          <SliderWrapper numberOfShowSlider={4} ArrowPosition="30%">
             <TourWaysCard
               price={134}
               score={935}
@@ -623,7 +623,7 @@ const ThingsToDoDetails = () => {
             isSeeAll={false}
           />
 
-          <SliderWrapper numberOfShowSlider={4}>
+          <SliderWrapper numberOfShowSlider={4} ArrowPosition="30%">
             <TourWaysCard
               price={134}
               score={935}

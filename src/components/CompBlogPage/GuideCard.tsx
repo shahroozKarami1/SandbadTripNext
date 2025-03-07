@@ -12,7 +12,7 @@ const GuideCard: FC<IGuideCardProps> = ({
   visitorNumber,
 }) => {
   return (
-    <Link href={link}>
+    <Link href={link} prefetch={true}>
       <Box
         display={"flex"}
         alignItems={"center"}
