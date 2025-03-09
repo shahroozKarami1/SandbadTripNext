@@ -2,7 +2,7 @@ import { FC } from "react";
 import { ICardSingleTextProps } from "../../types/intefaces";
 import { Box } from "@mui/material";
 import { CusTPForCard, DarkOverlay } from "../../elements/CusComponets";
-import { useMedia } from "../../context/MediaQueryContext";
+// import { useMedia } from "../../context/MediaQueryContext";
 import Link from "next/link";
 
 const CardSingleText: FC<ICardSingleTextProps> = ({
@@ -11,7 +11,7 @@ const CardSingleText: FC<ICardSingleTextProps> = ({
   heightCard,
   link
 }) => {
-  const isXs = useMedia();
+  // const isXs = useMedia();
 
   return (
     <Link href={link ? link : "/"} prefetch={true}>
@@ -32,8 +32,8 @@ const CardSingleText: FC<ICardSingleTextProps> = ({
             }}
           />
           <CusTPForCard sx={{
-            fontSize: isXs ? "0.90rem " : "1.3rem",
-            fontWeight: isXs ? "light" : "bold",
+            fontSize: { xs: "0.90rem ", md: "1.3rem" },
+            fontWeight: { xs: "light", md: "bold" },
           }}>{textBody}</CusTPForCard>
         </Box>
       </Box>

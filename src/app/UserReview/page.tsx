@@ -1,13 +1,12 @@
-"use client"
 import { Box, Container, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import InpSearch from "@/components/InpSearch/InpSearch";
 import BeenHereCards from "@/components/CompUserReview/BeenHereCards";
-import { useMedia } from "@/context/MediaQueryContext";
+// import { useMedia } from "@/context/MediaQueryContext";
 import Link from "next/link";
 import { CusAddPlaceBtn, CusBoxBtnCard, CusBoxTextCard } from "@/elements/CusComponets";
 function UserReview() {
-  let isXs = useMedia();
+  // let isXs = useMedia();
 
   return (
     <>
@@ -22,41 +21,41 @@ function UserReview() {
                 justifyContent={"center"}
                 alignItems={"center"}
               >
-                <Typography sx={{ fontWeight: "bold", fontSize: "2.5rem", textAlign: isXs ? "center" : "right" }}>
-                  نظر بنویسید، سفر کسی را انجام دهید
-                </Typography>
-                <Typography sx={{ textAlign: "center" }}>
-                  داستان هایی مانند داستان شما به مسافران کمک می کند سفرهای
-                  بهتری داشته باشند. تجربه خود را به اشتراک بگذارید و به یک
-                  همسفر کمک کنید!
-                </Typography>
+                <Typography sx={{ fontWeight: "bold", fontSize: "2.5rem", textAlign: { xs: "center", md: "right" }}}>
+                نظر بنویسید، سفر کسی را انجام دهید
+              </Typography>
+              <Typography sx={{ textAlign: "center" }}>
+                داستان هایی مانند داستان شما به مسافران کمک می کند سفرهای
+                بهتری داشته باشند. تجربه خود را به اشتراک بگذارید و به یک
+                همسفر کمک کنید!
+              </Typography>
 
-                <InpSearch
-                  isBtnSearch={false}
-                  textPlaceHolder="دوست دارید چه چیزی را مرور کنید؟"
-                />
-                <Box display={"flex"} gap={3} sx={{ marginTop: "2rem" }}>
+              <InpSearch
+                isBtnSearch={false}
+                textPlaceHolder="دوست دارید چه چیزی را مرور کنید؟"
+              />
+              {/* <Box display={"flex"} gap={3} sx={{ marginTop: "2rem" }}>
                   <img
                     src="/images/UserRview/mainImgs/img1.png"
-                    style={{ width: isXs ? "120px" : "200px" }}
+                    style={{ width:  { xs :"120px"  ,  md  : "200px"} }}
                     alt=""
                   />
                   <img
                     src="/images/UserRview/mainImgs/img2.png"
-                    style={{ width: isXs ? "120px" : "200px" }}
+                    style={{ width:  { xs :"120px"  ,  md  : "200px"} }}
                     alt=""
                   />
                   <img
                     src="/images/UserRview/mainImgs/img3.png"
-                    style={{ width: isXs ? "120px" : "200px" }}
+                    style={{ width:  { xs :"120px"  ,  md  : "200px"} }}
                     alt=""
                   />
-                </Box>
-              </Box>
-            </Grid>
+                </Box> */}
+            </Box>
           </Grid>
-        </Container>
-      </Box>
+        </Grid>
+      </Container>
+    </Box >
 
       <Container>
         <Box

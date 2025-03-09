@@ -1,4 +1,3 @@
-"use client"
 import { Box, Container, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import BtnMenus from "../../components/CompCruises/BtnMenus";
@@ -14,10 +13,10 @@ import TitleSection from "../../components/ComHomePage/TitleSection";
 import CardWhiteBottom from "../../components/CompCruises/CardWhiteBottom";
 import CruisingGuide from "../../components/CompCruises/CruisingGuide";
 import { CusDarkBtnSearch } from "@/elements/CusComponets";
-import { useMedia } from "@/context/MediaQueryContext";
+// import { useMedia } from "@/context/MediaQueryContext";
 
 const Cruises = () => {
-let  isXs =  useMedia()
+  // let  isXs =  useMedia()
   return (
     <Box>
       <Container>
@@ -43,9 +42,9 @@ let  isXs =  useMedia()
                 alignItems={"center"}
                 justifyContent={"center"}
                 gap={1}
-                flexDirection={  isXs ?"column" : "row"}
+                flexDirection={{ xs: "column", md: "row" }}
               >
-                <BtnMenus
+                {/* <BtnMenus
                   isWhereToInp={false}
                   textOnBtn="ماه حرکت"
                   icon={<TodayIcon />}
@@ -57,7 +56,7 @@ let  isXs =  useMedia()
                       openTo="month"
                     />
                   </LocalizationProvider>
-                </BtnMenus>
+                </BtnMenus> */}
                 <BtnMenus
                   isWhereToInp={true}
                   textOnBtn="به کجا ؟"
@@ -80,7 +79,7 @@ let  isXs =  useMedia()
             alignItems={"center"}
             sx={{ padding: "3rem  0" }}
           >
-            <Grid size={{ md: 4 , xs :  12 }}>
+            <Grid size={{ md: 4, xs: 12 }}>
               <CardDetails
                 coverImg="/images/Cruises/DetialsCards/img1.svg"
                 disc="  برای مشاهده جزئیات کشتی، بررسی ها، عکس ها و برنامه های سفر، یک
@@ -88,7 +87,7 @@ let  isXs =  useMedia()
                 title="صفحات Ship-tinerary™ را کاوش کنید"
               />
             </Grid>
-            <Grid size={{ md: 4 , xs :  12 }}>
+            <Grid size={{ md: 4, xs: 12 }}>
               <CardDetails
                 coverImg="/images/Cruises/DetialsCards/img3.svg"
                 disc="  برای مشاهده جزئیات کشتی، بررسی ها، عکس ها و برنامه های سفر، یک
@@ -96,7 +95,7 @@ let  isXs =  useMedia()
                 title="صفحات Ship-tinerary™ را کاوش کنید"
               />
             </Grid>
-            <Grid size={{ md: 4  , xs :  12}}>
+            <Grid size={{ md: 4, xs: 12 }}>
               <CardDetails
                 coverImg="/images/Cruises/DetialsCards/img3.svg"
                 disc="  برای مشاهده جزئیات کشتی، بررسی ها، عکس ها و برنامه های سفر، یک
@@ -176,7 +175,7 @@ let  isXs =  useMedia()
                 name="کیش"
               />
             </Grid>
-            <Grid size={{ md: 3  , xs  :  6 }}>
+            <Grid size={{ md: 3, xs: 6 }}>
               <CardWhiteBottom
                 link="/"
                 coverImg="/images/Cruises/popularDistination/img4.jpg"
@@ -189,28 +188,28 @@ let  isXs =  useMedia()
               isSubTitle={false}
               mainTitle="سفرهای دریایی به مقصدهای محبوب"
             />
-            <Grid size={{ md: 3  ,  xs :  6}}>
+            <Grid size={{ md: 3, xs: 6 }}>
               <CardWhiteBottom
                 link="/"
                 coverImg="/images/Cruises/popularDistination/img3.jpg"
                 name="آسیا"
               />
             </Grid>
-            <Grid size={{ md: 3  ,  xs :  6 }}>
+            <Grid size={{ md: 3, xs: 6 }}>
               <CardWhiteBottom
                 link="/"
                 coverImg="/images/Cruises/popularDistination/img4.jpg"
                 name="آسیا"
               />
             </Grid>
-            <Grid size={{ md: 3  ,  xs :  6 }}>
+            <Grid size={{ md: 3, xs: 6 }}>
               <CardWhiteBottom
                 link="/"
                 coverImg="/images/Cruises/popularDistination/img1.jpg"
                 name="آسیا"
               />
             </Grid>
-            <Grid size={{ md: 3  , xs :  6 }}>
+            <Grid size={{ md: 3, xs: 6 }}>
               <CardWhiteBottom
                 link="/"
                 coverImg="/images/Cruises/popularDistination/img2.jpg"
@@ -223,28 +222,28 @@ let  isXs =  useMedia()
               isSubTitle={false}
               mainTitle="سفرهای دریایی بر اساس طول"
             />
-            <Grid size={{ md: 3  , xs :  6 }}>
+            <Grid size={{ md: 3, xs: 6 }}>
               <CardWhiteBottom
                 link="/"
                 coverImg="/images/Cruises/popularDistination/img2.jpg"
                 name="+15 روز"
               />
             </Grid>
-            <Grid size={{ md: 3    , xs :  6}}>
+            <Grid size={{ md: 3, xs: 6 }}>
               <CardWhiteBottom
                 link="/"
                 coverImg="/images/Cruises/popularDistination/img3.jpg"
                 name="8روز"
               />
             </Grid>
-            <Grid size={{ md: 3   , xs :  6 }}>
+            <Grid size={{ md: 3, xs: 6 }}>
               <CardWhiteBottom
                 link="/"
                 coverImg="/images/Cruises/popularDistination/img4.jpg"
                 name="2روز"
               />
             </Grid>
-            <Grid size={{ md: 3  , xs :  6 }}>
+            <Grid size={{ md: 3, xs: 6 }}>
               <CardWhiteBottom
                 link="/"
                 coverImg="/images/Cruises/popularDistination/img1.jpg"

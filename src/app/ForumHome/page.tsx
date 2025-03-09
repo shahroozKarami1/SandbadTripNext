@@ -1,4 +1,3 @@
-"use client"
 import { Box, Container, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import InpSearch from "../../components/InpSearch/InpSearch";
@@ -7,11 +6,11 @@ import ListOfForum from "../../components/CompForum/ListOfForum";
 import PopularFourmsCard from "../../components/CompForum/PopularFourmsCard";
 import SliderWrapper from "../../components/SliderWraper/SliderWrapper";
 import TitleSection from "../../components/ComHomePage/TitleSection";
-import { useMedia } from "../../context/MediaQueryContext";
+// import { useMedia } from "../../context/MediaQueryContext";
 import Link from "next/link";
 import { CusMainBox, CusTgSubText } from "@/elements/CusComponets";
 const Formus = () => {
-  let isXs = useMedia()
+  // let isXs = useMedia()
 
 
   let browseDistinationArr = [
@@ -44,7 +43,7 @@ const Formus = () => {
         <Container>
           <Grid container justifyContent={"center"} alignItems={"flex-end"}>
             <Grid size={{ md: 6, xs: 12 }}  >
-              <Box display={"flex"} flexDirection={isXs ? "column" : "row"} gap={2}>
+              <Box display={"flex"} flexDirection={{ xs: "column", md: "row" }} gap={2}>
                 <img
                   src="/images/Formus/bgImg.svg"
                   alt=""
@@ -53,14 +52,14 @@ const Formus = () => {
                     margin: "0 auto"
                   }}
                 />
-                <Typography sx={{ fontWeight: "bold", fontSize: isXs ? "1.5rem" : "2.5rem", textAlign: isXs ? "center" : "right", paddingY: "1rem" }}>
+                <Typography sx={{ fontWeight: "bold", fontSize: { xs: "1.5rem", md: "2.5rem" }, textAlign: { xs: "center", md: "right" }, paddingY: "1rem" }}>
                   انجمن های Tripadvisor
                 </Typography>
               </Box>
             </Grid>
 
             <Grid size={{ md: 6, xs: 12 }}>
-              <Box flexDirection={isXs ? "column" : "row"} display={"flex"} gap={2}  >
+              <Box flexDirection={{ xs: "column", md: "row" }} display={"flex"} gap={2}  >
                 <Box width={"100%"}>
                   <InpSearch
                     isBtnSearch={false}
@@ -89,14 +88,14 @@ const Formus = () => {
                   >
                     به اشتراک بگذارید یاد بگیرید. برو
                   </Typography>
-                  <CusTgSubText sx={{ fontSize: isXs ? "0.90rem" : "1.2rem", }}    >
+                  <CusTgSubText sx={{ fontSize: { xs: "0.90rem", md: "1.2rem" } }}    >
                     از مسافرانی که قبلاً آنجا بوده اند بپرسید.
                   </CusTgSubText    >
-                  <CusTgSubText sx={{ fontSize: isXs ? "0.90rem" : "1.2rem", }}>
+                  <CusTgSubText sx={{ fontSize: { xs: "0.90rem", md: "1.2rem" } }}>
                     تجربه خود را با همسفران در میان بگذارید.{" "}
                   </CusTgSubText>
                   <Link href={"/"}>
-                    <CusTgSubText sx={{ fontSize: isXs ? "0.90rem" : "1.2rem", }}>
+                    <CusTgSubText sx={{ fontSize: { xs: "0.90rem", md: "1.2rem" } }}>
                       از مرکز راهنمایی انجمن ها دیدن کنید
                     </CusTgSubText>
                   </Link>
@@ -125,7 +124,7 @@ const Formus = () => {
       <Container>
         <Box>
           <TitleSection isSubTitle={false} mainTitle="به بحث بپیوندید" isSeeAll={false} />
-          <Typography fontWeight={"bold"} fontSize={isXs ? "1.5rem" : " 2rem"} mb={"2rem"}>انجمن های محبوب مقصد</Typography>
+          <Typography fontWeight={"bold"} fontSize={{ xs: "1.5rem", md: " 2rem" }} mb={"2rem"}>انجمن های محبوب مقصد</Typography>
           <SliderWrapper numberOfShowSlider={3} ArrowPosition="35%">
             <PopularFourmsCard
               name="شهر نیویورک"
@@ -145,7 +144,7 @@ const Formus = () => {
           </SliderWrapper>
         </Box>
       </Container>
-    </Box>
+    </Box >
   );
 };
 

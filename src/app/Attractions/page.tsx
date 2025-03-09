@@ -1,4 +1,3 @@
-"use client"
 import { Box, Container, Typography } from "@mui/material";
 import InpSearch from "@/components/InpSearch/InpSearch";
 import { CusThingsToDoPage } from "@/elements/CusComponets";
@@ -9,10 +8,10 @@ import RestoreOutlinedIcon from "@mui/icons-material/RestoreOutlined";
 import TitleSection from "@/components/ComHomePage/TitleSection";
 import TourWaysCard from "@/components/ComHomePage/TourWaysCard";
 import SliderWrapper from "@/components/SliderWraper/SliderWrapper";
-import { useMedia } from "@/context/MediaQueryContext";
+// import { useMedia } from "@/context/MediaQueryContext";
 
 const ThingsToDo = () => {
-  let isXS = useMedia()
+  // let isXS = useMedia()
   return (
     <>
       <CusThingsToDoPage>
@@ -22,13 +21,13 @@ const ThingsToDo = () => {
           justifyContent={"center"}
           sx={{ height: "100%" }}
         >
-          <Grid size={{ md: 9 ,  xs :  12 }}>
+          <Grid size={{ md: 9, xs: 12 }}>
             <Box
               display={"flex"}
               alignItems={"center"}
               flexDirection={"column"}
-              gap={4}  
-              margin={ "0 2rem"}
+              gap={4}
+              margin={"0 2rem"}
             >
               <Typography
                 sx={{ fontWeight: "bold", color: "#fff", fontSize: "2.5rem", textAlign: "center" }}
@@ -47,7 +46,7 @@ const ThingsToDo = () => {
           justifyContent={"center"}
           sx={{ margin: "3rem  0" }}
         >
-          <Typography sx={{ fontWeight: "bold", fontSize:  isXS ? "1.2rem" :"1.5rem", textAlign: isXS ? 'center' : "right" }}>
+          <Typography sx={{ fontWeight: "bold", fontSize: { xs: "1.2rem", md: "1.5rem" }, textAlign: { xs: 'center', md: "right" } }}>
             برنامه ریزی کنید، رزرو کنید، بروید—ما کار را آسان می کنیم
           </Typography>
         </Box>

@@ -86,7 +86,7 @@ const HotelDetails = () => {
               <SaveBtn />
             </Box>
           </Box>
-          <Box display={"flex"} alignItems={isXs ? "right" : "center"} gap={1} my={"1rem"} flexDirection={isXs ? "column" : "row"}>
+          <Box display={"flex"} alignItems={{ xs: "right", md: "center" }} gap={1} my={"1rem"} flexDirection={{ xs: "column", md: "row" }}>
             <CircleRate isScoreText={false} scoreNum={3.6} />
             <MentionText text="# 37.838 بازدید" />
             <MentionText text="#3 از 25 کاری که  باید در هتل اسپیناس انجام داد" />
@@ -102,7 +102,7 @@ const HotelDetails = () => {
         <Container>
 
 
-          <Grid container spacing={3} alignItems={"flex-start"} flexDirection={isXs ? "column" : "row"} >
+          <Grid container spacing={3} alignItems={"flex-start"} flexDirection={{ xs: "column", md: "row" }} >
             <Grid size={{ md: 8, xs: 12 }}>
               <Grid container spacing={1} alignItems={"center"} height={"100%"}>
                 {!isXs && (

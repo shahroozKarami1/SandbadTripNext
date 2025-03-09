@@ -1,16 +1,16 @@
-"use client"
+// "use client"
 import { Box, Container, Typography } from "@mui/material";
 import InpSearch from "../../components/InpSearch/InpSearch";
 import Grid from "@mui/material/Grid2";
 import MainCardsRestaurant from "../../components/CompRestaurantsPage/MainCardsRestaurant";
 import TitleSection from "../../components/ComHomePage/TitleSection";
 import MainBanner from "../../components/MainBanner/MainBanner";
-import { useMedia } from "../../context/MediaQueryContext";
+// import { useMedia } from "../../context/MediaQueryContext";
 import SliderWrapper from "../../components/SliderWraper/SliderWrapper";
 import CardWithReviewAndPlace from "../../components/CompRestaurantsPage/CardWithReviewAndPlace";
 
 const Restaurans = () => {
-  const isXs = useMedia();
+  // const isXs = useMedia();
   return (
     <Box>
       <MainBanner bannerUrl={"/images/ResturantImgs/Banner.jpg"}>
@@ -28,7 +28,7 @@ const Restaurans = () => {
               sx={{
                 fontWeight: "bold",
                 color: "#fff",
-                fontSize: isXs ? "1.5rem" : "2.5rem",
+                fontSize: { xs: "1.5rem", md: "2.5rem" },
                 textAlign: "center",
               }}
             >
@@ -38,7 +38,7 @@ const Restaurans = () => {
         </Container>
       </MainBanner>
       <Container sx={{ marginTop: "4rem" }}>
-        {!isXs && (
+        {/* {!isXs && (
           <Grid container spacing={3}>
             <MainCardsRestaurant
               disc="4.3 میلیون رستوران - همه چیز، از غذاهای خیابانی گرفته تا غذاهای عالی"
@@ -56,7 +56,7 @@ const Restaurans = () => {
               title="جدول رزرو ها"
             />
           </Grid>
-        )}
+        )} */}
         <Box>
           <TitleSection
             isSubTitle={false}
@@ -100,7 +100,7 @@ const Restaurans = () => {
             mainTitle="ناهار در دبی "
             isSeeAll={true}
           />
-          <SliderWrapper numberOfShowSlider={4}  ArrowPosition="35%">
+          <SliderWrapper numberOfShowSlider={4} ArrowPosition="35%">
             <CardWithReviewAndPlace
               cardCover="/images/ResturantImgs/otherImgs/img1.jpg"
               countOfReviews={7500}
@@ -137,7 +137,7 @@ const Restaurans = () => {
             mainTitle="شام در دبی"
             isSeeAll={true}
           />
-          <SliderWrapper numberOfShowSlider={4}  ArrowPosition="35%">
+          <SliderWrapper numberOfShowSlider={4} ArrowPosition="35%">
             <CardWithReviewAndPlace
               cardCover="/images/ResturantImgs/otherImgs/img1.jpg"
               countOfReviews={7500}
@@ -174,7 +174,7 @@ const Restaurans = () => {
             mainTitle="صبحانه در دبی"
             isSeeAll={true}
           />
-          <SliderWrapper numberOfShowSlider={4}  ArrowPosition="35%">
+          <SliderWrapper numberOfShowSlider={4} ArrowPosition="35%">
             <CardWithReviewAndPlace
               cardCover="/images/ResturantImgs/otherImgs/img1.jpg"
               countOfReviews={7500}
@@ -211,7 +211,7 @@ const Restaurans = () => {
             mainTitle="خوردنی های ارزان در دبی"
             isSeeAll={true}
           />
-          <SliderWrapper numberOfShowSlider={4}  ArrowPosition="35%">
+          <SliderWrapper numberOfShowSlider={4} ArrowPosition="35%">
             <CardWithReviewAndPlace
               cardCover="/images/ResturantImgs/otherImgs/img1.jpg"
               countOfReviews={7500}

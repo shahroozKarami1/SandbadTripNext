@@ -4,11 +4,11 @@ import { ICardDetailsProps } from "../../types/intefaces";
 import { useMedia } from "@/context/MediaQueryContext";
 
 const CardDetails: FC<ICardDetailsProps> = ({ coverImg, disc, title }) => {
-  let  isXs =  useMedia()
+  // let  isXs =  useMedia()
   return (
     <Box display={"flex"}
       alignItems={"center"}
-      margin={  isXs ? " 1rem 3rem" : "unset"}
+      margin={{ xs: " 1rem 3rem", md: "unset" }}
       gap={1}
       flexDirection={"column"}
       justifyContent={"center"}>

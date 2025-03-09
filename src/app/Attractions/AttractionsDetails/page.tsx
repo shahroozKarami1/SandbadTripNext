@@ -1,4 +1,3 @@
-"use client"
 import {
   Box,
   Container,
@@ -17,7 +16,7 @@ import Groups2OutlinedIcon from "@mui/icons-material/Groups2Outlined";
 import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
 import CircleIcon from "@mui/icons-material/Circle";
 import AccordionMenu from "@/components/AccordionMenu/AccordionMenu";
-import { useMedia } from "@/context/MediaQueryContext";
+// import { useMedia } from "@/context/MediaQueryContext";
 import LinkBorder from "@/components/ThingsToDoDetails/LinkBorder";
 import { CusCardDetails, CusCircleIcon, CusCircleOutLine, CusVerifiedOutlinedIcon } from "@/elements/CusComponets";
 import SaveBtn from "@/components/SaveBtn/SaveBtn";
@@ -64,7 +63,7 @@ const ListItemComp: FC<{
   );
 };
 const ThingsToDoDetails = () => {
-  let isXs = useMedia()
+  // let isXs = useMedia()
 
 
   return (
@@ -73,10 +72,10 @@ const ThingsToDoDetails = () => {
         <Box
           display={"flex"}
           justifyContent={"space-between"}
-          flexDirection={isXs ? "column-reverse" : "row"}
-          alignItems={isXs ? "flex-start" : "center"}
+          flexDirection={ { xs :"column-reverse"  ,  md : "row"} }
+          alignItems={ {  xs : "flex-start"  ,  md  : "center"}}
           marginTop={"2rem"}
-          gap={isXs ? 2 : 0}
+          gap={ { xs :2  ,  md  : 0}}
 
         >
           <Box display={"flex"} flexDirection={"column"} gap={1}>

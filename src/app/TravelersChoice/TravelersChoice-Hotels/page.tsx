@@ -1,4 +1,3 @@
-"use client"
 import NextTripSection from "@/components/ComHomePage/NextTripSection";
 import BadgeBoxes from "@/components/CompTravelerChoiceHotel/BadgeBoxes";
 import CardComment from "@/components/CompTravelerChoiceHotel/CardComment";
@@ -8,7 +7,7 @@ import FadeSlider from "@/components/CompTravelerChoiceHotel/FadeSlider";
 import RangeScore from "@/components/CompTravelerChoiceHotel/RangeScore";
 import ReadMore from "@/components/ReadMore/ReadMore";
 import SliderWrapper from "@/components/SliderWraper/SliderWrapper";
-import { useMedia } from "@/context/MediaQueryContext";
+// import { useMedia } from "@/context/MediaQueryContext";
 import { CusCircleIcon, CusInnerMainBanner, CusTPTitle, DarkOverlay } from "@/elements/CusComponets";
 import { Box, Container, List, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2"
@@ -21,10 +20,10 @@ import SaveBtn from "@/components/SaveBtn/SaveBtn";
 
 const TravelersChoiceHotels = () => {
 
-  let isXs = useMedia();
+  // let isXs = useMedia();
   return (
     <Box>
-      {isXs ? (
+      {/* {isXs ? (
         <Box position={"relative"} width={"100%"}>
           <DarkOverlay />
 
@@ -101,7 +100,7 @@ const TravelersChoiceHotels = () => {
             </Box>
           </CusInnerMainBanner>
         </Box>
-      )}
+      )} */}
       <Container>
         <Grid container sx={{ borderBottom: "3px  solid #F2B203" }}>
           <Grid size={{ md: 8 }}>

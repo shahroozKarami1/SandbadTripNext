@@ -1,4 +1,3 @@
-"use client"
 import { Box, Container, Typography } from "@mui/material";
 import MainBanner from "../../components/MainBanner/MainBanner";
 import Grid from "@mui/material/Grid2";
@@ -6,9 +5,9 @@ import Grid from "@mui/material/Grid2";
 import CardRental from "../../components/CompVacationRental/CardRental";
 import CardSingleText from "../../components/CardSingleText/CardSingleText";
 import InpRental from "../../components/CompVacationRental/InpRental";
-import { useMedia } from "@/context/MediaQueryContext";
+// import { useMedia } from "@/context/MediaQueryContext";
 const Vacations = () => {
-  let  isXs  =  useMedia()
+  // let  isXs  =  useMedia()
   return (
     <Box>
       <MainBanner bannerUrl="/images/VacationRental/Banner.jpg">
@@ -26,12 +25,12 @@ const Vacations = () => {
                 sx={{
                   fontWeight: "bold",
                   color: "#fff",
-                  fontSize:  isXs ? "1.5rem"  : "2.5rem",
+                  fontSize: { xs: "1.5rem", md: "2.5rem" },
                   textAlign: "center",
-                  marginBottom:  isXs ? "1rem" : "3rem",
+                  marginBottom: { xs: "1rem", md: "3rem" },
                 }}
               >
-                آخرین بررسی ها پایین ترین قیمت ها.{" "}
+                آخرین بررسی ها پایین ترین قیمت ها.
               </Typography>
               <InpRental />
             </Grid>

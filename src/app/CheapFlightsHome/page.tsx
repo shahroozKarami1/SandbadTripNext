@@ -1,4 +1,3 @@
-"use client"
 import { Box, Container, Typography } from "@mui/material";
 import MainBanner from "../../components/MainBanner/MainBanner";
 import Grid from "@mui/material/Grid2";
@@ -10,9 +9,9 @@ import AssistantOutlinedIcon from "@mui/icons-material/AssistantOutlined";
 import ReviewsCard from "../../components/CompFlightPage/ReviewsCard";
 import Paragraph from "../../components/CompFlightPage/Paragraph";
 import InpFlightPage from "../../components/CompFlightPage/InpFlightPage";
-import { useMedia } from "@/context/MediaQueryContext";
+// import { useMedia } from "@/context/MediaQueryContext";
 const Flights = () => {
-  let isXs = useMedia()
+  // let isXs = useMedia()
   return (
     <Box>
       <MainBanner bannerUrl="/images/FlightsImg/Banner.png">
@@ -30,9 +29,9 @@ const Flights = () => {
                 sx={{
                   fontWeight: "bold",
                   color: "#fff",
-                  fontSize: isXs ? "1.5rem" : "2.5rem",
+                  fontSize: { xs: "1.5rem", md: "2.5rem" },
                   textAlign: "center",
-                  marginBottom: isXs ? "1rem" : "3rem",
+                  marginBottom: { xs: "1rem", md: "3rem" },
                 }}
               >
                 بهترین پرواز را با قیمت مناسب پیدا کنید{" "}
@@ -100,11 +99,11 @@ const Flights = () => {
                 خود بدانید مسافران چه چیزی را دوست داشتند (یا دوست نداشتند). همه
                 خطوط هوایی را مرور کنید
               </Typography>
-              <Grid size={{ md: 7,  xs : 12 }} sx={{ marginTop: "0.5rem" }}>
+              <Grid size={{ md: 7, xs: 12 }} sx={{ marginTop: "0.5rem" }}>
                 {/* <InpSearch isBtnSearch={false} /> */}
               </Grid>
               <Grid container spacing={1} sx={{ marginTop: "1rem" }}>
-                <Grid size={{ md: 3 ,  xs : 12}}>
+                <Grid size={{ md: 3, xs: 12 }}>
                   <ReviewsCard
                     comment=" من نمی توانم به اندازه کافی از شرکت هواپیمایی امریکن ایرلاینز به خاطر همه حمایت هایشان در پرواز از لندن به فیلادلفیا تشکر کنم."
                     link="/"
@@ -114,7 +113,7 @@ const Flights = () => {
                     topRateIn="رتبه برتر در خدمات مشتری (به عنوان مثال نگرش، مراقبت، کمک)"
                   />
                 </Grid>
-                <Grid size={{ md: 3 ,  xs : 12}}>
+                <Grid size={{ md: 3, xs: 12 }}>
                   <ReviewsCard
                     comment=" من نمی توانم به اندازه کافی از شرکت هواپیمایی امریکن ایرلاینز به خاطر همه حمایت هایشان در پرواز از لندن به فیلادلفیا تشکر کنم."
                     link="/"
@@ -124,7 +123,7 @@ const Flights = () => {
                     topRateIn="رتبه برتر در خدمات مشتری (به عنوان مثال نگرش، مراقبت، کمک)"
                   />
                 </Grid>
-                <Grid size={{ md: 3 ,  xs : 12}}>
+                <Grid size={{ md: 3, xs: 12 }}>
                   <ReviewsCard
                     comment=" من نمی توانم به اندازه کافی از شرکت هواپیمایی امریکن ایرلاینز به خاطر همه حمایت هایشان در پرواز از لندن به فیلادلفیا تشکر کنم."
                     link="/"
@@ -134,7 +133,7 @@ const Flights = () => {
                     topRateIn="رتبه برتر در خدمات مشتری (به عنوان مثال نگرش، مراقبت، کمک)"
                   />
                 </Grid>
-                <Grid size={{ md: 3 ,  xs : 12}}>
+                <Grid size={{ md: 3, xs: 12 }}>
                   <ReviewsCard
                     comment=" من نمی توانم به اندازه کافی از شرکت هواپیمایی امریکن ایرلاینز به خاطر همه حمایت هایشان در پرواز از لندن به فیلادلفیا تشکر کنم."
                     link="/"
