@@ -1,19 +1,19 @@
 "use client"
 import { SearchOutlined } from "@mui/icons-material";
-import { Box, InputAdornment } from "@mui/material";
+import { Box, InputAdornment, InputProps } from "@mui/material";
 import { FC, useState } from "react";
 import { CusSearchBtn, CusSearchInp } from "../../elements/CusComponets";
 import AutoCompleteBox from "../AutoCompleteBox/AutoCompleteBox";
 
-interface IInpSearchProps {
+interface IInpSearchProps extends InputProps {
   isBtnSearch: boolean;
   textPlaceHolder: string;
 }
 
-const InpSearch: FC<IInpSearchProps> = ({ isBtnSearch, textPlaceHolder }) => {
+const InpSearch: FC<IInpSearchProps> = ({ isBtnSearch, textPlaceHolder, sx }) => {
   let [isOpenCompleteBox, setIsOpenCompleteBox] = useState(false);
   return (
-    <Box position={"relative"} width={"100%"}>
+    <Box position={"relative"} width={"100%"} display={"flex"} justifyContent={"center"}>
       <CusSearchInp
         sx={{
           borderRadius: isOpenCompleteBox ? "0rem" : "2rem",
@@ -22,6 +22,7 @@ const InpSearch: FC<IInpSearchProps> = ({ isBtnSearch, textPlaceHolder }) => {
           boxShadow: isOpenCompleteBox
             ? "   0px -1px 13px 0px rgba(0,0,0,0.75)"
             : `var(--main-shadow)`,
+          ...sx
         }}
         onFocus={() => setIsOpenCompleteBox(true)}
         onBlur={() => setIsOpenCompleteBox(false)}

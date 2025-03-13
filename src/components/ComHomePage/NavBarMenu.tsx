@@ -57,8 +57,8 @@ const NavbarMenu: FC<INavbarMenuProps> = ({
                 <Typography
                   sx={{
                     whiteSpace: "nowrap",
-                    fontWeight: isXs ? "light" : "bold",
-                    color: isXs ? "white" : "var(--dark-color)",
+                    fontWeight: "bold",
+                    color:"var(--dark-color)",
                     fontSize: { fontSize },
                   }}
                 >

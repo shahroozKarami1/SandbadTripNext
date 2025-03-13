@@ -1,10 +1,11 @@
-"use client"
+"use client";
+
 import { createContext, ReactNode, useContext } from "react";
 import { useMediaQuery } from "@mui/material";
 
-type MediaContextType = boolean | null;
+type MediaContextType = boolean;
 
-const MediaContext = createContext<MediaContextType>(null);
+const MediaContext = createContext<MediaContextType>(false);
 
 export const MediaProvider = ({ children }: { children: ReactNode }) => {
   const isXs = useMediaQuery("(max-width: 768px)");
@@ -13,12 +14,5 @@ export const MediaProvider = ({ children }: { children: ReactNode }) => {
 };
 
 export const useMedia = () => {
-  const context = useContext(MediaContext);
-  if (context === null) {
-    throw new Error("useMedia باید در داخل MediaProvider استفاده شود");
-  }
-  return context;
+  return useContext(MediaContext);
 };
-
-export default MediaContext;
-

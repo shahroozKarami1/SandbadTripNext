@@ -1,10 +1,11 @@
-import { Box, Typography } from "@mui/material";
+import { Box, SxProps, Typography } from "@mui/material";
 import { CusAutoComplete } from "../../elements/CusComponets";
 import AutoCompleteItem from "./AutoCompleteItem";
+import { FC } from "react";
 
-const AutoCompleteBox = () => {
+const AutoCompleteBox: FC<{ sx?: SxProps }> = ({ sx }) => {
   return (
-    <CusAutoComplete>
+    <CusAutoComplete sx={sx}>
       <AutoCompleteItem IsNearby={true} name="در نزدیکی" />
       <AutoCompleteItem
         IsNearby={false}

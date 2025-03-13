@@ -1,6 +1,7 @@
+import { ButtonProps } from "@mui/material";
 import React from "react";
 
-export interface IDarkBtnProps {
+export interface IDarkBtnProps  extends ButtonProps{
   children: string | React.ReactNode;
   setState?: React.Dispatch<React.SetStateAction<boolean>>;
 }

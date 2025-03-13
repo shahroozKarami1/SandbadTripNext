@@ -31,9 +31,10 @@ export const CusTitleHomePage = styled(Typography)({
 export const CusSearchInp = styled(Input)({
   border: 0,
   position: "relative",
+  
   padding: "  0.75rem   1rem ",
   backgroundColor: "#fff",
-  width: "100%",
+  width: "90%",
   "&.MuiInput-underline": {
     ":before": {
       display: "none",
@@ -305,7 +306,6 @@ export const CusAutoComplete = styled(Box)({
   display: "flex",
   flexDirection: 'column',
   right: 0,
-
   position: "absolute",
   overflowX: "hidden",
   width: "100%",

@@ -1,39 +1,50 @@
+"use client"
 import {
   Box,
   Button,
+  ButtonProps,
   Dialog,
   DialogContent,
   DialogTitle,
   Slide,
   Typography,
 } from "@mui/material";
-import { FC, forwardRef } from "react";
+import { FC, forwardRef, useState } from "react";
 import { IProfileBox } from "../../types/intefaces";
 import { TransitionProps } from "@mui/material/transitions";
 import GoogleIcon from "@mui/icons-material/Google";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
-const CusBtnForContinue: FC<{
+interface ICusBtnForContinue extends ButtonProps {
   icon: React.ReactNode;
   text: string;
-}> = ({ icon, text }) => {
+}
+import EmailAuth from "./EmailAuth";
+const CusBtnForContinue: FC<ICusBtnForContinue> = ({ icon, text, onClick, onBlur }) => {
+
   return (
-    <Button
-      sx={{
-        display: "flex",
-        width: "70%",
-        padding: "0.75rem",
-        border: "1px  solid  #000",
-        justifyContent: "center",
-        alignItems: "center",
-        borderRadius: "2rem",
-        margin: "1rem  auto",
-      }}
-    >
-      <Box display={"flex"} alignItems={"center"} justifyContent={"center"}>
-        <Typography>{text}</Typography>
-      </Box>
-      <Box sx={{ position: "absolute", right: 20 }}>{icon}</Box>
-    </Button>
+    <>
+      <Button
+        onClick={onClick}
+        onBlur={onBlur}
+        sx={{
+          display: "flex",
+          width: "70%",
+          padding: "0.75rem",
+          border: "1px  solid  #000",
+          justifyContent: "center",
+          alignItems: "center",
+          borderRadius: "2rem",
+          margin: "1rem  auto",
+        }}
+      >
+        <Box display={"flex"} alignItems={"center"} justifyContent={"center"}>
+          <Typography>{text}</Typography>
+        </Box>
+        <Box sx={{ position: "absolute", right: 20 }}>{icon}</Box>
+      </Button>
+
+
+    </>
   );
 };
 
@@ -47,14 +58,16 @@ const Transition = forwardRef(function Transition(
 });
 
 const LoginBox: FC<IProfileBox> = ({ setOpen, open }) => {
+  let [isOpenAuthEmailBox, setIsOpenAuthEmailBox] = useState<boolean>(false)
+
   function handlerClose() {
     setOpen(false);
   }
+
   return (
     <Box>
       <Dialog
         maxWidth={"sm"}
-
         open={open}
         TransitionComponent={Transition}
         keepMounted
@@ -69,7 +82,7 @@ const LoginBox: FC<IProfileBox> = ({ setOpen, open }) => {
           >
             <img
               style={{
-              width: "50px",
+                width: "50px",
               }}
               src="/images/AllNewLogos/singleLogo.svg"
               alt=""
@@ -89,6 +102,7 @@ const LoginBox: FC<IProfileBox> = ({ setOpen, open }) => {
             text="با گوگل ادامه دهید"
           />
           <CusBtnForContinue
+            onClick={() => setIsOpenAuthEmailBox(true)}
             icon={
               <EmailOutlinedIcon
                 sx={{ "& path": { color: "var(--primary-color)" } }}
@@ -108,6 +122,7 @@ const LoginBox: FC<IProfileBox> = ({ setOpen, open }) => {
       </Dialog>
 
 
+        <EmailAuth isOpen={isOpenAuthEmailBox}   setOpen = {setIsOpenAuthEmailBox} />
     </Box>
   );
 };

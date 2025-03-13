@@ -15,6 +15,7 @@ body,
   font-family: var(--main-font) !important;
   color: var(--dark-color);
   text-decoration: none;
+  /* transition: all 0.25s ease; */
 }
 /* @media (min-width: 1200px) {
   .css-wbysu7-MuiContainer-root {
@@ -85,4 +86,8 @@ body,
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.css-i51og3 {
+  margin-top: 0.5rem;
 }

@@ -1,5 +1,5 @@
 "use client"
-import { Box, Container, List } from "@mui/material";
+import { Box, Container, Input, InputAdornment, List } from "@mui/material";
 import { CusTitleHomePage } from "../../elements/CusComponets";
 import NavbarMenu from "./NavBarMenu";
 import CottageOutlinedIcon from "@mui/icons-material/CottageOutlined";
@@ -12,12 +12,16 @@ import InpSearch from "../InpSearch/InpSearch";
 import { useState } from "react";
 import FlightInp from "./FlightInp/FlightInp";
 import { useMedia } from "../../context/MediaQueryContext";
+import PrimaryBtn from "../PrimaryBtn/PrimaryBtn";
+import SearchIcon from '@mui/icons-material/Search';
+import AutoCompleteBox from "../AutoCompleteBox/AutoCompleteBox";
 const NavBarHome = () => {
   let [textPlaceholder, setPlaceHolder] = useState<string>(
     "جاهایی برای رفتن و کارهایی برای انجام دادن و هتل ها و..."
   );
   let [textHomeTitle, setTextHomeTitle] = useState<string>("کجا میخوای بری");
   let [isFlightSearch, setIsFlightSearch] = useState<boolean>(false);
+  let [isOpenAutoComplete, setIsOpenAutoComplete] = useState(false)
   let [idMenu, setIdMenu] = useState<number>(0);
   function handleBtnClick(
     mainTitle: string,
@@ -40,12 +44,12 @@ const NavBarHome = () => {
   return (
     <Box
       sx={{
-        background: isXs
-          ? "linear-gradient(180deg, rgba(241,90,41,1) 0%, rgba(255,255,255,1) 100%)"
-          : "",
-        borderBottomLeftRadius: isXs ? "50rem" : "",
-        borderBottomRightRadius: isXs ? "50rem" : "",
-        height: isXs ? "550px" : "",
+        // background: isXs
+        //   ? "linear-gradient(180deg, rgba(241,90,41,1) 0%, rgba(255,255,255,1) 100%)"
+        //   : "",
+        // borderBottomLeftRadius: isXs ? "50rem" : "",
+        // borderBottomRightRadius: isXs ? "50rem" : "",
+        height: isXs ? "350px" : "",
       }}
     >
       <Container>
@@ -53,17 +57,22 @@ const NavBarHome = () => {
           <Grid size={{ md: 12 }}>
             <Box
               display={"flex"}
-              alignItems={"center"}
+              alignItems={!isXs ? "center" : "unset"}
               flexDirection={"column"}
+              sx={{
+                overflowX: {
+                  xs: "scroll",
+                  md: "unset"
+                }
+              }}
               justifyContent={"center"}
             >
               {!isXs && <CusTitleHomePage>{textHomeTitle}</CusTitleHomePage>}
               <Box>
                 <List
                   sx={{
-                    display: isXs ? "grid" : "flex",
-                    gridTemplateColumns: isXs ? " 1fr 1fr" : "",
-                    gap: 2,
+                    display: "flex",
+                    mt: { xs: '2rem', md: "unset" },
                   }}
                 >
                   <NavbarMenu
@@ -75,7 +84,7 @@ const NavBarHome = () => {
                       {
                         icon: (
                           <CottageOutlinedIcon
-                            sx={isXs ? { "& path": { color: "#fff" } } : {}}
+                          // sx={isXs ? { "& path": { color: "#000" } } : {}}
                           />
                         ),
                         title: "جست و جوی همه ",
@@ -94,7 +103,7 @@ const NavBarHome = () => {
                       {
                         icon: (
                           <KingBedOutlinedIcon
-                            sx={isXs ? { "& path": { color: "#fff" } } : {}}
+                          // sx={isXs ? { "& path": { color: "#fff" } } : {}}
                           />
                         ),
                         title: "هتل ها  ",
@@ -112,7 +121,7 @@ const NavBarHome = () => {
                       {
                         icon: (
                           <CottageOutlinedIcon
-                            sx={isXs ? { "& path": { color: "#fff" } } : {}}
+                          // sx={isXs ? { "& path": { color: "#fff" } } : {}}
                           />
                         ),
                         title: "کارهایی برای انجام ",
@@ -130,7 +139,7 @@ const NavBarHome = () => {
                       {
                         icon: (
                           <RestaurantOutlinedIcon
-                            sx={isXs ? { "& path": { color: "#fff" } } : {}}
+                          // sx={isXs ? { "& path": { color: "#fff" } } : {}}
                           />
                         ),
                         title: "رستوران ها ",
@@ -149,7 +158,7 @@ const NavBarHome = () => {
                       {
                         icon: (
                           <FlightTakeoffOutlinedIcon
-                            sx={isXs ? { "& path": { color: "#fff" } } : {}}
+                          // sx={isXs ? { "& path": { color: "#fff" } } : {}}
                           />
                         ),
                         title: "پرواز ها ",
@@ -168,7 +177,7 @@ const NavBarHome = () => {
                       {
                         icon: (
                           <HouseboatOutlinedIcon
-                            sx={isXs ? { "& path": { color: "#fff" } } : {}}
+                          // sx={isXs ? { "& path": { color: "#fff" } } : {}}
                           />
                         ),
                         title: "تعطیلات اجاره ها",
@@ -186,10 +195,43 @@ const NavBarHome = () => {
               {isFlightSearch ? (
                 <FlightInp />
               ) : (
-                <InpSearch
-                  isBtnSearch={true}
-                  textPlaceHolder={textPlaceholder}
-                />
+                !isXs ? (
+                  <InpSearch
+                    isBtnSearch={true}
+                    textPlaceHolder={textPlaceholder}
+                  />
+                ) : (
+
+                  <Box sx={{
+                    border: "1px  solid  #ccc",
+                    borderRadius: "0.5rem",
+                    position   : 'relative'
+                  }}>
+                    <Input
+                      onFocus={() => setIsOpenAutoComplete(true)}
+                      onBlur={() => setIsOpenAutoComplete(false)}
+                      sx={{
+                        width: "100vw" ,  
+                        mt : "2rem"
+                      }}
+                      placeholder="مکان های مورد علاقه و هتل ها و ..."
+                      startAdornment={
+                        <InputAdornment position="start">
+                          <SearchIcon />
+                        </InputAdornment>
+                      }
+                    />
+                    <PrimaryBtn text="جست وجو" sx={{
+                      margin: '1.5rem' , 
+                    }} />
+
+                    {
+                      isOpenAutoComplete && (
+                        <AutoCompleteBox />
+                      )
+                    }
+                  </Box>
+                )
               )}
             </Box>
           </Grid>

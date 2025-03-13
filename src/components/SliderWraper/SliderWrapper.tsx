@@ -1,48 +1,54 @@
 "use client"
 import { Box, styled } from "@mui/material";
 import React, { FC } from "react";
-import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
-import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
+import WestIcon from '@mui/icons-material/West';
+import EastIcon from '@mui/icons-material/East';
 import Slider from "react-slick";
 interface ISliderWrapperProps {
   children: React.ReactNode;
   numberOfShowSlider: number;
-  ArrowPosition  ?:   string ;
+  ArrowPosition?: string;
 }
 const SliderWrapper: FC<ISliderWrapperProps> = ({
   children,
   numberOfShowSlider,
   ArrowPosition
 }) => {
-  const CusArrowForwardIcon = styled(ArrowCircleLeftIcon)(({ theme }) => ({
-
-    fontSize: "2.5rem",
-    top:  ArrowPosition ? ArrowPosition  :  "50%",
-    backgroundColor: "#000",
+  const CusArrowForwardIcon = styled(WestIcon)(({ theme }) => ({
+    border: "1px  solid  #444",
+    fontSize: "1.5rem",
+    zIndex: 100,
+    padding: "0.25rem",
+    top: ArrowPosition ? ArrowPosition : "50%",
     borderRadius: "50%",
+    backgroundColor: "#fff",
     position: "absolute",
     [theme.breakpoints.down("sm")]: {
       left: "0px",
       zIndex: 99
     },
-    left: -50,
+    left: -30,
     "& path": {
-      color:  "#fff"
+      color: "#444"
     },
   })
   )
-  const CusArrowCircleRightIcon = styled(ArrowCircleRightIcon)(({ theme }) => ({
-    fontSize: "2.5rem",
-    backgroundColor: "#000",
+  const CusArrowCircleRightIcon = styled(EastIcon)(({ theme }) => ({
+    fontSize: "1.5rem",
+    zIndex: 100,
+
     position: "absolute",
     borderRadius: "50%",
+    backgroundColor: "#fff",
+    border: "1px  solid #444",
+    padding: "0.25rem",
     [theme.breakpoints.down("sm")]: {
       right: "0px"
     },
-    right: -50,
-    top:  ArrowPosition ? ArrowPosition  :  "50%",
+    right: -30,
+    top: ArrowPosition ? ArrowPosition : "50%",
     "& path": {
-      color:  "#fff"
+      color: "#444"
 
     }
   }))
@@ -61,7 +67,7 @@ const SliderWrapper: FC<ISliderWrapperProps> = ({
     speed: 1000,
     slidesToShow: numberOfShowSlider,
     cssEase: "linear",
-    autoplay: true,
+    autoplay: false,
     rtl: true,
     slidesToScroll: 1,
     nextArrow: <SampleArrow><CusArrowCircleRightIcon /></SampleArrow>,
