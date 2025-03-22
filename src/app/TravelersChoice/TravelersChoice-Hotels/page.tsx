@@ -8,7 +8,7 @@ import RangeScore from "@/components/CompTravelerChoiceHotel/RangeScore";
 import ReadMore from "@/components/ReadMore/ReadMore";
 import SliderWrapper from "@/components/SliderWraper/SliderWrapper";
 // import { useMedia } from "@/context/MediaQueryContext";
-import { CusCircleIcon, CusInnerMainBanner, CusTPTitle, DarkOverlay } from "@/elements/CusComponets";
+import { CusCircleIcon} from "@/elements/CusComponets";
 import { Box, Container, List, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2"
 import PoolIcon from "@mui/icons-material/Pool";

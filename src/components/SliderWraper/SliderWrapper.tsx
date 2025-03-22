@@ -64,10 +64,10 @@ const SliderWrapper: FC<ISliderWrapperProps> = ({
   var settings = {
     dots: true,
     infinite: true,
-    speed: 1000,
+    speed: 500,
     slidesToShow: numberOfShowSlider,
-    cssEase: "linear",
-    autoplay: false,
+    // cssEase: "linear",
+    // autoplay: false,
     rtl: true,
     slidesToScroll: 1,
     nextArrow: <SampleArrow><CusArrowCircleRightIcon /></SampleArrow>,
